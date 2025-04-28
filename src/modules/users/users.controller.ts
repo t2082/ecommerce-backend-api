@@ -105,10 +105,7 @@ export class UsersController {
 
   @Patch(':id/role')
   @Roles(UserRole.ADMIN)
-  async setRole(
-    @Param('id') id: string,
-    @Body('role') role: UserRole,
-  ): Promise<UserResponseDto> {
+  async setRole(@Param('id') id: string, @Body('role') role: UserRole): Promise<UserResponseDto> {
     const user = await this.usersService.setRole(id, role);
     return plainToClass(UserResponseDto, user, {
       excludeExtraneousValues: true,

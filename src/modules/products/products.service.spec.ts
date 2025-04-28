@@ -56,9 +56,7 @@ describe('ProductsService', () => {
         },
       ];
 
-      jest
-        .spyOn(repository, 'find')
-        .mockResolvedValue(mockProducts as Product[]);
+      jest.spyOn(repository, 'find').mockResolvedValue(mockProducts as Product[]);
 
       const result = await service.findAll();
       expect(result).toEqual(mockProducts);
@@ -83,9 +81,7 @@ describe('ProductsService', () => {
         updatedAt: new Date(),
       };
 
-      jest
-        .spyOn(repository, 'findOne')
-        .mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
 
       const result = await service.findById('1');
       expect(result).toEqual(mockProduct);
@@ -158,12 +154,8 @@ describe('ProductsService', () => {
         ...updateProductDto,
       };
 
-      jest
-        .spyOn(repository, 'findOne')
-        .mockResolvedValue(mockProduct as Product);
-      jest
-        .spyOn(repository, 'save')
-        .mockResolvedValue(updatedProduct as Product);
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'save').mockResolvedValue(updatedProduct as Product);
 
       const result = await service.update('1', updateProductDto);
       expect(result).toEqual(updatedProduct);
@@ -177,9 +169,7 @@ describe('ProductsService', () => {
     it('should throw NotFoundException if product not found', async () => {
       jest.spyOn(repository, 'findOne').mockResolvedValue(null);
 
-      await expect(service.update('1', { name: 'Updated' })).rejects.toThrow(
-        NotFoundException,
-      );
+      await expect(service.update('1', { name: 'Updated' })).rejects.toThrow(NotFoundException);
       expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
     });
   });
@@ -201,9 +191,7 @@ describe('ProductsService', () => {
         updatedAt: new Date(),
       };
 
-      jest
-        .spyOn(repository, 'findOne')
-        .mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
       jest.spyOn(repository, 'softRemove').mockResolvedValue(undefined);
 
       await service.remove('1');
@@ -241,12 +229,8 @@ describe('ProductsService', () => {
         stockQuantity: 15,
       };
 
-      jest
-        .spyOn(repository, 'findOne')
-        .mockResolvedValue(mockProduct as Product);
-      jest
-        .spyOn(repository, 'save')
-        .mockResolvedValue(updatedProduct as Product);
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'save').mockResolvedValue(updatedProduct as Product);
 
       const result = await service.updateStock('1', 5);
       expect(result).toEqual(updatedProduct);
@@ -278,12 +262,8 @@ describe('ProductsService', () => {
         stockQuantity: 5,
       };
 
-      jest
-        .spyOn(repository, 'findOne')
-        .mockResolvedValue(mockProduct as Product);
-      jest
-        .spyOn(repository, 'save')
-        .mockResolvedValue(updatedProduct as Product);
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'save').mockResolvedValue(updatedProduct as Product);
 
       const result = await service.updateStock('1', -5);
       expect(result).toEqual(updatedProduct);
@@ -310,13 +290,9 @@ describe('ProductsService', () => {
         updatedAt: new Date(),
       };
 
-      jest
-        .spyOn(repository, 'findOne')
-        .mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
 
-      await expect(service.updateStock('1', -15)).rejects.toThrow(
-        'Not enough stock available',
-      );
+      await expect(service.updateStock('1', -15)).rejects.toThrow('Not enough stock available');
       expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
     });
   });

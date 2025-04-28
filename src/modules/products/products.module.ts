@@ -16,8 +16,7 @@ import { existsSync, mkdirSync } from 'fs';
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => {
-        const uploadDestination =
-          configService.get('upload.destination') || './uploads';
+        const uploadDestination = configService.get('upload.destination') || './uploads';
 
         // Ensure upload directory exists
         if (!existsSync(uploadDestination)) {
@@ -40,8 +39,7 @@ import { existsSync, mkdirSync } from 'fs';
             },
           }),
           limits: {
-            fileSize:
-              configService.get('upload.maxFileSize') || 5 * 1024 * 1024, // 5MB
+            fileSize: configService.get('upload.maxFileSize') || 5 * 1024 * 1024, // 5MB
           },
         };
       },

@@ -1,0 +1,8771 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+# File Summary
+
+## Purpose
+
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+
+## File Format
+
+The content is organized as follows:
+
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Multiple file entries, each consisting of:
+   a. A header with the file path (## File: path/to/file)
+   b. The full contents of the file in a code block
+
+## Usage Guidelines
+
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+
+## Notes
+
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+
+## Additional Info
+
+# Directory Structure
+
+```
+.env.example
+.github/workflows/ci.yml
+.gitignore
+.prettierrc
+docker-compose.yml
+Dockerfile
+eslint.config.mjs
+nest-cli.json
+package.json
+README.md
+repomix-output.xml
+src/app.controller.spec.ts
+src/app.controller.ts
+src/app.module.ts
+src/app.service.ts
+src/application/dtos/auth.dto.ts
+src/application/dtos/order.dto.ts
+src/application/dtos/product.dto.ts
+src/application/dtos/user.dto.ts
+src/config/config.module.ts
+src/config/configuration.ts
+src/domain/entities/base.entity.ts
+src/domain/entities/order-item.entity.ts
+src/domain/entities/order.entity.ts
+src/domain/entities/product.entity.ts
+src/domain/entities/user.entity.ts
+src/infrastructure/cache/cache.module.ts
+src/infrastructure/database/data-source.ts
+src/infrastructure/database/database.module.ts
+src/infrastructure/email/email.module.ts
+src/infrastructure/email/email.service.ts
+src/infrastructure/logging/logging.module.ts
+src/infrastructure/queue/queue.module.ts
+src/infrastructure/security/security.module.ts
+src/main.ts
+src/modules/auth/auth.controller.ts
+src/modules/auth/auth.module.ts
+src/modules/auth/auth.service.ts
+src/modules/auth/decorators/current-user.decorator.ts
+src/modules/auth/decorators/roles.decorator.ts
+src/modules/auth/guards/jwt-auth.guard.ts
+src/modules/auth/guards/roles.guard.ts
+src/modules/auth/strategies/jwt.strategy.ts
+src/modules/orders/orders.controller.ts
+src/modules/orders/orders.module.ts
+src/modules/orders/orders.service.ts
+src/modules/products/products.controller.ts
+src/modules/products/products.module.ts
+src/modules/products/products.service.spec.ts
+src/modules/products/products.service.ts
+src/modules/users/users.controller.ts
+src/modules/users/users.module.ts
+src/modules/users/users.service.ts
+test/app.e2e-spec.ts
+test/jest-e2e.json
+test/products.e2e-spec.ts
+tsconfig.build.json
+tsconfig.json
+```
+
+# Files
+
+## File: repomix-output.xml
+
+````xml
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+<additional_info>
+
+</additional_info>
+
+</file_summary>
+
+<directory_structure>
+.env.example
+.github/workflows/ci.yml
+.gitignore
+.prettierrc
+docker-compose.yml
+Dockerfile
+eslint.config.mjs
+nest-cli.json
+package.json
+README.md
+src/app.controller.spec.ts
+src/app.controller.ts
+src/app.module.ts
+src/app.service.ts
+src/application/dtos/auth.dto.ts
+src/application/dtos/order.dto.ts
+src/application/dtos/product.dto.ts
+src/application/dtos/user.dto.ts
+src/config/config.module.ts
+src/config/configuration.ts
+src/domain/entities/base.entity.ts
+src/domain/entities/order-item.entity.ts
+src/domain/entities/order.entity.ts
+src/domain/entities/product.entity.ts
+src/domain/entities/user.entity.ts
+src/infrastructure/cache/cache.module.ts
+src/infrastructure/database/data-source.ts
+src/infrastructure/database/database.module.ts
+src/infrastructure/email/email.module.ts
+src/infrastructure/email/email.service.ts
+src/infrastructure/logging/logging.module.ts
+src/infrastructure/queue/queue.module.ts
+src/infrastructure/security/security.module.ts
+src/main.ts
+src/modules/auth/auth.controller.ts
+src/modules/auth/auth.module.ts
+src/modules/auth/auth.service.ts
+src/modules/auth/decorators/current-user.decorator.ts
+src/modules/auth/decorators/roles.decorator.ts
+src/modules/auth/guards/jwt-auth.guard.ts
+src/modules/auth/guards/roles.guard.ts
+src/modules/auth/strategies/jwt.strategy.ts
+src/modules/orders/orders.controller.ts
+src/modules/orders/orders.module.ts
+src/modules/orders/orders.service.ts
+src/modules/products/products.controller.ts
+src/modules/products/products.module.ts
+src/modules/products/products.service.spec.ts
+src/modules/products/products.service.ts
+src/modules/users/users.controller.ts
+src/modules/users/users.module.ts
+src/modules/users/users.service.ts
+test/app.e2e-spec.ts
+test/jest-e2e.json
+test/products.e2e-spec.ts
+tsconfig.build.json
+tsconfig.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".env.example">
+# Application
+NODE_ENV=development
+PORT=3000
+API_PREFIX=api
+APP_NAME=E-Commerce Backend
+
+# Database
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+DB_DATABASE=ecommerce
+DB_SCHEMA=public
+DB_SYNCHRONIZE=false
+
+# JWT Authentication
+JWT_SECRET=your-secret-key
+JWT_EXPIRATION=1h
+JWT_REFRESH_SECRET=your-refresh-secret-key
+JWT_REFRESH_EXPIRATION=7d
+
+# Redis Cache
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+REDIS_TTL=3600
+
+# Email
+MAIL_HOST=smtp.example.com
+MAIL_PORT=587
+MAIL_USER=user@example.com
+MAIL_PASSWORD=password
+MAIL_FROM=noreply@example.com
+
+# File Upload
+UPLOAD_DESTINATION=./uploads
+MAX_FILE_SIZE=5242880 # 5MB
+
+# Rate Limiting
+THROTTLE_TTL=60
+THROTTLE_LIMIT=10
+</file>
+
+<file path=".github/workflows/ci.yml">
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run linting
+        run: npm run lint
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    needs: lint
+    services:
+      postgres:
+        image: postgres:14-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: ecommerce_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm run test
+
+      - name: Run e2e tests
+        run: npm run test:e2e
+        env:
+          DB_HOST: localhost
+          DB_PORT: 5432
+          DB_USERNAME: postgres
+          DB_PASSWORD: postgres
+          DB_DATABASE: ecommerce_test
+          REDIS_HOST: localhost
+          REDIS_PORT: 6379
+          JWT_SECRET: test-secret
+          JWT_REFRESH_SECRET: test-refresh-secret
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: dist/
+
+  # Uncomment and configure this job when you're ready to deploy
+  # deploy:
+  #   name: Deploy
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
+  #
+  #     - name: Download build artifacts
+  #       uses: actions/download-artifact@v3
+  #       with:
+  #         name: build
+  #         path: dist/
+  #
+  #     - name: Deploy to production
+  #       # Add your deployment steps here
+  #       run: echo "Deploying to production..."
+</file>
+
+<file path=".gitignore">
+# compiled output
+/dist
+/node_modules
+/build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# temp directory
+.temp
+.tmp
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Uploads directory
+/uploads
+
+# Database files
+*.sqlite
+*.db
+
+# Docker volumes
+/docker/volumes
+</file>
+
+<file path=".prettierrc">
+{
+  "singleQuote": true,
+  "trailingComma": "all"
+
+}
+</file>
+
+<file path="docker-compose.yml">
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: ecommerce-api
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:
+      - postgres
+      - redis
+    env_file:
+      - .env
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=postgres
+      - DB_DATABASE=ecommerce-backend
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    command: npm run start:dev
+
+  postgres:
+    image: postgres:14-alpine
+    container_name: ecommerce-postgres
+    restart: unless-stopped
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=ecommerce-backend
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: ecommerce-redis
+    restart: unless-stopped
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis_data:/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: ecommerce-pgadmin
+    restart: unless-stopped
+    ports:
+      - '5050:80'
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+  redis_data:
+  pgadmin_data:
+</file>
+
+<file path="Dockerfile">
+# Base image
+FROM node:18-alpine AS development
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Build the application
+RUN npm run build
+
+# Production image
+FROM node:18-alpine AS production
+
+# Set NODE_ENV
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Copy package files
+COPY package*.json ./
+
+# Install production dependencies
+RUN npm ci --only=production
+
+# Copy built application from development stage
+COPY --from=development /usr/src/app/dist ./dist
+COPY --from=development /usr/src/app/node_modules ./node_modules
+
+# Create uploads directory
+RUN mkdir -p uploads/products
+
+# Expose port
+EXPOSE 3000
+
+# Start the application
+CMD ["node", "dist/main"]
+</file>
+
+<file path="eslint.config.mjs">
+// @ts-check
+import eslint from '@eslint/js';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+  {
+    ignores: ['eslint.config.mjs'],
+  },
+  eslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
+  eslintPluginPrettierRecommended,
+  {
+    languageOptions: {
+      globals: {
+        ...globals.node,
+        ...globals.jest,
+      },
+      sourceType: 'commonjs',
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
+  {
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-floating-promises': 'warn',
+      '@typescript-eslint/no-unsafe-argument': 'warn'
+    },
+  },
+);
+</file>
+
+<file path="nest-cli.json">
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true
+  }
+}
+</file>
+
+<file path="package.json">
+{
+  "name": "ecommerce-backend",
+  "version": "0.0.1",
+  "description": "E-Commerce Backend API with NestJS, TypeORM, and PostgreSQL",
+  "author": "Your Name",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "migration:generate": "npm run typeorm -- migration:generate -d src/infrastructure/database/data-source.ts",
+    "migration:run": "npm run typeorm -- migration:run -d src/infrastructure/database/data-source.ts",
+    "migration:revert": "npm run typeorm -- migration:revert -d src/infrastructure/database/data-source.ts",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "dependencies": {
+    "@nestjs/bull": "^11.0.2",
+    "@nestjs/cache-manager": "^3.0.1",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/jwt": "^11.0.0",
+    "@nestjs/passport": "^11.0.5",
+    "@nestjs/platform-express": "^11.0.20",
+    "@nestjs/serve-static": "^5.0.3",
+    "@nestjs/swagger": "^11.1.5",
+    "@nestjs/throttler": "^6.4.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "bcrypt": "^5.1.1",
+    "bull": "^4.16.5",
+    "cache-manager": "^6.4.2",
+    "cache-manager-redis-store": "^3.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "compression": "^1.8.0",
+    "helmet": "^8.1.0",
+    "joi": "^17.13.3",
+    "multer": "^1.4.5-lts.2",
+    "nest-winston": "^1.10.2",
+    "nodemailer": "^6.10.1",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.15.1",
+    "redis": "^4.7.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.22",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.1",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.10.7",
+    "@types/bcrypt": "^5.0.2",
+    "@types/bull": "^3.15.9",
+    "@types/compression": "^1.7.5",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.7",
+    "@types/nodemailer": "^6.4.17",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/passport-local": "^1.0.38",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "globals": "^16.0.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2",
+    "source-map-support": "^0.5.21",
+    "supertest": "^7.1.0",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
+</file>
+
+<file path="README.md">
+# E-Commerce Backend API
+
+## Overview
+
+A robust and scalable E-Commerce Backend API built with NestJS, TypeScript, PostgreSQL, and following Clean Architecture / Domain-Driven Design principles. This boilerplate provides a solid foundation for building e-commerce applications with features like authentication, product management, order processing, and more.
+
+## Features
+
+- **Authentication**
+  - JWT + Refresh Token authentication
+  - User registration and login
+  - Password reset functionality
+  - Role-based access control
+
+- **User Management**
+  - CRUD operations for users
+  - Role management (Admin, Manager, Customer)
+  - Profile management
+
+- **Product Management**
+  - CRUD operations for products
+  - Product categorization
+  - Image upload support
+  - Stock management
+  - Discount management
+
+- **Order Management**
+  - Order creation and processing
+  - Order status tracking
+  - Payment status tracking
+  - Order history
+
+- **Infrastructure**
+  - PostgreSQL database with TypeORM
+  - Redis for caching
+  - BullMQ for task queues
+  - Winston for logging
+  - Email service with Nodemailer
+
+- **Security**
+  - Helmet for HTTP headers
+  - Rate limiting
+  - CORS protection
+  - Input validation
+
+- **Documentation**
+  - Swagger API documentation
+
+## Architecture
+
+This project follows Clean Architecture / Domain-Driven Design principles with a clear separation of concerns:
+
+- **Domain Layer**: Contains business entities, value objects, and domain services
+- **Application Layer**: Contains use cases and application services
+- **Infrastructure Layer**: Contains implementations of repositories, external services, etc.
+- **Presentation Layer**: Contains controllers, DTOs, and API endpoints
+
+## Tech Stack
+
+- **Framework**: NestJS (TypeScript)
+- **Database**: PostgreSQL
+- **ORM**: TypeORM
+- **Authentication**: JWT + Passport
+- **Validation**: class-validator & class-transformer
+- **Logging**: Winston
+- **Caching**: Redis
+- **Task Queue**: BullMQ + Redis
+- **Email**: Nodemailer
+- **API Documentation**: Swagger
+- **Testing**: Jest + SuperTest
+- **Containerization**: Docker & Docker Compose
+
+## Prerequisites
+
+- Node.js (v16+)
+- npm or yarn
+- PostgreSQL
+- Redis
+
+## Installation
+
+### Local Development
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+cd ecommerce-backend
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Create a `.env` file based on `.env.example`
+
+```bash
+cp .env.example .env
+```
+
+4. Update the `.env` file with your configuration
+
+5. Start the development server
+
+```bash
+npm run start:dev
+```
+
+### Using Docker
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+cd ecommerce-backend
+```
+
+2. Create a `.env` file based on `.env.example`
+
+```bash
+cp .env.example .env
+```
+
+3. Build and start the containers
+
+```bash
+npm run docker:build
+npm run docker:up
+```
+
+## Database Migrations
+
+### Generate a migration
+
+```bash
+npm run migration:generate -- src/infrastructure/database/migrations/MigrationName
+```
+
+### Run migrations
+
+```bash
+npm run migration:run
+```
+
+### Revert migrations
+
+```bash
+npm run migration:revert
+```
+
+## API Documentation
+
+Swagger API documentation is available at `/api/docs` when running in development mode.
+
+## Testing
+
+### Unit Tests
+
+```bash
+npm run test
+```
+
+### E2E Tests
+
+```bash
+npm run test:e2e
+```
+
+### Test Coverage
+
+```bash
+npm run test:cov
+```
+
+## Folder Structure
+
+```
+src/
+├── application/         # Application layer
+│   ├── dtos/           # Data Transfer Objects
+│   └── use-cases/      # Application use cases
+├── config/             # Configuration
+├── domain/             # Domain layer
+│   ├── entities/       # Domain entities
+│   ├── services/       # Domain services
+│   └── value-objects/  # Value objects
+├── infrastructure/     # Infrastructure layer
+│   ├── cache/          # Cache implementation
+│   ├── database/       # Database configuration and migrations
+│   ├── email/          # Email service
+│   ├── logging/        # Logging configuration
+│   ├── queue/          # Queue implementation
+│   └── security/       # Security configuration
+├── modules/            # Feature modules
+│   ├── auth/           # Authentication module
+│   ├── orders/         # Order management module
+│   ├── products/       # Product management module
+│   └── users/          # User management module
+└── presentation/       # Presentation layer
+    ├── controllers/    # API controllers
+    ├── filters/        # Exception filters
+    ├── guards/         # Guards
+    └── pipes/          # Validation pipes
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/my-feature`
+3. Commit your changes: `git commit -am 'Add my feature'`
+4. Push to the branch: `git push origin feature/my-feature`
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+</file>
+
+<file path="src/app.controller.spec.ts">
+import { Test, TestingModule } from '@nestjs/testing';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+
+describe('AppController', () => {
+  let appController: AppController;
+
+  beforeEach(async () => {
+    const app: TestingModule = await Test.createTestingModule({
+      controllers: [AppController],
+      providers: [AppService],
+    }).compile();
+
+    appController = app.get<AppController>(AppController);
+  });
+
+  describe('root', () => {
+    it('should return "Hello World!"', () => {
+      expect(appController.getHello()).toBe('Hello World!');
+    });
+  });
+});
+</file>
+
+<file path="src/app.controller.ts">
+import { Controller, Get } from '@nestjs/common';
+import { AppService } from './app.service';
+
+@Controller()
+export class AppController {
+  constructor(private readonly appService: AppService) {}
+
+  @Get()
+  getHello(): string {
+    return this.appService.getHello();
+  }
+}
+</file>
+
+<file path="src/app.module.ts">
+import { Module } from '@nestjs/common';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
+
+// Config
+import { ConfigModule } from '@config/config.module';
+
+// Infrastructure
+import { DatabaseModule } from '@infrastructure/database/database.module';
+import { CacheModule } from '@infrastructure/cache/cache.module';
+import { QueueModule } from '@infrastructure/queue/queue.module';
+import { EmailModule } from '@infrastructure/email/email.module';
+import { LoggingModule } from '@infrastructure/logging/logging.module';
+import { SecurityModule } from '@infrastructure/security/security.module';
+
+// Modules
+import { AuthModule } from '@modules/auth/auth.module';
+import { UsersModule } from '@modules/users/users.module';
+import { ProductsModule } from '@modules/products/products.module';
+import { OrdersModule } from '@modules/orders/orders.module';
+
+@Module({
+  imports: [
+    // Config
+    ConfigModule,
+
+    // Infrastructure
+    DatabaseModule,
+    CacheModule,
+    QueueModule,
+    EmailModule,
+    LoggingModule,
+    SecurityModule,
+
+    // Serve static files
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'uploads'),
+      serveRoot: '/uploads',
+    }),
+
+    // Feature modules
+    AuthModule,
+    UsersModule,
+    ProductsModule,
+    OrdersModule,
+  ],
+})
+export class AppModule {}
+</file>
+
+<file path="src/app.service.ts">
+import { Injectable } from '@nestjs/common';
+
+@Injectable()
+export class AppService {
+  getHello(): string {
+    return 'Hello World!';
+  }
+}
+</file>
+
+<file path="src/application/dtos/auth.dto.ts">
+import { IsEmail, IsNotEmpty, IsString, MinLength } from 'class-validator';
+
+export class LoginDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsString()
+  @IsNotEmpty()
+  password: string;
+}
+
+export class RegisterDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsString()
+  @IsNotEmpty()
+  firstName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  lastName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(8)
+  password: string;
+}
+
+export class RefreshTokenDto {
+  @IsString()
+  @IsNotEmpty()
+  refreshToken: string;
+}
+
+export class ForgotPasswordDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+}
+
+export class ResetPasswordDto {
+  @IsString()
+  @IsNotEmpty()
+  token: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(8)
+  newPassword: string;
+}
+
+export class TokenResponseDto {
+  accessToken: string;
+  refreshToken: string;
+  expiresIn: number;
+}
+</file>
+
+<file path="src/application/dtos/order.dto.ts">
+import {
+  IsArray,
+  IsEnum,
+  IsNotEmpty,
+  IsNumber,
+  IsObject,
+  IsOptional,
+  IsPositive,
+  IsString,
+  ValidateNested,
+} from 'class-validator';
+import { Type } from 'class-transformer';
+import { OrderStatus, PaymentStatus } from '@domain/entities/order.entity';
+
+class AddressDto {
+  @IsString()
+  @IsNotEmpty()
+  firstName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  lastName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  address1: string;
+
+  @IsString()
+  @IsOptional()
+  address2?: string;
+
+  @IsString()
+  @IsNotEmpty()
+  city: string;
+
+  @IsString()
+  @IsNotEmpty()
+  state: string;
+
+  @IsString()
+  @IsNotEmpty()
+  postalCode: string;
+
+  @IsString()
+  @IsNotEmpty()
+  country: string;
+
+  @IsString()
+  @IsNotEmpty()
+  phone: string;
+}
+
+class OrderItemDto {
+  @IsString()
+  @IsNotEmpty()
+  productId: string;
+
+  @IsNumber()
+  @IsPositive()
+  @Type(() => Number)
+  quantity: number;
+}
+
+export class CreateOrderDto {
+  @IsArray()
+  @ValidateNested({ each: true })
+  @Type(() => OrderItemDto)
+  items: OrderItemDto[];
+
+  @IsObject()
+  @ValidateNested()
+  @Type(() => AddressDto)
+  shippingAddress: AddressDto;
+
+  @IsObject()
+  @ValidateNested()
+  @IsOptional()
+  @Type(() => AddressDto)
+  billingAddress?: AddressDto;
+
+  @IsString()
+  @IsOptional()
+  notes?: string;
+
+  @IsString()
+  @IsNotEmpty()
+  paymentMethod: string;
+}
+
+export class UpdateOrderStatusDto {
+  @IsEnum(OrderStatus)
+  status: OrderStatus;
+
+  @IsString()
+  @IsOptional()
+  trackingNumber?: string;
+}
+
+export class UpdatePaymentStatusDto {
+  @IsEnum(PaymentStatus)
+  paymentStatus: PaymentStatus;
+
+  @IsString()
+  @IsOptional()
+  paymentTransactionId?: string;
+}
+
+export class OrderResponseDto {
+  id: string;
+  orderNumber: string;
+  user: {
+    id: string;
+    email: string;
+    fullName: string;
+  };
+  items: {
+    id: string;
+    product: {
+      id: string;
+      name: string;
+      images: string[];
+    };
+    quantity: number;
+    unitPrice: number;
+    discount: number;
+    subtotal: number;
+  }[];
+  status: OrderStatus;
+  paymentStatus: PaymentStatus;
+  subtotal: number;
+  tax: number;
+  shippingCost: number;
+  discount: number;
+  total: number;
+  shippingAddress: AddressDto;
+  billingAddress?: AddressDto;
+  notes?: string;
+  trackingNumber?: string;
+  paymentMethod?: string;
+  paymentTransactionId?: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+</file>
+
+<file path="src/application/dtos/product.dto.ts">
+import {
+  IsArray,
+  IsBoolean,
+  IsNotEmpty,
+  IsNumber,
+  IsOptional,
+  IsPositive,
+  IsString,
+  Min,
+  Max,
+} from 'class-validator';
+import { Type } from 'class-transformer';
+
+export class CreateProductDto {
+  @IsString()
+  @IsNotEmpty()
+  name: string;
+
+  @IsString()
+  @IsNotEmpty()
+  description: string;
+
+  @IsNumber()
+  @IsPositive()
+  @Type(() => Number)
+  price: number;
+
+  @IsNumber()
+  @Min(0)
+  @Type(() => Number)
+  stockQuantity: number;
+
+  @IsArray()
+  @IsOptional()
+  images?: string[];
+
+  @IsBoolean()
+  @IsOptional()
+  isActive?: boolean;
+
+  @IsArray()
+  @IsOptional()
+  categories?: string[];
+
+  @IsOptional()
+  attributes?: Record<string, any>;
+
+  @IsNumber()
+  @Min(0)
+  @Max(100)
+  @IsOptional()
+  @Type(() => Number)
+  discountPercentage?: number;
+}
+
+export class UpdateProductDto {
+  @IsString()
+  @IsOptional()
+  name?: string;
+
+  @IsString()
+  @IsOptional()
+  description?: string;
+
+  @IsNumber()
+  @IsPositive()
+  @IsOptional()
+  @Type(() => Number)
+  price?: number;
+
+  @IsNumber()
+  @Min(0)
+  @IsOptional()
+  @Type(() => Number)
+  stockQuantity?: number;
+
+  @IsArray()
+  @IsOptional()
+  images?: string[];
+
+  @IsBoolean()
+  @IsOptional()
+  isActive?: boolean;
+
+  @IsArray()
+  @IsOptional()
+  categories?: string[];
+
+  @IsOptional()
+  attributes?: Record<string, any>;
+
+  @IsNumber()
+  @Min(0)
+  @Max(100)
+  @IsOptional()
+  @Type(() => Number)
+  discountPercentage?: number;
+}
+
+export class ProductResponseDto {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  stockQuantity: number;
+  images: string[];
+  isActive: boolean;
+  categories: string[];
+  attributes: Record<string, any>;
+  discountPercentage: number;
+  createdAt: Date;
+  updatedAt: Date;
+  isInStock: boolean;
+  finalPrice: number;
+}
+
+export class ProductFilterDto {
+  @IsOptional()
+  @IsString()
+  search?: string;
+
+  @IsOptional()
+  @IsArray()
+  categories?: string[];
+
+  @IsOptional()
+  @IsNumber()
+  @Min(0)
+  @Type(() => Number)
+  minPrice?: number;
+
+  @IsOptional()
+  @IsNumber()
+  @IsPositive()
+  @Type(() => Number)
+  maxPrice?: number;
+
+  @IsOptional()
+  @IsBoolean()
+  inStock?: boolean;
+
+  @IsOptional()
+  @IsBoolean()
+  onSale?: boolean;
+}
+</file>
+
+<file path="src/application/dtos/user.dto.ts">
+import {
+  IsEmail,
+  IsEnum,
+  IsNotEmpty,
+  IsOptional,
+  IsString,
+  MinLength,
+} from 'class-validator';
+import { UserRole } from '@domain/entities/user.entity';
+import { Exclude, Expose, Transform } from 'class-transformer';
+
+export class CreateUserDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsString()
+  @IsNotEmpty()
+  firstName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  lastName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(8)
+  password: string;
+
+  @IsEnum(UserRole)
+  @IsOptional()
+  role?: UserRole;
+}
+
+export class UpdateUserDto {
+  @IsEmail()
+  @IsOptional()
+  email?: string;
+
+  @IsString()
+  @IsOptional()
+  firstName?: string;
+
+  @IsString()
+  @IsOptional()
+  lastName?: string;
+
+  @IsEnum(UserRole)
+  @IsOptional()
+  role?: UserRole;
+}
+
+export class ChangePasswordDto {
+  @IsString()
+  @IsNotEmpty()
+  currentPassword: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(8)
+  newPassword: string;
+}
+
+export class UserResponseDto {
+  @Expose()
+  id: string;
+
+  @Expose()
+  email: string;
+
+  @Expose()
+  firstName: string;
+
+  @Expose()
+  lastName: string;
+
+  @Expose()
+  role: UserRole;
+
+  @Expose()
+  isEmailVerified: boolean;
+
+  @Expose()
+  createdAt: Date;
+
+  @Expose()
+  updatedAt: Date;
+
+  @Expose()
+  @Transform(({ obj }) => `${obj.firstName} ${obj.lastName}`)
+  fullName: string;
+
+  @Exclude()
+  password: string;
+
+  @Exclude()
+  refreshToken: string;
+
+  @Exclude()
+  deletedAt: Date;
+}
+</file>
+
+<file path="src/config/config.module.ts">
+import { Module } from '@nestjs/common';
+import { ConfigModule as NestConfigModule } from '@nestjs/config';
+import configuration from './configuration';
+import * as Joi from 'joi';
+
+@Module({
+  imports: [
+    NestConfigModule.forRoot({
+      isGlobal: true,
+      load: [configuration],
+      validationSchema: Joi.object({
+        NODE_ENV: Joi.string()
+          .valid('development', 'production', 'test', 'staging')
+          .default('development'),
+        PORT: Joi.number().default(3000),
+        API_PREFIX: Joi.string().default('api'),
+
+        // Database
+        DB_HOST: Joi.string().default('localhost'),
+        DB_PORT: Joi.number().default(5432),
+        DB_USERNAME: Joi.string().default('postgres'),
+        DB_PASSWORD: Joi.string().default('postgres'),
+        DB_DATABASE: Joi.string().default('ecommerce'),
+        DB_SCHEMA: Joi.string().default('public'),
+        DB_SYNCHRONIZE: Joi.boolean().default(false),
+
+        // JWT
+        JWT_SECRET: Joi.string().required(),
+        JWT_EXPIRATION: Joi.string().default('1h'),
+        JWT_REFRESH_SECRET: Joi.string().required(),
+        JWT_REFRESH_EXPIRATION: Joi.string().default('7d'),
+
+        // Redis
+        REDIS_HOST: Joi.string().default('localhost'),
+        REDIS_PORT: Joi.number().default(6379),
+        REDIS_PASSWORD: Joi.string().allow('').default(''),
+        REDIS_TTL: Joi.number().default(3600),
+
+        // Email
+        MAIL_HOST: Joi.string().default('smtp.example.com'),
+        MAIL_PORT: Joi.number().default(587),
+        MAIL_USER: Joi.string().default('user@example.com'),
+        MAIL_PASSWORD: Joi.string().default('password'),
+        MAIL_FROM: Joi.string().default('noreply@example.com'),
+
+        // File Upload
+        UPLOAD_DESTINATION: Joi.string().default('./uploads'),
+        MAX_FILE_SIZE: Joi.number().default(5242880), // 5MB
+
+        // Rate Limiting
+        THROTTLE_TTL: Joi.number().default(60),
+        THROTTLE_LIMIT: Joi.number().default(10),
+      }),
+    }),
+  ],
+})
+export class ConfigModule {}
+</file>
+
+<file path="src/config/configuration.ts">
+export default () => ({
+  // Application
+  nodeEnv: process.env.NODE_ENV || 'development',
+  port: parseInt(process.env.PORT || '3000', 10),
+  apiPrefix: process.env.API_PREFIX || 'api',
+  appName: process.env.APP_NAME || 'E-Commerce Backend',
+
+  // Database
+  database: {
+    host: process.env.DB_HOST || 'localhost',
+    port: parseInt(process.env.DB_PORT || '5432', 10),
+    username: process.env.DB_USERNAME || 'postgres',
+    password: process.env.DB_PASSWORD || 'postgres',
+    database: process.env.DB_DATABASE || 'ecommerce',
+    schema: process.env.DB_SCHEMA || 'public',
+    synchronize: process.env.DB_SYNCHRONIZE === 'true',
+  },
+
+  // JWT Authentication
+  jwt: {
+    secret: process.env.JWT_SECRET || 'your-secret-key',
+    expiresIn: process.env.JWT_EXPIRATION || '1h',
+    refreshSecret: process.env.JWT_REFRESH_SECRET || 'your-refresh-secret-key',
+    refreshExpiresIn: process.env.JWT_REFRESH_EXPIRATION || '7d',
+  },
+
+  // Redis Cache
+  redis: {
+    host: process.env.REDIS_HOST || 'localhost',
+    port: parseInt(process.env.REDIS_PORT || '6379', 10),
+    password: process.env.REDIS_PASSWORD || '',
+    ttl: parseInt(process.env.REDIS_TTL || '3600', 10),
+  },
+
+  // Email
+  mail: {
+    host: process.env.MAIL_HOST || 'smtp.example.com',
+    port: parseInt(process.env.MAIL_PORT || '587', 10),
+    user: process.env.MAIL_USER || 'user@example.com',
+    password: process.env.MAIL_PASSWORD || 'password',
+    from: process.env.MAIL_FROM || 'noreply@example.com',
+  },
+
+  // File Upload
+  upload: {
+    destination: process.env.UPLOAD_DESTINATION || './uploads',
+    maxFileSize: parseInt(process.env.MAX_FILE_SIZE || '5242880', 10), // 5MB
+  },
+
+  // Rate Limiting
+  throttle: {
+    ttl: parseInt(process.env.THROTTLE_TTL || '60', 10),
+    limit: parseInt(process.env.THROTTLE_LIMIT || '10', 10),
+  },
+});
+</file>
+
+<file path="src/domain/entities/base.entity.ts">
+import {
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+  DeleteDateColumn,
+  BaseEntity as TypeOrmBaseEntity,
+} from 'typeorm';
+
+export abstract class BaseEntity extends TypeOrmBaseEntity {
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
+
+  @CreateDateColumn({ name: 'created_at' })
+  createdAt: Date;
+
+  @UpdateDateColumn({ name: 'updated_at' })
+  updatedAt: Date;
+
+  @DeleteDateColumn({ name: 'deleted_at', nullable: true })
+  deletedAt?: Date;
+}
+</file>
+
+<file path="src/domain/entities/order-item.entity.ts">
+import { Entity, Column, ManyToOne, JoinColumn } from 'typeorm';
+import { BaseEntity } from './base.entity';
+import { Order } from './order.entity';
+import { Product } from './product.entity';
+
+@Entity('order_items')
+export class OrderItem extends BaseEntity {
+  @ManyToOne(() => Order, (order) => order.items, { onDelete: 'CASCADE' })
+  @JoinColumn({ name: 'order_id' })
+  order: Order;
+
+  @ManyToOne(() => Product, (product) => product.orderItems)
+  @JoinColumn({ name: 'product_id' })
+  product: Product;
+
+  @Column('int')
+  quantity: number;
+
+  @Column('decimal', { precision: 10, scale: 2 })
+  unitPrice: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  discount: number;
+
+  get subtotal(): number {
+    return this.quantity * this.unitPrice * (1 - this.discount / 100);
+  }
+}
+</file>
+
+<file path="src/domain/entities/order.entity.ts">
+import { Entity, Column, ManyToOne, OneToMany, JoinColumn } from 'typeorm';
+import { BaseEntity } from './base.entity';
+import { User } from './user.entity';
+import { OrderItem } from './order-item.entity';
+
+export enum OrderStatus {
+  PENDING = 'pending',
+  PROCESSING = 'processing',
+  SHIPPED = 'shipped',
+  DELIVERED = 'delivered',
+  CANCELLED = 'cancelled',
+  REFUNDED = 'refunded',
+}
+
+export enum PaymentStatus {
+  PENDING = 'pending',
+  PAID = 'paid',
+  FAILED = 'failed',
+  REFUNDED = 'refunded',
+}
+
+@Entity('orders')
+export class Order extends BaseEntity {
+  @Column()
+  orderNumber: string;
+
+  @ManyToOne(() => User, (user) => user.orders)
+  @JoinColumn({ name: 'user_id' })
+  user: User;
+
+  @OneToMany(() => OrderItem, (orderItem) => orderItem.order, {
+    cascade: true,
+    eager: true,
+  })
+  items: OrderItem[];
+
+  @Column({
+    type: process.env.NODE_ENV === 'development' ? 'varchar' : 'enum',
+    enum: OrderStatus,
+    default: OrderStatus.PENDING,
+  })
+  status: OrderStatus;
+
+  @Column({
+    type: process.env.NODE_ENV === 'development' ? 'varchar' : 'enum',
+    enum: PaymentStatus,
+    default: PaymentStatus.PENDING,
+  })
+  paymentStatus: PaymentStatus;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  subtotal: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  tax: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  shippingCost: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  discount: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  total: number;
+
+  @Column('simple-json')
+  shippingAddress: {
+    firstName: string;
+    lastName: string;
+    address1: string;
+    address2?: string;
+    city: string;
+    state: string;
+    postalCode: string;
+    country: string;
+    phone: string;
+  };
+
+  @Column('simple-json', { nullable: true })
+  billingAddress?: {
+    firstName: string;
+    lastName: string;
+    address1: string;
+    address2?: string;
+    city: string;
+    state: string;
+    postalCode: string;
+    country: string;
+    phone: string;
+  };
+
+  @Column({ nullable: true })
+  notes?: string;
+
+  @Column({ nullable: true })
+  trackingNumber?: string;
+
+  @Column({ nullable: true })
+  paymentMethod?: string;
+
+  @Column({ nullable: true })
+  paymentTransactionId?: string;
+
+  calculateTotals(): void {
+    // Calculate subtotal from items
+    this.subtotal = this.items.reduce((sum, item) => sum + item.subtotal, 0);
+
+    // Calculate total with tax, shipping, and discounts
+    this.total = this.subtotal + this.tax + this.shippingCost - this.discount;
+  }
+
+  canCancel(): boolean {
+    return [OrderStatus.PENDING, OrderStatus.PROCESSING].includes(this.status);
+  }
+
+  cancel(): void {
+    if (!this.canCancel()) {
+      throw new Error('This order cannot be cancelled');
+    }
+    this.status = OrderStatus.CANCELLED;
+  }
+
+  markAsPaid(): void {
+    this.paymentStatus = PaymentStatus.PAID;
+    if (this.status === OrderStatus.PENDING) {
+      this.status = OrderStatus.PROCESSING;
+    }
+  }
+
+  markAsShipped(trackingNumber: string): void {
+    if (this.status !== OrderStatus.PROCESSING) {
+      throw new Error('Order must be in processing status to be shipped');
+    }
+    this.trackingNumber = trackingNumber;
+    this.status = OrderStatus.SHIPPED;
+  }
+
+  markAsDelivered(): void {
+    if (this.status !== OrderStatus.SHIPPED) {
+      throw new Error('Order must be shipped before it can be delivered');
+    }
+    this.status = OrderStatus.DELIVERED;
+  }
+}
+</file>
+
+<file path="src/domain/entities/product.entity.ts">
+import { Entity, Column, OneToMany } from 'typeorm';
+import { BaseEntity } from './base.entity';
+import { OrderItem } from './order-item.entity';
+
+@Entity('products')
+export class Product extends BaseEntity {
+  @Column()
+  name: string;
+
+  @Column('text')
+  description: string;
+
+  @Column('decimal', { precision: 10, scale: 2 })
+  price: number;
+
+  @Column('int')
+  stockQuantity: number;
+
+  @Column('simple-array', { nullable: true })
+  images: string[];
+
+  @Column({ default: true })
+  isActive: boolean;
+
+  @Column('simple-array', { nullable: true })
+  categories: string[];
+
+  @Column('simple-json', { nullable: true })
+  attributes: Record<string, any>;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  discountPercentage: number;
+
+  @OneToMany(() => OrderItem, (orderItem) => orderItem.product)
+  orderItems: OrderItem[];
+
+  get isInStock(): boolean {
+    return this.stockQuantity > 0;
+  }
+
+  get finalPrice(): number {
+    if (this.discountPercentage > 0) {
+      return this.price * (1 - this.discountPercentage / 100);
+    }
+    return this.price;
+  }
+
+  decreaseStock(quantity: number): void {
+    if (quantity > this.stockQuantity) {
+      throw new Error('Not enough stock available');
+    }
+    this.stockQuantity -= quantity;
+  }
+
+  increaseStock(quantity: number): void {
+    this.stockQuantity += quantity;
+  }
+}
+</file>
+
+<file path="src/domain/entities/user.entity.ts">
+import { Entity, Column, OneToMany, BeforeInsert, BeforeUpdate } from 'typeorm';
+import { Exclude } from 'class-transformer';
+import * as bcrypt from 'bcrypt';
+import { BaseEntity } from './base.entity';
+import { Order } from './order.entity';
+
+export enum UserRole {
+  ADMIN = 'admin',
+  CUSTOMER = 'customer',
+  MANAGER = 'manager',
+}
+
+@Entity('users')
+export class User extends BaseEntity {
+  @Column({ unique: true })
+  email: string;
+
+  @Column()
+  firstName: string;
+
+  @Column()
+  lastName: string;
+
+  @Column()
+  @Exclude({ toPlainOnly: true })
+  password: string;
+
+  @Column({
+    type: process.env.NODE_ENV === 'development' ? 'varchar' : 'enum',
+    enum: UserRole,
+    default: UserRole.CUSTOMER,
+  })
+  role: UserRole;
+
+  @Column({ default: false })
+  isEmailVerified: boolean;
+
+  @Column({ nullable: true })
+  @Exclude({ toPlainOnly: true })
+  refreshToken?: string;
+
+  @OneToMany(() => Order, (order) => order.user)
+  orders: Order[];
+
+  @BeforeInsert()
+  @BeforeUpdate()
+  async hashPassword() {
+    // Only hash the password if it has been modified
+    if (this.password) {
+      const salt = await bcrypt.genSalt();
+      this.password = await bcrypt.hash(this.password, salt);
+    }
+  }
+
+  async validatePassword(password: string): Promise<boolean> {
+    return bcrypt.compare(password, this.password);
+  }
+
+  get fullName(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
+</file>
+
+<file path="src/infrastructure/cache/cache.module.ts">
+import { Module } from '@nestjs/common';
+import { CacheModule as NestCacheModule } from '@nestjs/cache-manager';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import * as redisStore from 'cache-manager-redis-store';
+
+@Module({
+  imports: [
+    NestCacheModule.registerAsync({
+      isGlobal: true,
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        store: redisStore,
+        host: configService.get('redis.host'),
+        port: configService.get('redis.port'),
+        password: configService.get('redis.password'),
+        ttl: configService.get('redis.ttl'),
+        max: 100, // maximum number of items in cache
+      }),
+    }),
+  ],
+})
+export class CacheModule {}
+</file>
+
+<file path="src/infrastructure/database/data-source.ts">
+import { DataSource, DataSourceOptions } from 'typeorm';
+import { config } from 'dotenv';
+import { join } from 'path';
+
+// Load environment variables from .env file
+config();
+
+const nodeEnv = process.env.NODE_ENV || 'development';
+
+// Use SQLite for development
+let dataSourceOptions: DataSourceOptions;
+
+if (nodeEnv === 'development') {
+  dataSourceOptions = {
+    type: 'sqlite',
+    database: 'ecommerce-backend.sqlite',
+    entities: [join(__dirname, '../../**/*.entity{.ts,.js}')],
+    migrations: [join(__dirname, './migrations/**/*{.ts,.js}')],
+    synchronize: true,
+    logging: true,
+  };
+} else {
+  // Use PostgreSQL for production
+  dataSourceOptions = {
+    type: 'postgres',
+    host: process.env.DB_HOST || 'localhost',
+    port: parseInt(process.env.DB_PORT || '5432', 10),
+    username: process.env.DB_USERNAME || 'postgres',
+    password: process.env.DB_PASSWORD || 'postgres',
+    database: process.env.DB_DATABASE || 'ecommerce-backend',
+    schema: process.env.DB_SCHEMA || 'public',
+    entities: [join(__dirname, '../../**/*.entity{.ts,.js}')],
+    migrations: [join(__dirname, './migrations/**/*{.ts,.js}')],
+    synchronize: process.env.DB_SYNCHRONIZE === 'true',
+    logging: nodeEnv === 'development',
+    ssl: nodeEnv === 'production',
+  };
+}
+
+export { dataSourceOptions };
+
+const dataSource = new DataSource(dataSourceOptions);
+export default dataSource;
+</file>
+
+<file path="src/infrastructure/database/database.module.ts">
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+
+@Module({
+  imports: [
+    TypeOrmModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => {
+        const nodeEnv = configService.get('nodeEnv');
+
+        // Use SQLite for development
+        if (nodeEnv === 'development') {
+          return {
+            type: 'sqlite',
+            database: 'ecommerce-backend.sqlite',
+            entities: [__dirname + '/../../**/*.entity{.ts,.js}'],
+            migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
+            synchronize: true,
+            logging: true,
+          };
+        }
+
+        // Use PostgreSQL for production
+        return {
+          type: 'postgres',
+          host: configService.get('database.host'),
+          port: configService.get('database.port'),
+          username: configService.get('database.username'),
+          password: configService.get('database.password'),
+          database: configService.get('database.database'),
+          schema: configService.get('database.schema'),
+          entities: [__dirname + '/../../**/*.entity{.ts,.js}'],
+          migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
+          synchronize: configService.get('database.synchronize'),
+          logging: nodeEnv === 'development',
+          ssl: nodeEnv === 'production',
+        };
+      },
+    }),
+  ],
+})
+export class DatabaseModule {}
+</file>
+
+<file path="src/infrastructure/email/email.module.ts">
+import { Module } from '@nestjs/common';
+import { EmailService } from './email.service';
+
+@Module({
+  providers: [EmailService],
+  exports: [EmailService],
+})
+export class EmailModule {}
+</file>
+
+<file path="src/infrastructure/email/email.service.ts">
+import { Injectable } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import * as nodemailer from 'nodemailer';
+
+@Injectable()
+export class EmailService {
+  private transporter: nodemailer.Transporter;
+
+  constructor(private readonly configService: ConfigService) {
+    this.transporter = nodemailer.createTransport({
+      host: this.configService.get('mail.host'),
+      port: this.configService.get('mail.port'),
+      secure: this.configService.get('mail.port') === 465,
+      auth: {
+        user: this.configService.get('mail.user'),
+        pass: this.configService.get('mail.password'),
+      },
+    });
+  }
+
+  async sendMail(options: {
+    to: string;
+    subject: string;
+    text?: string;
+    html?: string;
+  }): Promise<void> {
+    await this.transporter.sendMail({
+      from: this.configService.get('mail.from'),
+      to: options.to,
+      subject: options.subject,
+      text: options.text,
+      html: options.html,
+    });
+  }
+
+  async sendPasswordResetEmail(
+    to: string,
+    token: string,
+    username: string,
+  ): Promise<void> {
+    const resetUrl = `${this.configService.get('appUrl')}/reset-password?token=${token}`;
+
+    await this.sendMail({
+      to,
+      subject: 'Password Reset Request',
+      html: `
+        <h1>Password Reset</h1>
+        <p>Hello ${username},</p>
+        <p>You requested a password reset. Please click the link below to reset your password:</p>
+        <p><a href="${resetUrl}">Reset Password</a></p>
+        <p>If you didn't request this, please ignore this email.</p>
+        <p>This link will expire in 1 hour.</p>
+      `,
+    });
+  }
+
+  async sendWelcomeEmail(to: string, username: string): Promise<void> {
+    await this.sendMail({
+      to,
+      subject: 'Welcome to our E-Commerce Platform',
+      html: `
+        <h1>Welcome to our E-Commerce Platform</h1>
+        <p>Hello ${username},</p>
+        <p>Thank you for registering with us. We're excited to have you on board!</p>
+        <p>You can now start shopping and exploring our platform.</p>
+        <p>Best regards,</p>
+        <p>The E-Commerce Team</p>
+      `,
+    });
+  }
+
+  async sendOrderConfirmationEmail(
+    to: string,
+    username: string,
+    orderNumber: string,
+    orderDetails: any,
+  ): Promise<void> {
+    await this.sendMail({
+      to,
+      subject: `Order Confirmation #${orderNumber}`,
+      html: `
+        <h1>Order Confirmation</h1>
+        <p>Hello ${username},</p>
+        <p>Thank you for your order. Your order #${orderNumber} has been received and is being processed.</p>
+        <h2>Order Details</h2>
+        <p>Order Date: ${new Date().toLocaleDateString()}</p>
+        <p>Order Total: $${orderDetails.total.toFixed(2)}</p>
+        <h3>Items</h3>
+        <ul>
+          ${orderDetails.items
+            .map(
+              (item) => `
+            <li>${item.quantity} x ${item.name} - $${item.price.toFixed(2)}</li>
+          `,
+            )
+            .join('')}
+        </ul>
+        <p>You can track your order status in your account.</p>
+        <p>Best regards,</p>
+        <p>The E-Commerce Team</p>
+      `,
+    });
+  }
+}
+</file>
+
+<file path="src/infrastructure/logging/logging.module.ts">
+import { Module } from '@nestjs/common';
+import { WinstonModule } from 'nest-winston';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import * as winston from 'winston';
+import 'winston-daily-rotate-file';
+
+@Module({
+  imports: [
+    WinstonModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => {
+        const isProduction = configService.get('nodeEnv') === 'production';
+
+        // Define log format
+        const logFormat = winston.format.combine(
+          winston.format.timestamp(),
+          winston.format.errors({ stack: true }),
+          winston.format.splat(),
+          winston.format.json(),
+        );
+
+        // Define transports
+        const transports: winston.transport[] = [
+          // Console transport
+          new winston.transports.Console({
+            format: winston.format.combine(
+              winston.format.colorize(),
+              winston.format.simple(),
+            ),
+            level: isProduction ? 'info' : 'debug',
+          }),
+        ];
+
+        // Add file transports in production
+        if (isProduction) {
+          // Add daily rotate file for all logs
+          transports.push(
+            new winston.transports.DailyRotateFile({
+              filename: 'logs/application-%DATE%.log',
+              datePattern: 'YYYY-MM-DD',
+              zippedArchive: true,
+              maxSize: '20m',
+              maxFiles: '14d',
+              level: 'info',
+            }),
+          );
+
+          // Add daily rotate file for error logs
+          transports.push(
+            new winston.transports.DailyRotateFile({
+              filename: 'logs/error-%DATE%.log',
+              datePattern: 'YYYY-MM-DD',
+              zippedArchive: true,
+              maxSize: '20m',
+              maxFiles: '14d',
+              level: 'error',
+            }),
+          );
+        }
+
+        return {
+          format: logFormat,
+          transports,
+        };
+      },
+    }),
+  ],
+  exports: [WinstonModule],
+})
+export class LoggingModule {}
+</file>
+
+<file path="src/infrastructure/queue/queue.module.ts">
+import { Module } from '@nestjs/common';
+import { BullModule } from '@nestjs/bull';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+
+@Module({
+  imports: [
+    BullModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        redis: {
+          host: configService.get('redis.host'),
+          port: configService.get('redis.port'),
+          password: configService.get('redis.password'),
+        },
+        defaultJobOptions: {
+          attempts: 3,
+          backoff: {
+            type: 'exponential',
+            delay: 1000,
+          },
+          removeOnComplete: true,
+          removeOnFail: false,
+        },
+      }),
+    }),
+  ],
+})
+export class QueueModule {}
+</file>
+
+<file path="src/infrastructure/security/security.module.ts">
+import { Module } from '@nestjs/common';
+import { APP_GUARD } from '@nestjs/core';
+import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+
+@Module({
+  imports: [
+    ThrottlerModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        throttlers: [
+          {
+            ttl: configService.get('throttle.ttl') || 60,
+            limit: configService.get('throttle.limit') || 10,
+          },
+        ],
+      }),
+    }),
+  ],
+  providers: [
+    {
+      provide: APP_GUARD,
+      useClass: ThrottlerGuard,
+    },
+  ],
+})
+export class SecurityModule {}
+</file>
+
+<file path="src/main.ts">
+import { NestFactory } from '@nestjs/core';
+import { ValidationPipe, Logger } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { NestExpressApplication } from '@nestjs/platform-express';
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+import { AppModule } from './app.module';
+import helmet from 'helmet';
+import * as compression from 'compression';
+import { existsSync, mkdirSync } from 'fs';
+async function bootstrap() {
+  // Create upload directory if it doesn't exist
+  const uploadDir = './uploads';
+  if (!existsSync(uploadDir)) {
+    mkdirSync(uploadDir, { recursive: true });
+  }
+
+  // Create NestJS application
+  const app = await NestFactory.create<NestExpressApplication>(AppModule, {
+    logger: ['error', 'warn', 'log', 'debug', 'verbose'],
+  });
+
+  // Get config service
+  const configService = app.get(ConfigService);
+  const port = configService.get<number>('port') || 3001;
+  const apiPrefix = configService.get<string>('apiPrefix') || 'api';
+  const nodeEnv = configService.get<string>('nodeEnv') || 'development';
+
+  // Set global prefix
+  app.setGlobalPrefix(apiPrefix);
+
+  // Enable CORS
+  app.enableCors();
+
+  // Use Helmet for security headers
+  app.use(helmet());
+
+  // Use compression
+  app.use(compression());
+
+  // Global validation pipe
+  app.useGlobalPipes(
+    new ValidationPipe({
+      whitelist: true,
+      forbidNonWhitelisted: true,
+      transform: true,
+    }),
+  );
+
+  // Swagger API documentation
+  if (nodeEnv !== 'production') {
+    const config = new DocumentBuilder()
+      .setTitle('E-Commerce API')
+      .setDescription('E-Commerce Backend API Documentation')
+      .setVersion('1.0')
+      .addBearerAuth()
+      .build();
+
+    const document = SwaggerModule.createDocument(app, config);
+    SwaggerModule.setup(`${apiPrefix}/docs`, app, document);
+  }
+
+  // Start the server
+  await app.listen(port);
+
+  Logger.log(
+    `🚀 Application is running on: http://localhost:${port}/${apiPrefix}`,
+    'Bootstrap',
+  );
+
+  if (nodeEnv !== 'production') {
+    Logger.log(
+      `📝 Swagger documentation is available at: http://localhost:${port}/${apiPrefix}/docs`,
+      'Bootstrap',
+    );
+  }
+}
+void bootstrap();
+</file>
+
+<file path="src/modules/auth/auth.controller.ts">
+import {
+  Body,
+  Controller,
+  Post,
+  HttpCode,
+  HttpStatus,
+  UseGuards,
+  Request,
+} from '@nestjs/common';
+import { AuthService } from './auth.service';
+import {
+  LoginDto,
+  RegisterDto,
+  TokenResponseDto,
+  RefreshTokenDto,
+  ForgotPasswordDto,
+  ResetPasswordDto,
+} from '@application/dtos/auth.dto';
+import { UserResponseDto } from '@application/dtos/user.dto';
+import { JwtAuthGuard } from './guards/jwt-auth.guard';
+import { plainToClass } from 'class-transformer';
+
+@Controller('auth')
+export class AuthController {
+  constructor(private readonly authService: AuthService) {}
+
+  @Post('register')
+  async register(@Body() registerDto: RegisterDto): Promise<UserResponseDto> {
+    const user = await this.authService.register(registerDto);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Post('login')
+  @HttpCode(HttpStatus.OK)
+  async login(@Body() loginDto: LoginDto): Promise<TokenResponseDto> {
+    return this.authService.login(loginDto);
+  }
+
+  @Post('refresh')
+  @HttpCode(HttpStatus.OK)
+  async refreshToken(
+    @Body() refreshTokenDto: RefreshTokenDto,
+  ): Promise<TokenResponseDto> {
+    return this.authService.refreshToken(refreshTokenDto.refreshToken);
+  }
+
+  @Post('logout')
+  @UseGuards(JwtAuthGuard)
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async logout(@Request() req: any): Promise<void> {
+    await this.authService.logout(req.user.id);
+  }
+
+  @Post('forgot-password')
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async forgotPassword(
+    @Body() forgotPasswordDto: ForgotPasswordDto,
+  ): Promise<void> {
+    await this.authService.forgotPassword(forgotPasswordDto);
+  }
+
+  @Post('reset-password')
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async resetPassword(
+    @Body() resetPasswordDto: ResetPasswordDto,
+  ): Promise<void> {
+    await this.authService.resetPassword(resetPasswordDto);
+  }
+}
+</file>
+
+<file path="src/modules/auth/auth.module.ts">
+import { Module } from '@nestjs/common';
+import { JwtModule } from '@nestjs/jwt';
+import { PassportModule } from '@nestjs/passport';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { User } from '@domain/entities/user.entity';
+import { AuthService } from './auth.service';
+import { AuthController } from './auth.controller';
+import { JwtStrategy } from './strategies/jwt.strategy';
+import { EmailModule } from '@infrastructure/email/email.module';
+
+@Module({
+  imports: [
+    TypeOrmModule.forFeature([User]),
+    PassportModule.register({ defaultStrategy: 'jwt' }),
+    JwtModule.registerAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        secret: configService.get('jwt.secret'),
+        signOptions: {
+          expiresIn: configService.get('jwt.expiresIn'),
+        },
+      }),
+    }),
+    EmailModule,
+  ],
+  controllers: [AuthController],
+  providers: [AuthService, JwtStrategy],
+  exports: [AuthService, JwtStrategy, PassportModule],
+})
+export class AuthModule {}
+</file>
+
+<file path="src/modules/auth/auth.service.ts">
+import {
+  BadRequestException,
+  Injectable,
+  UnauthorizedException,
+} from '@nestjs/common';
+import { JwtService } from '@nestjs/jwt';
+import { ConfigService } from '@nestjs/config';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import * as bcrypt from 'bcrypt';
+import { v4 as uuidv4 } from 'uuid';
+import { User } from '@domain/entities/user.entity';
+import { EmailService } from '@infrastructure/email/email.service';
+import {
+  LoginDto,
+  RegisterDto,
+  TokenResponseDto,
+  ForgotPasswordDto,
+  ResetPasswordDto,
+} from '@application/dtos/auth.dto';
+
+@Injectable()
+export class AuthService {
+  constructor(
+    @InjectRepository(User)
+    private readonly userRepository: Repository<User>,
+    private readonly jwtService: JwtService,
+    private readonly configService: ConfigService,
+    private readonly emailService: EmailService,
+  ) {}
+
+  async register(registerDto: RegisterDto): Promise<User> {
+    const { email, password, firstName, lastName } = registerDto;
+
+    // Check if user already exists
+    const existingUser = await this.userRepository.findOne({
+      where: { email },
+    });
+    if (existingUser) {
+      throw new BadRequestException('User with this email already exists');
+    }
+
+    // Create new user
+    const user = this.userRepository.create({
+      email,
+      password,
+      firstName,
+      lastName,
+    });
+
+    const savedUser = await this.userRepository.save(user);
+
+    // Send welcome email
+    await this.emailService.sendWelcomeEmail(user.email, user.firstName);
+
+    return savedUser;
+  }
+
+  async login(loginDto: LoginDto): Promise<TokenResponseDto> {
+    const { email, password } = loginDto;
+
+    // Find user
+    const user = await this.userRepository.findOne({
+      where: { email },
+    });
+
+    if (!user) {
+      throw new UnauthorizedException('Invalid credentials');
+    }
+
+    // Validate password
+    const isPasswordValid = await user.validatePassword(password);
+    if (!isPasswordValid) {
+      throw new UnauthorizedException('Invalid credentials');
+    }
+
+    // Generate tokens
+    const tokens = await this.generateTokens(user);
+
+    // Update refresh token in database
+    user.refreshToken = await bcrypt.hash(tokens.refreshToken, 10);
+    await this.userRepository.save(user);
+
+    return tokens;
+  }
+
+  async refreshToken(refreshToken: string): Promise<TokenResponseDto> {
+    try {
+      // Verify refresh token
+      const payload = this.jwtService.verify(refreshToken, {
+        secret: this.configService.get('jwt.refreshSecret'),
+      });
+
+      // Find user
+      const user = await this.userRepository.findOne({
+        where: { id: payload.sub },
+      });
+
+      if (!user || !user.refreshToken) {
+        throw new UnauthorizedException('Invalid refresh token');
+      }
+
+      // Validate stored refresh token
+      const isRefreshTokenValid = await bcrypt.compare(
+        refreshToken,
+        user.refreshToken,
+      );
+
+      if (!isRefreshTokenValid) {
+        throw new UnauthorizedException('Invalid refresh token');
+      }
+
+      // Generate new tokens
+      const tokens = await this.generateTokens(user);
+
+      // Update refresh token in database
+      user.refreshToken = await bcrypt.hash(tokens.refreshToken, 10);
+      await this.userRepository.save(user);
+
+      return tokens;
+    } catch (error) {
+      throw new UnauthorizedException('Invalid refresh token');
+    }
+  }
+
+  async logout(userId: string): Promise<void> {
+    // Clear refresh token
+    await this.userRepository.update(userId, { refreshToken: undefined });
+  }
+
+  async forgotPassword(forgotPasswordDto: ForgotPasswordDto): Promise<void> {
+    const { email } = forgotPasswordDto;
+
+    // Find user
+    const user = await this.userRepository.findOne({
+      where: { email },
+    });
+
+    if (!user) {
+      // Don't reveal that the user doesn't exist
+      return;
+    }
+
+    // Generate password reset token
+    const resetToken = uuidv4();
+    const resetTokenExpiry = new Date();
+    resetTokenExpiry.setHours(resetTokenExpiry.getHours() + 1); // Token valid for 1 hour
+
+    // Store hashed token in database
+    user.refreshToken = await bcrypt.hash(resetToken, 10);
+    await this.userRepository.save(user);
+
+    // Send password reset email
+    await this.emailService.sendPasswordResetEmail(
+      user.email,
+      resetToken,
+      user.firstName,
+    );
+  }
+
+  async resetPassword(resetPasswordDto: ResetPasswordDto): Promise<void> {
+    const { token, newPassword } = resetPasswordDto;
+
+    // Find user with this reset token
+    const users = await this.userRepository.find();
+
+    // Find user with matching reset token
+    let userToUpdate: User | undefined;
+    for (const user of users) {
+      if (user.refreshToken) {
+        const isMatch = await bcrypt.compare(token, user.refreshToken);
+        if (isMatch) {
+          userToUpdate = user;
+          break;
+        }
+      }
+    }
+
+    if (!userToUpdate) {
+      throw new BadRequestException('Invalid or expired token');
+    }
+
+    // Update password and clear reset token
+    userToUpdate.password = newPassword;
+    userToUpdate.refreshToken = undefined;
+    await this.userRepository.save(userToUpdate);
+  }
+
+  async validateUser(userId: string): Promise<User> {
+    const user = await this.userRepository.findOne({
+      where: { id: userId },
+    });
+
+    if (!user) {
+      throw new UnauthorizedException('User not found');
+    }
+
+    return user;
+  }
+
+  private async generateTokens(user: User): Promise<TokenResponseDto> {
+    const payload = { sub: user.id, email: user.email, role: user.role };
+
+    const [accessToken, refreshToken] = await Promise.all([
+      this.jwtService.signAsync(payload, {
+        secret: this.configService.get('jwt.secret'),
+        expiresIn: this.configService.get('jwt.expiresIn'),
+      }),
+      this.jwtService.signAsync(payload, {
+        secret: this.configService.get('jwt.refreshSecret'),
+        expiresIn: this.configService.get('jwt.refreshExpiresIn'),
+      }),
+    ]);
+
+    return {
+      accessToken,
+      refreshToken,
+      expiresIn: this.getExpiresInSeconds(
+        this.configService.get('jwt.expiresIn'),
+      ),
+    };
+  }
+
+  private getExpiresInSeconds(expiresIn: string | undefined): number {
+    if (!expiresIn) return 3600; // Default to 1 hour
+
+    const match = expiresIn.match(/(\d+)([smhd])/);
+    if (!match) return 3600; // Default to 1 hour
+
+    const value = parseInt(match[1], 10);
+    const unit = match[2];
+
+    switch (unit) {
+      case 's':
+        return value;
+      case 'm':
+        return value * 60;
+      case 'h':
+        return value * 60 * 60;
+      case 'd':
+        return value * 24 * 60 * 60;
+      default:
+        return 3600;
+    }
+  }
+}
+</file>
+
+<file path="src/modules/auth/decorators/current-user.decorator.ts">
+import { createParamDecorator, ExecutionContext } from '@nestjs/common';
+
+export const CurrentUser = createParamDecorator(
+  (data: unknown, ctx: ExecutionContext) => {
+    const request = ctx.switchToHttp().getRequest();
+    return request.user;
+  },
+);
+</file>
+
+<file path="src/modules/auth/decorators/roles.decorator.ts">
+import { SetMetadata } from '@nestjs/common';
+import { UserRole } from '@domain/entities/user.entity';
+
+export const Roles = (...roles: UserRole[]) => SetMetadata('roles', roles);
+</file>
+
+<file path="src/modules/auth/guards/jwt-auth.guard.ts">
+import { Injectable } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
+
+@Injectable()
+export class JwtAuthGuard extends AuthGuard('jwt') {}
+</file>
+
+<file path="src/modules/auth/guards/roles.guard.ts">
+import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
+import { Reflector } from '@nestjs/core';
+import { UserRole } from '@domain/entities/user.entity';
+
+@Injectable()
+export class RolesGuard implements CanActivate {
+  constructor(private reflector: Reflector) {}
+
+  canActivate(context: ExecutionContext): boolean {
+    const requiredRoles = this.reflector.getAllAndOverride<UserRole[]>(
+      'roles',
+      [context.getHandler(), context.getClass()],
+    );
+
+    if (!requiredRoles) {
+      return true;
+    }
+
+    const { user } = context.switchToHttp().getRequest();
+    return requiredRoles.some((role) => user.role === role);
+  }
+}
+</file>
+
+<file path="src/modules/auth/strategies/jwt.strategy.ts">
+import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { PassportStrategy } from '@nestjs/passport';
+import { ExtractJwt, Strategy } from 'passport-jwt';
+import { ConfigService } from '@nestjs/config';
+import { AuthService } from '../auth.service';
+
+@Injectable()
+export class JwtStrategy extends PassportStrategy(Strategy) {
+  constructor(
+    private readonly configService: ConfigService,
+    private readonly authService: AuthService,
+  ) {
+    const secret = configService.get<string>('jwt.secret');
+    if (!secret) {
+      throw new Error('JWT secret is not defined');
+    }
+
+    super({
+      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+      ignoreExpiration: false,
+      secretOrKey: secret,
+    });
+  }
+
+  async validate(payload: any) {
+    try {
+      const user = await this.authService.validateUser(payload.sub);
+      return user;
+    } catch (error) {
+      throw new UnauthorizedException('Invalid token');
+    }
+  }
+}
+</file>
+
+<file path="src/modules/orders/orders.controller.ts">
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+} from '@nestjs/common';
+import { OrdersService } from './orders.service';
+import {
+  CreateOrderDto,
+  UpdateOrderStatusDto,
+  UpdatePaymentStatusDto,
+  OrderResponseDto,
+} from '@application/dtos/order.dto';
+import { JwtAuthGuard } from '@modules/auth/guards/jwt-auth.guard';
+import { RolesGuard } from '@modules/auth/guards/roles.guard';
+import { Roles } from '@modules/auth/decorators/roles.decorator';
+import { UserRole } from '@domain/entities/user.entity';
+import { CurrentUser } from '@modules/auth/decorators/current-user.decorator';
+import { User } from '@domain/entities/user.entity';
+import { plainToClass } from 'class-transformer';
+
+@Controller('orders')
+@UseGuards(JwtAuthGuard)
+export class OrdersController {
+  constructor(private readonly ordersService: OrdersService) {}
+
+  @Get()
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async findAll(): Promise<OrderResponseDto[]> {
+    const orders = await this.ordersService.findAll();
+    return orders.map((order) => plainToClass(OrderResponseDto, order));
+  }
+
+  @Get('my-orders')
+  async findMyOrders(@CurrentUser() user: User): Promise<OrderResponseDto[]> {
+    const orders = await this.ordersService.findAll(user.id);
+    return orders.map((order) => plainToClass(OrderResponseDto, order));
+  }
+
+  @Get(':id')
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async findOne(@Param('id') id: string): Promise<OrderResponseDto> {
+    const order = await this.ordersService.findById(id);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Get('my-orders/:id')
+  async findMyOrder(
+    @Param('id') id: string,
+    @CurrentUser() user: User,
+  ): Promise<OrderResponseDto> {
+    const order = await this.ordersService.findById(id, user.id);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Post()
+  async create(
+    @Body() createOrderDto: CreateOrderDto,
+    @CurrentUser() user: User,
+  ): Promise<OrderResponseDto> {
+    const order = await this.ordersService.create(createOrderDto, user);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Patch(':id/status')
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async updateStatus(
+    @Param('id') id: string,
+    @Body() updateOrderStatusDto: UpdateOrderStatusDto,
+  ): Promise<OrderResponseDto> {
+    const order = await this.ordersService.updateStatus(
+      id,
+      updateOrderStatusDto,
+    );
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Patch(':id/payment')
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async updatePaymentStatus(
+    @Param('id') id: string,
+    @Body() updatePaymentStatusDto: UpdatePaymentStatusDto,
+  ): Promise<OrderResponseDto> {
+    const order = await this.ordersService.updatePaymentStatus(
+      id,
+      updatePaymentStatusDto,
+    );
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Post(':id/cancel')
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  @HttpCode(HttpStatus.OK)
+  async cancelOrder(@Param('id') id: string): Promise<OrderResponseDto> {
+    const order = await this.ordersService.cancelOrder(id);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Post('my-orders/:id/cancel')
+  @HttpCode(HttpStatus.OK)
+  async cancelMyOrder(
+    @Param('id') id: string,
+    @CurrentUser() user: User,
+  ): Promise<OrderResponseDto> {
+    const order = await this.ordersService.cancelOrder(id, user.id);
+    return plainToClass(OrderResponseDto, order);
+  }
+}
+</file>
+
+<file path="src/modules/orders/orders.module.ts">
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { Order } from '@domain/entities/order.entity';
+import { OrderItem } from '@domain/entities/order-item.entity';
+import { OrdersService } from './orders.service';
+import { OrdersController } from './orders.controller';
+import { ProductsModule } from '@modules/products/products.module';
+import { AuthModule } from '@modules/auth/auth.module';
+import { EmailModule } from '@infrastructure/email/email.module';
+
+@Module({
+  imports: [
+    TypeOrmModule.forFeature([Order, OrderItem]),
+    ProductsModule,
+    AuthModule,
+    EmailModule,
+  ],
+  controllers: [OrdersController],
+  providers: [OrdersService],
+  exports: [OrdersService],
+})
+export class OrdersModule {}
+</file>
+
+<file path="src/modules/orders/orders.service.ts">
+import {
+  Injectable,
+  NotFoundException,
+  BadRequestException,
+} from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository, FindOptionsWhere } from 'typeorm';
+import {
+  Order,
+  OrderStatus,
+  PaymentStatus,
+} from '@domain/entities/order.entity';
+import { OrderItem } from '@domain/entities/order-item.entity';
+import { User } from '@domain/entities/user.entity';
+import { ProductsService } from '@modules/products/products.service';
+import {
+  CreateOrderDto,
+  UpdateOrderStatusDto,
+  UpdatePaymentStatusDto,
+} from '@application/dtos/order.dto';
+import { EmailService } from '@infrastructure/email/email.service';
+import { v4 as uuidv4 } from 'uuid';
+
+@Injectable()
+export class OrdersService {
+  constructor(
+    @InjectRepository(Order)
+    private readonly orderRepository: Repository<Order>,
+    @InjectRepository(OrderItem)
+    private readonly orderItemRepository: Repository<OrderItem>,
+    private readonly productsService: ProductsService,
+    private readonly emailService: EmailService,
+  ) {}
+
+  async findAll(userId?: string): Promise<Order[]> {
+    const where: FindOptionsWhere<Order> = {};
+
+    if (userId) {
+      where.user = { id: userId };
+    }
+
+    return this.orderRepository.find({
+      where,
+      relations: ['user', 'items', 'items.product'],
+      order: { createdAt: 'DESC' },
+    });
+  }
+
+  async findById(id: string, userId?: string): Promise<Order> {
+    const where: FindOptionsWhere<Order> = { id };
+
+    if (userId) {
+      where.user = { id: userId };
+    }
+
+    const order = await this.orderRepository.findOne({
+      where,
+      relations: ['user', 'items', 'items.product'],
+    });
+
+    if (!order) {
+      throw new NotFoundException(`Order with ID ${id} not found`);
+    }
+
+    return order;
+  }
+
+  async create(createOrderDto: CreateOrderDto, user: User): Promise<Order> {
+    // Validate items
+    if (!createOrderDto.items || createOrderDto.items.length === 0) {
+      throw new BadRequestException('Order must contain at least one item');
+    }
+
+    // Create new order
+    const order = this.orderRepository.create({
+      orderNumber: this.generateOrderNumber(),
+      user,
+      shippingAddress: createOrderDto.shippingAddress,
+      billingAddress:
+        createOrderDto.billingAddress || createOrderDto.shippingAddress,
+      notes: createOrderDto.notes,
+      paymentMethod: createOrderDto.paymentMethod,
+      status: OrderStatus.PENDING,
+      paymentStatus: PaymentStatus.PENDING,
+      subtotal: 0,
+      tax: 0,
+      shippingCost: 0,
+      discount: 0,
+      total: 0,
+    });
+
+    // Save order to get ID
+    const savedOrder = await this.orderRepository.save(order);
+
+    // Create order items
+    const orderItems: OrderItem[] = [];
+
+    for (const item of createOrderDto.items) {
+      const product = await this.productsService.findById(item.productId);
+
+      // Check if product is in stock
+      if (product.stockQuantity < item.quantity) {
+        throw new BadRequestException(
+          `Product ${product.name} does not have enough stock`,
+        );
+      }
+
+      // Create order item
+      const orderItem = this.orderItemRepository.create({
+        order: savedOrder,
+        product,
+        quantity: item.quantity,
+        unitPrice: product.price,
+        discount: product.discountPercentage,
+      });
+
+      orderItems.push(await this.orderItemRepository.save(orderItem));
+
+      // Update product stock
+      await this.productsService.updateStock(product.id, -item.quantity);
+    }
+
+    // Update order with items
+    savedOrder.items = orderItems;
+
+    // Calculate totals
+    savedOrder.calculateTotals();
+
+    // Add tax (example: 10%)
+    savedOrder.tax = savedOrder.subtotal * 0.1;
+
+    // Add shipping cost (example: flat rate)
+    savedOrder.shippingCost = 10;
+
+    // Recalculate total
+    savedOrder.calculateTotals();
+
+    // Save updated order
+    const finalOrder = await this.orderRepository.save(savedOrder);
+
+    // Send order confirmation email
+    await this.emailService.sendOrderConfirmationEmail(
+      user.email,
+      user.firstName,
+      finalOrder.orderNumber,
+      {
+        total: finalOrder.total,
+        items: finalOrder.items.map((item) => ({
+          name: item.product.name,
+          quantity: item.quantity,
+          price: item.unitPrice,
+        })),
+      },
+    );
+
+    return finalOrder;
+  }
+
+  async updateStatus(
+    id: string,
+    updateOrderStatusDto: UpdateOrderStatusDto,
+  ): Promise<Order> {
+    const order = await this.findById(id);
+
+    // Validate status transition
+    this.validateStatusTransition(order.status, updateOrderStatusDto.status);
+
+    // Update status
+    order.status = updateOrderStatusDto.status;
+
+    // Update tracking number if provided
+    if (updateOrderStatusDto.trackingNumber) {
+      order.trackingNumber = updateOrderStatusDto.trackingNumber;
+    }
+
+    return this.orderRepository.save(order);
+  }
+
+  async updatePaymentStatus(
+    id: string,
+    updatePaymentStatusDto: UpdatePaymentStatusDto,
+  ): Promise<Order> {
+    const order = await this.findById(id);
+
+    // Update payment status
+    order.paymentStatus = updatePaymentStatusDto.paymentStatus;
+
+    // Update payment transaction ID if provided
+    if (updatePaymentStatusDto.paymentTransactionId) {
+      order.paymentTransactionId = updatePaymentStatusDto.paymentTransactionId;
+    }
+
+    // If payment is marked as paid, update order status if it's still pending
+    if (
+      updatePaymentStatusDto.paymentStatus === PaymentStatus.PAID &&
+      order.status === OrderStatus.PENDING
+    ) {
+      order.status = OrderStatus.PROCESSING;
+    }
+
+    return this.orderRepository.save(order);
+  }
+
+  async cancelOrder(id: string, userId?: string): Promise<Order> {
+    const order = await this.findById(id, userId);
+
+    // Check if order can be cancelled
+    if (!order.canCancel()) {
+      throw new BadRequestException(
+        'This order cannot be cancelled due to its current status',
+      );
+    }
+
+    // Cancel order
+    order.cancel();
+
+    // Return items to inventory
+    for (const item of order.items) {
+      await this.productsService.updateStock(item.product.id, item.quantity);
+    }
+
+    return this.orderRepository.save(order);
+  }
+
+  private generateOrderNumber(): string {
+    const timestamp = new Date().getTime().toString().slice(-8);
+    const random = Math.floor(Math.random() * 10000)
+      .toString()
+      .padStart(4, '0');
+    return `ORD-${timestamp}-${random}`;
+  }
+
+  private validateStatusTransition(
+    currentStatus: OrderStatus,
+    newStatus: OrderStatus,
+  ): void {
+    // Define valid status transitions
+    const validTransitions: Record<OrderStatus, OrderStatus[]> = {
+      [OrderStatus.PENDING]: [OrderStatus.PROCESSING, OrderStatus.CANCELLED],
+      [OrderStatus.PROCESSING]: [OrderStatus.SHIPPED, OrderStatus.CANCELLED],
+      [OrderStatus.SHIPPED]: [OrderStatus.DELIVERED, OrderStatus.CANCELLED],
+      [OrderStatus.DELIVERED]: [OrderStatus.REFUNDED],
+      [OrderStatus.CANCELLED]: [],
+      [OrderStatus.REFUNDED]: [],
+    };
+
+    // Check if transition is valid
+    if (!validTransitions[currentStatus].includes(newStatus)) {
+      throw new BadRequestException(
+        `Cannot transition order from ${currentStatus} to ${newStatus}`,
+      );
+    }
+  }
+}
+</file>
+
+<file path="src/modules/products/products.controller.ts">
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  Query,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+  UseInterceptors,
+  UploadedFiles,
+  ParseFilePipe,
+  MaxFileSizeValidator,
+  FileTypeValidator,
+} from '@nestjs/common';
+import { FilesInterceptor } from '@nestjs/platform-express';
+import { ProductsService } from './products.service';
+import {
+  CreateProductDto,
+  UpdateProductDto,
+  ProductFilterDto,
+  ProductResponseDto,
+} from '@application/dtos/product.dto';
+import { JwtAuthGuard } from '@modules/auth/guards/jwt-auth.guard';
+import { RolesGuard } from '@modules/auth/guards/roles.guard';
+import { Roles } from '@modules/auth/decorators/roles.decorator';
+import { UserRole } from '@domain/entities/user.entity';
+import { plainToClass } from 'class-transformer';
+import { diskStorage } from 'multer';
+import { extname } from 'path';
+import { v4 as uuidv4 } from 'uuid';
+import { ConfigService } from '@nestjs/config';
+
+@Controller('products')
+export class ProductsController {
+  constructor(
+    private readonly productsService: ProductsService,
+    private readonly configService: ConfigService,
+  ) {}
+
+  @Get()
+  async findAll(
+    @Query() filters: ProductFilterDto,
+  ): Promise<ProductResponseDto[]> {
+    const products = await this.productsService.findAll(filters);
+    return products.map((product) => plainToClass(ProductResponseDto, product));
+  }
+
+  @Get(':id')
+  async findOne(@Param('id') id: string): Promise<ProductResponseDto> {
+    const product = await this.productsService.findById(id);
+    return plainToClass(ProductResponseDto, product);
+  }
+
+  @Post()
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async create(
+    @Body() createProductDto: CreateProductDto,
+  ): Promise<ProductResponseDto> {
+    const product = await this.productsService.create(createProductDto);
+    return plainToClass(ProductResponseDto, product);
+  }
+
+  @Patch(':id')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async update(
+    @Param('id') id: string,
+    @Body() updateProductDto: UpdateProductDto,
+  ): Promise<ProductResponseDto> {
+    const product = await this.productsService.update(id, updateProductDto);
+    return plainToClass(ProductResponseDto, product);
+  }
+
+  @Delete(':id')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async remove(@Param('id') id: string): Promise<void> {
+    await this.productsService.remove(id);
+  }
+
+  @Post(':id/images')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  @UseInterceptors(
+    FilesInterceptor('images', 5, {
+      storage: diskStorage({
+        destination: (req, file, cb) => {
+          const uploadPath = './uploads/products';
+          cb(null, uploadPath);
+        },
+        filename: (req, file, cb) => {
+          const uniqueName = `${uuidv4()}${extname(file.originalname)}`;
+          cb(null, uniqueName);
+        },
+      }),
+    }),
+  )
+  async uploadImages(
+    @Param('id') id: string,
+    @UploadedFiles(
+      new ParseFilePipe({
+        validators: [
+          new MaxFileSizeValidator({ maxSize: 5 * 1024 * 1024 }), // 5MB
+          new FileTypeValidator({ fileType: /(jpg|jpeg|png|webp)$/ }),
+        ],
+      }),
+    )
+    files: Express.Multer.File[],
+  ): Promise<ProductResponseDto> {
+    const product = await this.productsService.findById(id);
+
+    // Get the base URL for images
+    const baseUrl = this.configService.get('appUrl') || 'http://localhost:3000';
+
+    // Add new image URLs to the product
+    const imageUrls = files.map(
+      (file) => `${baseUrl}/uploads/products/${file.filename}`,
+    );
+
+    // Update product with new images
+    product.images = [...(product.images || []), ...imageUrls];
+
+    // Save the updated product
+    const updatedProduct = await this.productsService.update(id, {
+      images: product.images,
+    });
+
+    return plainToClass(ProductResponseDto, updatedProduct);
+  }
+
+  @Patch(':id/stock')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async updateStock(
+    @Param('id') id: string,
+    @Body('quantity') quantity: number,
+  ): Promise<ProductResponseDto> {
+    const product = await this.productsService.updateStock(id, quantity);
+    return plainToClass(ProductResponseDto, product);
+  }
+}
+</file>
+
+<file path="src/modules/products/products.module.ts">
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { MulterModule } from '@nestjs/platform-express';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { Product } from '@domain/entities/product.entity';
+import { ProductsService } from './products.service';
+import { ProductsController } from './products.controller';
+import { AuthModule } from '@modules/auth/auth.module';
+import { diskStorage } from 'multer';
+import { existsSync, mkdirSync } from 'fs';
+
+@Module({
+  imports: [
+    TypeOrmModule.forFeature([Product]),
+    MulterModule.registerAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => {
+        const uploadDestination =
+          configService.get('upload.destination') || './uploads';
+
+        // Ensure upload directory exists
+        if (!existsSync(uploadDestination)) {
+          mkdirSync(uploadDestination, { recursive: true });
+        }
+
+        // Create products directory
+        const productsDir = `${uploadDestination}/products`;
+        if (!existsSync(productsDir)) {
+          mkdirSync(productsDir, { recursive: true });
+        }
+
+        return {
+          storage: diskStorage({
+            destination: productsDir,
+            filename: (req, file, cb) => {
+              const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
+              const ext = file.originalname.split('.').pop();
+              cb(null, `${file.fieldname}-${uniqueSuffix}.${ext}`);
+            },
+          }),
+          limits: {
+            fileSize:
+              configService.get('upload.maxFileSize') || 5 * 1024 * 1024, // 5MB
+          },
+        };
+      },
+    }),
+    AuthModule,
+  ],
+  controllers: [ProductsController],
+  providers: [ProductsService],
+  exports: [ProductsService],
+})
+export class ProductsModule {}
+</file>
+
+<file path="src/modules/products/products.service.spec.ts">
+import { Test, TestingModule } from '@nestjs/testing';
+import { getRepositoryToken } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { ProductsService } from './products.service';
+import { Product } from '@domain/entities/product.entity';
+import { NotFoundException } from '@nestjs/common';
+
+// Mock repository factory
+const mockRepository = () => ({
+  find: jest.fn(),
+  findOne: jest.fn(),
+  create: jest.fn(),
+  save: jest.fn(),
+  softRemove: jest.fn(),
+});
+
+describe('ProductsService', () => {
+  let service: ProductsService;
+  let repository: Repository<Product>;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        ProductsService,
+        {
+          provide: getRepositoryToken(Product),
+          useFactory: mockRepository,
+        },
+      ],
+    }).compile();
+
+    service = module.get<ProductsService>(ProductsService);
+    repository = module.get<Repository<Product>>(getRepositoryToken(Product));
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+
+  describe('findAll', () => {
+    it('should return an array of products', async () => {
+      const mockProducts = [
+        {
+          id: '1',
+          name: 'Product 1',
+          description: 'Description 1',
+          price: 100,
+          stockQuantity: 10,
+          images: [],
+          isActive: true,
+          categories: [],
+          attributes: {},
+          discountPercentage: 0,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ];
+
+      jest
+        .spyOn(repository, 'find')
+        .mockResolvedValue(mockProducts as Product[]);
+
+      const result = await service.findAll();
+      expect(result).toEqual(mockProducts);
+      expect(repository.find).toHaveBeenCalled();
+    });
+  });
+
+  describe('findById', () => {
+    it('should return a product by id', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      jest
+        .spyOn(repository, 'findOne')
+        .mockResolvedValue(mockProduct as Product);
+
+      const result = await service.findById('1');
+      expect(result).toEqual(mockProduct);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+
+    it('should throw NotFoundException if product not found', async () => {
+      jest.spyOn(repository, 'findOne').mockResolvedValue(null);
+
+      await expect(service.findById('1')).rejects.toThrow(NotFoundException);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+  });
+
+  describe('create', () => {
+    it('should create a new product', async () => {
+      const createProductDto = {
+        name: 'New Product',
+        description: 'New Description',
+        price: 200,
+        stockQuantity: 20,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+      };
+
+      const mockProduct = {
+        id: '1',
+        ...createProductDto,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      jest.spyOn(repository, 'create').mockReturnValue(mockProduct as Product);
+      jest.spyOn(repository, 'save').mockResolvedValue(mockProduct as Product);
+
+      const result = await service.create(createProductDto);
+      expect(result).toEqual(mockProduct);
+      expect(repository.create).toHaveBeenCalledWith(createProductDto);
+      expect(repository.save).toHaveBeenCalledWith(mockProduct);
+    });
+  });
+
+  describe('update', () => {
+    it('should update a product', async () => {
+      const updateProductDto = {
+        name: 'Updated Product',
+        price: 300,
+      };
+
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      const updatedProduct = {
+        ...mockProduct,
+        ...updateProductDto,
+      };
+
+      jest
+        .spyOn(repository, 'findOne')
+        .mockResolvedValue(mockProduct as Product);
+      jest
+        .spyOn(repository, 'save')
+        .mockResolvedValue(updatedProduct as Product);
+
+      const result = await service.update('1', updateProductDto);
+      expect(result).toEqual(updatedProduct);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+      expect(repository.save).toHaveBeenCalledWith({
+        ...mockProduct,
+        ...updateProductDto,
+      });
+    });
+
+    it('should throw NotFoundException if product not found', async () => {
+      jest.spyOn(repository, 'findOne').mockResolvedValue(null);
+
+      await expect(service.update('1', { name: 'Updated' })).rejects.toThrow(
+        NotFoundException,
+      );
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+  });
+
+  describe('remove', () => {
+    it('should remove a product', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      jest
+        .spyOn(repository, 'findOne')
+        .mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'softRemove').mockResolvedValue(undefined);
+
+      await service.remove('1');
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+      expect(repository.softRemove).toHaveBeenCalledWith(mockProduct);
+    });
+
+    it('should throw NotFoundException if product not found', async () => {
+      jest.spyOn(repository, 'findOne').mockResolvedValue(null);
+
+      await expect(service.remove('1')).rejects.toThrow(NotFoundException);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+  });
+
+  describe('updateStock', () => {
+    it('should increase product stock', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      const updatedProduct = {
+        ...mockProduct,
+        stockQuantity: 15,
+      };
+
+      jest
+        .spyOn(repository, 'findOne')
+        .mockResolvedValue(mockProduct as Product);
+      jest
+        .spyOn(repository, 'save')
+        .mockResolvedValue(updatedProduct as Product);
+
+      const result = await service.updateStock('1', 5);
+      expect(result).toEqual(updatedProduct);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+      expect(repository.save).toHaveBeenCalledWith({
+        ...mockProduct,
+        stockQuantity: 15,
+      });
+    });
+
+    it('should decrease product stock', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      const updatedProduct = {
+        ...mockProduct,
+        stockQuantity: 5,
+      };
+
+      jest
+        .spyOn(repository, 'findOne')
+        .mockResolvedValue(mockProduct as Product);
+      jest
+        .spyOn(repository, 'save')
+        .mockResolvedValue(updatedProduct as Product);
+
+      const result = await service.updateStock('1', -5);
+      expect(result).toEqual(updatedProduct);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+      expect(repository.save).toHaveBeenCalledWith({
+        ...mockProduct,
+        stockQuantity: 5,
+      });
+    });
+
+    it('should throw error if trying to decrease more than available stock', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      jest
+        .spyOn(repository, 'findOne')
+        .mockResolvedValue(mockProduct as Product);
+
+      await expect(service.updateStock('1', -15)).rejects.toThrow(
+        'Not enough stock available',
+      );
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+  });
+});
+</file>
+
+<file path="src/modules/products/products.service.ts">
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository, Like, Between, FindOptionsWhere } from 'typeorm';
+import { Product } from '@domain/entities/product.entity';
+import {
+  CreateProductDto,
+  UpdateProductDto,
+  ProductFilterDto,
+} from '@application/dtos/product.dto';
+
+@Injectable()
+export class ProductsService {
+  constructor(
+    @InjectRepository(Product)
+    private readonly productRepository: Repository<Product>,
+  ) {}
+
+  async findAll(filters?: ProductFilterDto): Promise<Product[]> {
+    const where: FindOptionsWhere<Product> = {};
+
+    if (filters) {
+      // Apply search filter
+      if (filters.search) {
+        where.name = Like(`%${filters.search}%`);
+      }
+
+      // Apply category filter
+      if (filters.categories && filters.categories.length > 0) {
+        // This is a simplification - for array columns, you might need a custom query
+        // depending on your database and ORM setup
+        where.categories = Like(`%${filters.categories[0]}%`);
+      }
+
+      // Apply price range filter
+      if (filters.minPrice !== undefined || filters.maxPrice !== undefined) {
+        where.price = Between(
+          filters.minPrice || 0,
+          filters.maxPrice || Number.MAX_SAFE_INTEGER,
+        );
+      }
+
+      // Apply in-stock filter
+      if (filters.inStock !== undefined) {
+        where.stockQuantity = filters.inStock
+          ? Between(1, Number.MAX_SAFE_INTEGER)
+          : 0;
+      }
+
+      // Apply on-sale filter
+      if (filters.onSale !== undefined) {
+        where.discountPercentage = filters.onSale ? Between(0.01, 100) : 0;
+      }
+    }
+
+    return this.productRepository.find({ where });
+  }
+
+  async findById(id: string): Promise<Product> {
+    const product = await this.productRepository.findOne({ where: { id } });
+    if (!product) {
+      throw new NotFoundException(`Product with ID ${id} not found`);
+    }
+    return product;
+  }
+
+  async create(createProductDto: CreateProductDto): Promise<Product> {
+    const product = this.productRepository.create(createProductDto);
+    return this.productRepository.save(product);
+  }
+
+  async update(
+    id: string,
+    updateProductDto: UpdateProductDto,
+  ): Promise<Product> {
+    const product = await this.findById(id);
+    Object.assign(product, updateProductDto);
+    return this.productRepository.save(product);
+  }
+
+  async remove(id: string): Promise<void> {
+    const product = await this.findById(id);
+    await this.productRepository.softRemove(product);
+  }
+
+  async updateStock(id: string, quantity: number): Promise<Product> {
+    const product = await this.findById(id);
+
+    if (quantity < 0 && Math.abs(quantity) > product.stockQuantity) {
+      throw new Error('Not enough stock available');
+    }
+
+    product.stockQuantity += quantity;
+    return this.productRepository.save(product);
+  }
+}
+</file>
+
+<file path="src/modules/users/users.controller.ts">
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+} from '@nestjs/common';
+import { UsersService } from './users.service';
+import {
+  CreateUserDto,
+  UpdateUserDto,
+  ChangePasswordDto,
+  UserResponseDto,
+} from '@application/dtos/user.dto';
+import { JwtAuthGuard } from '@modules/auth/guards/jwt-auth.guard';
+import { RolesGuard } from '@modules/auth/guards/roles.guard';
+import { Roles } from '@modules/auth/decorators/roles.decorator';
+import { UserRole } from '@domain/entities/user.entity';
+import { CurrentUser } from '@modules/auth/decorators/current-user.decorator';
+import { plainToClass } from 'class-transformer';
+import { User } from '@domain/entities/user.entity';
+
+@Controller('users')
+@UseGuards(JwtAuthGuard, RolesGuard)
+export class UsersController {
+  constructor(private readonly usersService: UsersService) {}
+
+  @Get()
+  @Roles(UserRole.ADMIN)
+  async findAll(): Promise<UserResponseDto[]> {
+    const users = await this.usersService.findAll();
+    return users.map((user) =>
+      plainToClass(UserResponseDto, user, { excludeExtraneousValues: true }),
+    );
+  }
+
+  @Get('profile')
+  async getProfile(@CurrentUser() user: User): Promise<UserResponseDto> {
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Get(':id')
+  @Roles(UserRole.ADMIN)
+  async findOne(@Param('id') id: string): Promise<UserResponseDto> {
+    const user = await this.usersService.findById(id);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Post()
+  @Roles(UserRole.ADMIN)
+  async create(@Body() createUserDto: CreateUserDto): Promise<UserResponseDto> {
+    const user = await this.usersService.create(createUserDto);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Patch(':id')
+  @Roles(UserRole.ADMIN)
+  async update(
+    @Param('id') id: string,
+    @Body() updateUserDto: UpdateUserDto,
+  ): Promise<UserResponseDto> {
+    const user = await this.usersService.update(id, updateUserDto);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Patch('profile')
+  async updateProfile(
+    @CurrentUser() user: User,
+    @Body() updateUserDto: UpdateUserDto,
+  ): Promise<UserResponseDto> {
+    const updatedUser = await this.usersService.update(user.id, updateUserDto);
+    return plainToClass(UserResponseDto, updatedUser, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Post('change-password')
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async changePassword(
+    @CurrentUser() user: User,
+    @Body() changePasswordDto: ChangePasswordDto,
+  ): Promise<void> {
+    await this.usersService.changePassword(user.id, changePasswordDto);
+  }
+
+  @Delete(':id')
+  @Roles(UserRole.ADMIN)
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async remove(@Param('id') id: string): Promise<void> {
+    await this.usersService.remove(id);
+  }
+
+  @Patch(':id/role')
+  @Roles(UserRole.ADMIN)
+  async setRole(
+    @Param('id') id: string,
+    @Body('role') role: UserRole,
+  ): Promise<UserResponseDto> {
+    const user = await this.usersService.setRole(id, role);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+}
+</file>
+
+<file path="src/modules/users/users.module.ts">
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { User } from '@domain/entities/user.entity';
+import { UsersService } from './users.service';
+import { UsersController } from './users.controller';
+import { AuthModule } from '@modules/auth/auth.module';
+
+@Module({
+  imports: [TypeOrmModule.forFeature([User]), AuthModule],
+  controllers: [UsersController],
+  providers: [UsersService],
+  exports: [UsersService],
+})
+export class UsersModule {}
+</file>
+
+<file path="src/modules/users/users.service.ts">
+import {
+  Injectable,
+  NotFoundException,
+  BadRequestException,
+} from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { User, UserRole } from '@domain/entities/user.entity';
+import {
+  CreateUserDto,
+  UpdateUserDto,
+  ChangePasswordDto,
+} from '@application/dtos/user.dto';
+
+@Injectable()
+export class UsersService {
+  constructor(
+    @InjectRepository(User)
+    private readonly userRepository: Repository<User>,
+  ) {}
+
+  async findAll(): Promise<User[]> {
+    return this.userRepository.find();
+  }
+
+  async findById(id: string): Promise<User> {
+    const user = await this.userRepository.findOne({ where: { id } });
+    if (!user) {
+      throw new NotFoundException(`User with ID ${id} not found`);
+    }
+    return user;
+  }
+
+  async findByEmail(email: string): Promise<User | null> {
+    return this.userRepository.findOne({ where: { email } });
+  }
+
+  async create(createUserDto: CreateUserDto): Promise<User> {
+    const existingUser = await this.findByEmail(createUserDto.email);
+    if (existingUser) {
+      throw new BadRequestException('User with this email already exists');
+    }
+
+    const user = this.userRepository.create(createUserDto);
+    return this.userRepository.save(user);
+  }
+
+  async update(id: string, updateUserDto: UpdateUserDto): Promise<User> {
+    const user = await this.findById(id);
+
+    // Check if email is being updated and if it's already in use
+    if (updateUserDto.email && updateUserDto.email !== user.email) {
+      const existingUser = await this.findByEmail(updateUserDto.email);
+      if (existingUser) {
+        throw new BadRequestException('Email is already in use');
+      }
+    }
+
+    // Update user properties
+    Object.assign(user, updateUserDto);
+    return this.userRepository.save(user);
+  }
+
+  async changePassword(
+    id: string,
+    changePasswordDto: ChangePasswordDto,
+  ): Promise<void> {
+    const { currentPassword, newPassword } = changePasswordDto;
+    const user = await this.findById(id);
+
+    // Validate current password
+    const isPasswordValid = await user.validatePassword(currentPassword);
+    if (!isPasswordValid) {
+      throw new BadRequestException('Current password is incorrect');
+    }
+
+    // Update password
+    user.password = newPassword;
+    await this.userRepository.save(user);
+  }
+
+  async remove(id: string): Promise<void> {
+    const user = await this.findById(id);
+    await this.userRepository.softRemove(user);
+  }
+
+  async setRole(id: string, role: UserRole): Promise<User> {
+    const user = await this.findById(id);
+    user.role = role;
+    return this.userRepository.save(user);
+  }
+}
+</file>
+
+<file path="test/app.e2e-spec.ts">
+import { Test, TestingModule } from '@nestjs/testing';
+import { INestApplication } from '@nestjs/common';
+import * as request from 'supertest';
+import { App } from 'supertest/types';
+import { AppModule } from './../src/app.module';
+
+describe('AppController (e2e)', () => {
+  let app: INestApplication<App>;
+
+  beforeEach(async () => {
+    const moduleFixture: TestingModule = await Test.createTestingModule({
+      imports: [AppModule],
+    }).compile();
+
+    app = moduleFixture.createNestApplication();
+    await app.init();
+  });
+
+  it('/ (GET)', () => {
+    return request(app.getHttpServer())
+      .get('/')
+      .expect(200)
+      .expect('Hello World!');
+  });
+});
+</file>
+
+<file path="test/jest-e2e.json">
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  }
+}
+</file>
+
+<file path="test/products.e2e-spec.ts">
+import { Test, TestingModule } from '@nestjs/testing';
+import { INestApplication, ValidationPipe } from '@nestjs/common';
+import * as request from 'supertest';
+import { AppModule } from '../src/app.module';
+import { getRepositoryToken } from '@nestjs/typeorm';
+import { Product } from '../src/domain/entities/product.entity';
+import { User, UserRole } from '../src/domain/entities/user.entity';
+import { JwtService } from '@nestjs/jwt';
+
+describe('ProductsController (e2e)', () => {
+  let app: INestApplication;
+  let jwtService: JwtService;
+  let accessToken: string;
+  let adminAccessToken: string;
+  let productRepository;
+  let userRepository;
+
+  const mockProduct = {
+    id: '1',
+    name: 'Test Product',
+    description: 'Test Description',
+    price: 100,
+    stockQuantity: 10,
+    images: [],
+    isActive: true,
+    categories: ['test'],
+    attributes: {},
+    discountPercentage: 0,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  };
+
+  const mockUser = {
+    id: '1',
+    email: 'user@example.com',
+    firstName: 'Test',
+    lastName: 'User',
+    password: 'hashedPassword',
+    role: UserRole.CUSTOMER,
+    isEmailVerified: true,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  };
+
+  const mockAdmin = {
+    id: '2',
+    email: 'admin@example.com',
+    firstName: 'Admin',
+    lastName: 'User',
+    password: 'hashedPassword',
+    role: UserRole.ADMIN,
+    isEmailVerified: true,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  };
+
+  beforeAll(async () => {
+    const moduleFixture: TestingModule = await Test.createTestingModule({
+      imports: [AppModule],
+    }).compile();
+
+    app = moduleFixture.createNestApplication();
+    app.useGlobalPipes(
+      new ValidationPipe({
+        whitelist: true,
+        transform: true,
+      }),
+    );
+
+    await app.init();
+
+    jwtService = moduleFixture.get<JwtService>(JwtService);
+    productRepository = moduleFixture.get(getRepositoryToken(Product));
+    userRepository = moduleFixture.get(getRepositoryToken(User));
+
+    // Generate tokens
+    accessToken = jwtService.sign(
+      { sub: mockUser.id, email: mockUser.email, role: mockUser.role },
+      { secret: 'your-secret-key', expiresIn: '1h' },
+    );
+
+    adminAccessToken = jwtService.sign(
+      { sub: mockAdmin.id, email: mockAdmin.email, role: mockAdmin.role },
+      { secret: 'your-secret-key', expiresIn: '1h' },
+    );
+
+    // Mock repositories
+    jest.spyOn(productRepository, 'find').mockResolvedValue([mockProduct]);
+    jest.spyOn(productRepository, 'findOne').mockResolvedValue(mockProduct);
+    jest.spyOn(productRepository, 'create').mockReturnValue(mockProduct);
+    jest.spyOn(productRepository, 'save').mockResolvedValue(mockProduct);
+
+    jest.spyOn(userRepository, 'findOne').mockImplementation((options) => {
+      if (options.where.id === '1') return Promise.resolve(mockUser);
+      if (options.where.id === '2') return Promise.resolve(mockAdmin);
+      return Promise.resolve(null);
+    });
+  });
+
+  afterAll(async () => {
+    await app.close();
+  });
+
+  describe('GET /products', () => {
+    it('should return an array of products', () => {
+      return request(app.getHttpServer())
+        .get('/products')
+        .expect(200)
+        .expect((res) => {
+          expect(Array.isArray(res.body)).toBe(true);
+          expect(res.body.length).toBeGreaterThan(0);
+          expect(res.body[0]).toHaveProperty('id');
+          expect(res.body[0]).toHaveProperty('name');
+          expect(res.body[0]).toHaveProperty('price');
+        });
+    });
+  });
+
+  describe('GET /products/:id', () => {
+    it('should return a product by id', () => {
+      return request(app.getHttpServer())
+        .get('/products/1')
+        .expect(200)
+        .expect((res) => {
+          expect(res.body).toHaveProperty('id', '1');
+          expect(res.body).toHaveProperty('name', 'Test Product');
+          expect(res.body).toHaveProperty('price', 100);
+        });
+    });
+
+    it('should return 404 if product not found', () => {
+      jest.spyOn(productRepository, 'findOne').mockResolvedValueOnce(null);
+
+      return request(app.getHttpServer())
+        .get('/products/999')
+        .expect(404);
+    });
+  });
+
+  describe('POST /products', () => {
+    it('should require authentication', () => {
+      return request(app.getHttpServer())
+        .post('/products')
+        .send({
+          name: 'New Product',
+          description: 'New Description',
+          price: 200,
+          stockQuantity: 20,
+        })
+        .expect(401);
+    });
+
+    it('should require admin role', () => {
+      return request(app.getHttpServer())
+        .post('/products')
+        .set('Authorization', `Bearer ${accessToken}`)
+        .send({
+          name: 'New Product',
+          description: 'New Description',
+          price: 200,
+          stockQuantity: 20,
+        })
+        .expect(403);
+    });
+
+    it('should create a new product with admin role', () => {
+      return request(app.getHttpServer())
+        .post('/products')
+        .set('Authorization', `Bearer ${adminAccessToken}`)
+        .send({
+          name: 'New Product',
+          description: 'New Description',
+          price: 200,
+          stockQuantity: 20,
+        })
+        .expect(201)
+        .expect((res) => {
+          expect(res.body).toHaveProperty('id');
+          expect(res.body).toHaveProperty('name', 'Test Product');
+        });
+    });
+
+    it('should validate input data', () => {
+      return request(app.getHttpServer())
+        .post('/products')
+        .set('Authorization', `Bearer ${adminAccessToken}`)
+        .send({
+          // Missing required fields
+          price: 'invalid', // Invalid type
+        })
+        .expect(400);
+    });
+  });
+
+  describe('PATCH /products/:id', () => {
+    it('should require authentication', () => {
+      return request(app.getHttpServer())
+        .patch('/products/1')
+        .send({
+          name: 'Updated Product',
+        })
+        .expect(401);
+    });
+
+    it('should require admin role', () => {
+      return request(app.getHttpServer())
+        .patch('/products/1')
+        .set('Authorization', `Bearer ${accessToken}`)
+        .send({
+          name: 'Updated Product',
+        })
+        .expect(403);
+    });
+
+    it('should update a product with admin role', () => {
+      const updatedProduct = { ...mockProduct, name: 'Updated Product' };
+      jest.spyOn(productRepository, 'save').mockResolvedValueOnce(updatedProduct);
+
+      return request(app.getHttpServer())
+        .patch('/products/1')
+        .set('Authorization', `Bearer ${adminAccessToken}`)
+        .send({
+          name: 'Updated Product',
+        })
+        .expect(200)
+        .expect((res) => {
+          expect(res.body).toHaveProperty('name', 'Updated Product');
+        });
+    });
+  });
+
+  describe('DELETE /products/:id', () => {
+    it('should require authentication', () => {
+      return request(app.getHttpServer())
+        .delete('/products/1')
+        .expect(401);
+    });
+
+    it('should require admin role', () => {
+      return request(app.getHttpServer())
+        .delete('/products/1')
+        .set('Authorization', `Bearer ${accessToken}`)
+        .expect(403);
+    });
+
+    it('should delete a product with admin role', () => {
+      jest.spyOn(productRepository, 'softRemove').mockResolvedValueOnce(undefined);
+
+      return request(app.getHttpServer())
+        .delete('/products/1')
+        .set('Authorization', `Bearer ${adminAccessToken}`)
+        .expect(204);
+    });
+  });
+});
+</file>
+
+<file path="tsconfig.build.json">
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}
+</file>
+
+<file path="tsconfig.json">
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@domain/*": [
+        "src/domain/*"
+      ],
+      "@application/*": [
+        "src/application/*"
+      ],
+      "@infrastructure/*": [
+        "src/infrastructure/*"
+      ],
+      "@presentation/*": [
+        "src/presentation/*"
+      ],
+      "@modules/*": [
+        "src/modules/*"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ]
+    }
+  }
+}
+</file>
+
+</files>
+````
+
+## File: .env.example
+
+```
+# Application
+NODE_ENV=development
+PORT=3000
+API_PREFIX=api
+APP_NAME=E-Commerce Backend
+
+# Database
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+DB_DATABASE=ecommerce
+DB_SCHEMA=public
+DB_SYNCHRONIZE=false
+
+# JWT Authentication
+JWT_SECRET=your-secret-key
+JWT_EXPIRATION=1h
+JWT_REFRESH_SECRET=your-refresh-secret-key
+JWT_REFRESH_EXPIRATION=7d
+
+# Redis Cache
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+REDIS_TTL=3600
+
+# Email
+MAIL_HOST=smtp.example.com
+MAIL_PORT=587
+MAIL_USER=user@example.com
+MAIL_PASSWORD=password
+MAIL_FROM=noreply@example.com
+
+# File Upload
+UPLOAD_DESTINATION=./uploads
+MAX_FILE_SIZE=5242880 # 5MB
+
+# Rate Limiting
+THROTTLE_TTL=60
+THROTTLE_LIMIT=10
+```
+
+## File: .github/workflows/ci.yml
+
+```yaml
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run linting
+        run: npm run lint
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    needs: lint
+    services:
+      postgres:
+        image: postgres:14-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: ecommerce_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm run test
+
+      - name: Run e2e tests
+        run: npm run test:e2e
+        env:
+          DB_HOST: localhost
+          DB_PORT: 5432
+          DB_USERNAME: postgres
+          DB_PASSWORD: postgres
+          DB_DATABASE: ecommerce_test
+          REDIS_HOST: localhost
+          REDIS_PORT: 6379
+          JWT_SECRET: test-secret
+          JWT_REFRESH_SECRET: test-refresh-secret
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: dist/
+
+  # Uncomment and configure this job when you're ready to deploy
+  # deploy:
+  #   name: Deploy
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
+  #
+  #     - name: Download build artifacts
+  #       uses: actions/download-artifact@v3
+  #       with:
+  #         name: build
+  #         path: dist/
+  #
+  #     - name: Deploy to production
+  #       # Add your deployment steps here
+  #       run: echo "Deploying to production..."
+```
+
+## File: .gitignore
+
+```
+# compiled output
+/dist
+/node_modules
+/build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# temp directory
+.temp
+.tmp
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Uploads directory
+/uploads
+
+# Database files
+*.sqlite
+*.db
+
+# Docker volumes
+/docker/volumes
+```
+
+## File: .prettierrc
+
+```
+{
+  "singleQuote": true,
+  "trailingComma": "all"
+
+}
+```
+
+## File: docker-compose.yml
+
+```yaml
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: ecommerce-api
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:
+      - postgres
+      - redis
+    env_file:
+      - .env
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=postgres
+      - DB_DATABASE=ecommerce-backend
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    command: npm run start:dev
+
+  postgres:
+    image: postgres:14-alpine
+    container_name: ecommerce-postgres
+    restart: unless-stopped
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=ecommerce-backend
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: ecommerce-redis
+    restart: unless-stopped
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis_data:/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: ecommerce-pgadmin
+    restart: unless-stopped
+    ports:
+      - '5050:80'
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+  redis_data:
+  pgadmin_data:
+```
+
+## File: Dockerfile
+
+```dockerfile
+# Base image
+FROM node:18-alpine AS development
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Build the application
+RUN npm run build
+
+# Production image
+FROM node:18-alpine AS production
+
+# Set NODE_ENV
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Copy package files
+COPY package*.json ./
+
+# Install production dependencies
+RUN npm ci --only=production
+
+# Copy built application from development stage
+COPY --from=development /usr/src/app/dist ./dist
+COPY --from=development /usr/src/app/node_modules ./node_modules
+
+# Create uploads directory
+RUN mkdir -p uploads/products
+
+# Expose port
+EXPOSE 3000
+
+# Start the application
+CMD ["node", "dist/main"]
+```
+
+## File: eslint.config.mjs
+
+```
+// @ts-check
+import eslint from '@eslint/js';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+  {
+    ignores: ['eslint.config.mjs'],
+  },
+  eslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
+  eslintPluginPrettierRecommended,
+  {
+    languageOptions: {
+      globals: {
+        ...globals.node,
+        ...globals.jest,
+      },
+      sourceType: 'commonjs',
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
+  {
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-floating-promises': 'warn',
+      '@typescript-eslint/no-unsafe-argument': 'warn'
+    },
+  },
+);
+```
+
+## File: nest-cli.json
+
+```json
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true
+  }
+}
+```
+
+## File: package.json
+
+```json
+{
+  "name": "ecommerce-backend",
+  "version": "0.0.1",
+  "description": "E-Commerce Backend API with NestJS, TypeORM, and PostgreSQL",
+  "author": "Your Name",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "migration:generate": "npm run typeorm -- migration:generate -d src/infrastructure/database/data-source.ts",
+    "migration:run": "npm run typeorm -- migration:run -d src/infrastructure/database/data-source.ts",
+    "migration:revert": "npm run typeorm -- migration:revert -d src/infrastructure/database/data-source.ts",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "dependencies": {
+    "@nestjs/bull": "^11.0.2",
+    "@nestjs/cache-manager": "^3.0.1",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/jwt": "^11.0.0",
+    "@nestjs/passport": "^11.0.5",
+    "@nestjs/platform-express": "^11.0.20",
+    "@nestjs/serve-static": "^5.0.3",
+    "@nestjs/swagger": "^11.1.5",
+    "@nestjs/throttler": "^6.4.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "bcrypt": "^5.1.1",
+    "bull": "^4.16.5",
+    "cache-manager": "^6.4.2",
+    "cache-manager-redis-store": "^3.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "compression": "^1.8.0",
+    "helmet": "^8.1.0",
+    "joi": "^17.13.3",
+    "multer": "^1.4.5-lts.2",
+    "nest-winston": "^1.10.2",
+    "nodemailer": "^6.10.1",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.15.1",
+    "redis": "^4.7.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.22",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.1",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.10.7",
+    "@types/bcrypt": "^5.0.2",
+    "@types/bull": "^3.15.9",
+    "@types/compression": "^1.7.5",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.7",
+    "@types/nodemailer": "^6.4.17",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/passport-local": "^1.0.38",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "globals": "^16.0.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2",
+    "source-map-support": "^0.5.21",
+    "supertest": "^7.1.0",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
+  },
+  "jest": {
+    "moduleFileExtensions": ["js", "json", "ts"],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": ["**/*.(t|j)s"],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
+```
+
+## File: README.md
+
+````markdown
+# E-Commerce Backend API
+
+## Overview
+
+A robust and scalable E-Commerce Backend API built with NestJS, TypeScript, PostgreSQL, and following Clean Architecture / Domain-Driven Design principles. This boilerplate provides a solid foundation for building e-commerce applications with features like authentication, product management, order processing, and more.
+
+## Features
+
+- **Authentication**
+
+  - JWT + Refresh Token authentication
+  - User registration and login
+  - Password reset functionality
+  - Role-based access control
+
+- **User Management**
+
+  - CRUD operations for users
+  - Role management (Admin, Manager, Customer)
+  - Profile management
+
+- **Product Management**
+
+  - CRUD operations for products
+  - Product categorization
+  - Image upload support
+  - Stock management
+  - Discount management
+
+- **Order Management**
+
+  - Order creation and processing
+  - Order status tracking
+  - Payment status tracking
+  - Order history
+
+- **Infrastructure**
+
+  - PostgreSQL database with TypeORM
+  - Redis for caching
+  - BullMQ for task queues
+  - Winston for logging
+  - Email service with Nodemailer
+
+- **Security**
+
+  - Helmet for HTTP headers
+  - Rate limiting
+  - CORS protection
+  - Input validation
+
+- **Documentation**
+  - Swagger API documentation
+
+## Architecture
+
+This project follows Clean Architecture / Domain-Driven Design principles with a clear separation of concerns:
+
+- **Domain Layer**: Contains business entities, value objects, and domain services
+- **Application Layer**: Contains use cases and application services
+- **Infrastructure Layer**: Contains implementations of repositories, external services, etc.
+- **Presentation Layer**: Contains controllers, DTOs, and API endpoints
+
+## Tech Stack
+
+- **Framework**: NestJS (TypeScript)
+- **Database**: PostgreSQL
+- **ORM**: TypeORM
+- **Authentication**: JWT + Passport
+- **Validation**: class-validator & class-transformer
+- **Logging**: Winston
+- **Caching**: Redis
+- **Task Queue**: BullMQ + Redis
+- **Email**: Nodemailer
+- **API Documentation**: Swagger
+- **Testing**: Jest + SuperTest
+- **Containerization**: Docker & Docker Compose
+
+## Prerequisites
+
+- Node.js (v16+)
+- npm or yarn
+- PostgreSQL
+- Redis
+
+## Installation
+
+### Local Development
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+cd ecommerce-backend
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Create a `.env` file based on `.env.example`
+
+```bash
+cp .env.example .env
+```
+
+4. Update the `.env` file with your configuration
+
+5. Start the development server
+
+```bash
+npm run start:dev
+```
+
+### Using Docker
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+cd ecommerce-backend
+```
+
+2. Create a `.env` file based on `.env.example`
+
+```bash
+cp .env.example .env
+```
+
+3. Build and start the containers
+
+```bash
+npm run docker:build
+npm run docker:up
+```
+
+## Database Migrations
+
+### Generate a migration
+
+```bash
+npm run migration:generate -- src/infrastructure/database/migrations/MigrationName
+```
+
+### Run migrations
+
+```bash
+npm run migration:run
+```
+
+### Revert migrations
+
+```bash
+npm run migration:revert
+```
+
+## API Documentation
+
+Swagger API documentation is available at `/api/docs` when running in development mode.
+
+## Testing
+
+### Unit Tests
+
+```bash
+npm run test
+```
+
+### E2E Tests
+
+```bash
+npm run test:e2e
+```
+
+### Test Coverage
+
+```bash
+npm run test:cov
+```
+
+## Folder Structure
+
+```
+src/
+├── application/         # Application layer
+│   ├── dtos/           # Data Transfer Objects
+│   └── use-cases/      # Application use cases
+├── config/             # Configuration
+├── domain/             # Domain layer
+│   ├── entities/       # Domain entities
+│   ├── services/       # Domain services
+│   └── value-objects/  # Value objects
+├── infrastructure/     # Infrastructure layer
+│   ├── cache/          # Cache implementation
+│   ├── database/       # Database configuration and migrations
+│   ├── email/          # Email service
+│   ├── logging/        # Logging configuration
+│   ├── queue/          # Queue implementation
+│   └── security/       # Security configuration
+├── modules/            # Feature modules
+│   ├── auth/           # Authentication module
+│   ├── orders/         # Order management module
+│   ├── products/       # Product management module
+│   └── users/          # User management module
+└── presentation/       # Presentation layer
+    ├── controllers/    # API controllers
+    ├── filters/        # Exception filters
+    ├── guards/         # Guards
+    └── pipes/          # Validation pipes
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/my-feature`
+3. Commit your changes: `git commit -am 'Add my feature'`
+4. Push to the branch: `git push origin feature/my-feature`
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+````
+
+## File: src/app.controller.spec.ts
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+
+describe('AppController', () => {
+  let appController: AppController;
+
+  beforeEach(async () => {
+    const app: TestingModule = await Test.createTestingModule({
+      controllers: [AppController],
+      providers: [AppService],
+    }).compile();
+
+    appController = app.get<AppController>(AppController);
+  });
+
+  describe('root', () => {
+    it('should return "Hello World!"', () => {
+      expect(appController.getHello()).toBe('Hello World!');
+    });
+  });
+});
+```
+
+## File: src/app.controller.ts
+
+```typescript
+import { Controller, Get } from '@nestjs/common';
+import { AppService } from './app.service';
+
+@Controller()
+export class AppController {
+  constructor(private readonly appService: AppService) {}
+
+  @Get()
+  getHello(): string {
+    return this.appService.getHello();
+  }
+}
+```
+
+## File: src/app.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
+
+// Config
+import { ConfigModule } from '@config/config.module';
+
+// Infrastructure
+import { DatabaseModule } from '@infrastructure/database/database.module';
+import { CacheModule } from '@infrastructure/cache/cache.module';
+import { QueueModule } from '@infrastructure/queue/queue.module';
+import { EmailModule } from '@infrastructure/email/email.module';
+import { LoggingModule } from '@infrastructure/logging/logging.module';
+import { SecurityModule } from '@infrastructure/security/security.module';
+
+// Modules
+import { AuthModule } from '@modules/auth/auth.module';
+import { UsersModule } from '@modules/users/users.module';
+import { ProductsModule } from '@modules/products/products.module';
+import { OrdersModule } from '@modules/orders/orders.module';
+
+@Module({
+  imports: [
+    // Config
+    ConfigModule,
+
+    // Infrastructure
+    DatabaseModule,
+    CacheModule,
+    QueueModule,
+    EmailModule,
+    LoggingModule,
+    SecurityModule,
+
+    // Serve static files
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'uploads'),
+      serveRoot: '/uploads',
+    }),
+
+    // Feature modules
+    AuthModule,
+    UsersModule,
+    ProductsModule,
+    OrdersModule,
+  ],
+})
+export class AppModule {}
+```
+
+## File: src/app.service.ts
+
+```typescript
+import { Injectable } from '@nestjs/common';
+
+@Injectable()
+export class AppService {
+  getHello(): string {
+    return 'Hello World!';
+  }
+}
+```
+
+## File: src/application/dtos/auth.dto.ts
+
+```typescript
+import { IsEmail, IsNotEmpty, IsString, MinLength } from 'class-validator';
+
+export class LoginDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsString()
+  @IsNotEmpty()
+  password: string;
+}
+
+export class RegisterDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsString()
+  @IsNotEmpty()
+  firstName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  lastName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(8)
+  password: string;
+}
+
+export class RefreshTokenDto {
+  @IsString()
+  @IsNotEmpty()
+  refreshToken: string;
+}
+
+export class ForgotPasswordDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+}
+
+export class ResetPasswordDto {
+  @IsString()
+  @IsNotEmpty()
+  token: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(8)
+  newPassword: string;
+}
+
+export class TokenResponseDto {
+  accessToken: string;
+  refreshToken: string;
+  expiresIn: number;
+}
+```
+
+## File: src/application/dtos/order.dto.ts
+
+```typescript
+import {
+  IsArray,
+  IsEnum,
+  IsNotEmpty,
+  IsNumber,
+  IsObject,
+  IsOptional,
+  IsPositive,
+  IsString,
+  ValidateNested,
+} from 'class-validator';
+import { Type } from 'class-transformer';
+import { OrderStatus, PaymentStatus } from '@domain/entities/order.entity';
+
+class AddressDto {
+  @IsString()
+  @IsNotEmpty()
+  firstName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  lastName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  address1: string;
+
+  @IsString()
+  @IsOptional()
+  address2?: string;
+
+  @IsString()
+  @IsNotEmpty()
+  city: string;
+
+  @IsString()
+  @IsNotEmpty()
+  state: string;
+
+  @IsString()
+  @IsNotEmpty()
+  postalCode: string;
+
+  @IsString()
+  @IsNotEmpty()
+  country: string;
+
+  @IsString()
+  @IsNotEmpty()
+  phone: string;
+}
+
+class OrderItemDto {
+  @IsString()
+  @IsNotEmpty()
+  productId: string;
+
+  @IsNumber()
+  @IsPositive()
+  @Type(() => Number)
+  quantity: number;
+}
+
+export class CreateOrderDto {
+  @IsArray()
+  @ValidateNested({ each: true })
+  @Type(() => OrderItemDto)
+  items: OrderItemDto[];
+
+  @IsObject()
+  @ValidateNested()
+  @Type(() => AddressDto)
+  shippingAddress: AddressDto;
+
+  @IsObject()
+  @ValidateNested()
+  @IsOptional()
+  @Type(() => AddressDto)
+  billingAddress?: AddressDto;
+
+  @IsString()
+  @IsOptional()
+  notes?: string;
+
+  @IsString()
+  @IsNotEmpty()
+  paymentMethod: string;
+}
+
+export class UpdateOrderStatusDto {
+  @IsEnum(OrderStatus)
+  status: OrderStatus;
+
+  @IsString()
+  @IsOptional()
+  trackingNumber?: string;
+}
+
+export class UpdatePaymentStatusDto {
+  @IsEnum(PaymentStatus)
+  paymentStatus: PaymentStatus;
+
+  @IsString()
+  @IsOptional()
+  paymentTransactionId?: string;
+}
+
+export class OrderResponseDto {
+  id: string;
+  orderNumber: string;
+  user: {
+    id: string;
+    email: string;
+    fullName: string;
+  };
+  items: {
+    id: string;
+    product: {
+      id: string;
+      name: string;
+      images: string[];
+    };
+    quantity: number;
+    unitPrice: number;
+    discount: number;
+    subtotal: number;
+  }[];
+  status: OrderStatus;
+  paymentStatus: PaymentStatus;
+  subtotal: number;
+  tax: number;
+  shippingCost: number;
+  discount: number;
+  total: number;
+  shippingAddress: AddressDto;
+  billingAddress?: AddressDto;
+  notes?: string;
+  trackingNumber?: string;
+  paymentMethod?: string;
+  paymentTransactionId?: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+```
+
+## File: src/application/dtos/product.dto.ts
+
+```typescript
+import {
+  IsArray,
+  IsBoolean,
+  IsNotEmpty,
+  IsNumber,
+  IsOptional,
+  IsPositive,
+  IsString,
+  Min,
+  Max,
+} from 'class-validator';
+import { Type } from 'class-transformer';
+
+export class CreateProductDto {
+  @IsString()
+  @IsNotEmpty()
+  name: string;
+
+  @IsString()
+  @IsNotEmpty()
+  description: string;
+
+  @IsNumber()
+  @IsPositive()
+  @Type(() => Number)
+  price: number;
+
+  @IsNumber()
+  @Min(0)
+  @Type(() => Number)
+  stockQuantity: number;
+
+  @IsArray()
+  @IsOptional()
+  images?: string[];
+
+  @IsBoolean()
+  @IsOptional()
+  isActive?: boolean;
+
+  @IsArray()
+  @IsOptional()
+  categories?: string[];
+
+  @IsOptional()
+  attributes?: Record<string, any>;
+
+  @IsNumber()
+  @Min(0)
+  @Max(100)
+  @IsOptional()
+  @Type(() => Number)
+  discountPercentage?: number;
+}
+
+export class UpdateProductDto {
+  @IsString()
+  @IsOptional()
+  name?: string;
+
+  @IsString()
+  @IsOptional()
+  description?: string;
+
+  @IsNumber()
+  @IsPositive()
+  @IsOptional()
+  @Type(() => Number)
+  price?: number;
+
+  @IsNumber()
+  @Min(0)
+  @IsOptional()
+  @Type(() => Number)
+  stockQuantity?: number;
+
+  @IsArray()
+  @IsOptional()
+  images?: string[];
+
+  @IsBoolean()
+  @IsOptional()
+  isActive?: boolean;
+
+  @IsArray()
+  @IsOptional()
+  categories?: string[];
+
+  @IsOptional()
+  attributes?: Record<string, any>;
+
+  @IsNumber()
+  @Min(0)
+  @Max(100)
+  @IsOptional()
+  @Type(() => Number)
+  discountPercentage?: number;
+}
+
+export class ProductResponseDto {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  stockQuantity: number;
+  images: string[];
+  isActive: boolean;
+  categories: string[];
+  attributes: Record<string, any>;
+  discountPercentage: number;
+  createdAt: Date;
+  updatedAt: Date;
+  isInStock: boolean;
+  finalPrice: number;
+}
+
+export class ProductFilterDto {
+  @IsOptional()
+  @IsString()
+  search?: string;
+
+  @IsOptional()
+  @IsArray()
+  categories?: string[];
+
+  @IsOptional()
+  @IsNumber()
+  @Min(0)
+  @Type(() => Number)
+  minPrice?: number;
+
+  @IsOptional()
+  @IsNumber()
+  @IsPositive()
+  @Type(() => Number)
+  maxPrice?: number;
+
+  @IsOptional()
+  @IsBoolean()
+  inStock?: boolean;
+
+  @IsOptional()
+  @IsBoolean()
+  onSale?: boolean;
+}
+```
+
+## File: src/application/dtos/user.dto.ts
+
+```typescript
+import { IsEmail, IsEnum, IsNotEmpty, IsOptional, IsString, MinLength } from 'class-validator';
+import { UserRole } from '@domain/entities/user.entity';
+import { Exclude, Expose, Transform } from 'class-transformer';
+
+export class CreateUserDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsString()
+  @IsNotEmpty()
+  firstName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  lastName: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(8)
+  password: string;
+
+  @IsEnum(UserRole)
+  @IsOptional()
+  role?: UserRole;
+}
+
+export class UpdateUserDto {
+  @IsEmail()
+  @IsOptional()
+  email?: string;
+
+  @IsString()
+  @IsOptional()
+  firstName?: string;
+
+  @IsString()
+  @IsOptional()
+  lastName?: string;
+
+  @IsEnum(UserRole)
+  @IsOptional()
+  role?: UserRole;
+}
+
+export class ChangePasswordDto {
+  @IsString()
+  @IsNotEmpty()
+  currentPassword: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @MinLength(8)
+  newPassword: string;
+}
+
+export class UserResponseDto {
+  @Expose()
+  id: string;
+
+  @Expose()
+  email: string;
+
+  @Expose()
+  firstName: string;
+
+  @Expose()
+  lastName: string;
+
+  @Expose()
+  role: UserRole;
+
+  @Expose()
+  isEmailVerified: boolean;
+
+  @Expose()
+  createdAt: Date;
+
+  @Expose()
+  updatedAt: Date;
+
+  @Expose()
+  @Transform(({ obj }) => `${obj.firstName} ${obj.lastName}`)
+  fullName: string;
+
+  @Exclude()
+  password: string;
+
+  @Exclude()
+  refreshToken: string;
+
+  @Exclude()
+  deletedAt: Date;
+}
+```
+
+## File: src/config/config.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { ConfigModule as NestConfigModule } from '@nestjs/config';
+import configuration from './configuration';
+import * as Joi from 'joi';
+
+@Module({
+  imports: [
+    NestConfigModule.forRoot({
+      isGlobal: true,
+      load: [configuration],
+      validationSchema: Joi.object({
+        NODE_ENV: Joi.string()
+          .valid('development', 'production', 'test', 'staging')
+          .default('development'),
+        PORT: Joi.number().default(3000),
+        API_PREFIX: Joi.string().default('api'),
+
+        // Database
+        DB_HOST: Joi.string().default('localhost'),
+        DB_PORT: Joi.number().default(5432),
+        DB_USERNAME: Joi.string().default('postgres'),
+        DB_PASSWORD: Joi.string().default('postgres'),
+        DB_DATABASE: Joi.string().default('ecommerce'),
+        DB_SCHEMA: Joi.string().default('public'),
+        DB_SYNCHRONIZE: Joi.boolean().default(false),
+
+        // JWT
+        JWT_SECRET: Joi.string().required(),
+        JWT_EXPIRATION: Joi.string().default('1h'),
+        JWT_REFRESH_SECRET: Joi.string().required(),
+        JWT_REFRESH_EXPIRATION: Joi.string().default('7d'),
+
+        // Redis
+        REDIS_HOST: Joi.string().default('localhost'),
+        REDIS_PORT: Joi.number().default(6379),
+        REDIS_PASSWORD: Joi.string().allow('').default(''),
+        REDIS_TTL: Joi.number().default(3600),
+
+        // Email
+        MAIL_HOST: Joi.string().default('smtp.example.com'),
+        MAIL_PORT: Joi.number().default(587),
+        MAIL_USER: Joi.string().default('user@example.com'),
+        MAIL_PASSWORD: Joi.string().default('password'),
+        MAIL_FROM: Joi.string().default('noreply@example.com'),
+
+        // File Upload
+        UPLOAD_DESTINATION: Joi.string().default('./uploads'),
+        MAX_FILE_SIZE: Joi.number().default(5242880), // 5MB
+
+        // Rate Limiting
+        THROTTLE_TTL: Joi.number().default(60),
+        THROTTLE_LIMIT: Joi.number().default(10),
+      }),
+    }),
+  ],
+})
+export class ConfigModule {}
+```
+
+## File: src/config/configuration.ts
+
+```typescript
+export default () => ({
+  // Application
+  nodeEnv: process.env.NODE_ENV || 'development',
+  port: parseInt(process.env.PORT || '3000', 10),
+  apiPrefix: process.env.API_PREFIX || 'api',
+  appName: process.env.APP_NAME || 'E-Commerce Backend',
+
+  // Database
+  database: {
+    host: process.env.DB_HOST || 'localhost',
+    port: parseInt(process.env.DB_PORT || '5432', 10),
+    username: process.env.DB_USERNAME || 'postgres',
+    password: process.env.DB_PASSWORD || 'postgres',
+    database: process.env.DB_DATABASE || 'ecommerce',
+    schema: process.env.DB_SCHEMA || 'public',
+    synchronize: process.env.DB_SYNCHRONIZE === 'true',
+  },
+
+  // JWT Authentication
+  jwt: {
+    secret: process.env.JWT_SECRET || 'your-secret-key',
+    expiresIn: process.env.JWT_EXPIRATION || '1h',
+    refreshSecret: process.env.JWT_REFRESH_SECRET || 'your-refresh-secret-key',
+    refreshExpiresIn: process.env.JWT_REFRESH_EXPIRATION || '7d',
+  },
+
+  // Redis Cache
+  redis: {
+    host: process.env.REDIS_HOST || 'localhost',
+    port: parseInt(process.env.REDIS_PORT || '6379', 10),
+    password: process.env.REDIS_PASSWORD || '',
+    ttl: parseInt(process.env.REDIS_TTL || '3600', 10),
+  },
+
+  // Email
+  mail: {
+    host: process.env.MAIL_HOST || 'smtp.example.com',
+    port: parseInt(process.env.MAIL_PORT || '587', 10),
+    user: process.env.MAIL_USER || 'user@example.com',
+    password: process.env.MAIL_PASSWORD || 'password',
+    from: process.env.MAIL_FROM || 'noreply@example.com',
+  },
+
+  // File Upload
+  upload: {
+    destination: process.env.UPLOAD_DESTINATION || './uploads',
+    maxFileSize: parseInt(process.env.MAX_FILE_SIZE || '5242880', 10), // 5MB
+  },
+
+  // Rate Limiting
+  throttle: {
+    ttl: parseInt(process.env.THROTTLE_TTL || '60', 10),
+    limit: parseInt(process.env.THROTTLE_LIMIT || '10', 10),
+  },
+});
+```
+
+## File: src/domain/entities/base.entity.ts
+
+```typescript
+import {
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+  DeleteDateColumn,
+  BaseEntity as TypeOrmBaseEntity,
+} from 'typeorm';
+
+export abstract class BaseEntity extends TypeOrmBaseEntity {
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
+
+  @CreateDateColumn({ name: 'created_at' })
+  createdAt: Date;
+
+  @UpdateDateColumn({ name: 'updated_at' })
+  updatedAt: Date;
+
+  @DeleteDateColumn({ name: 'deleted_at', nullable: true })
+  deletedAt?: Date;
+}
+```
+
+## File: src/domain/entities/order-item.entity.ts
+
+```typescript
+import { Entity, Column, ManyToOne, JoinColumn } from 'typeorm';
+import { BaseEntity } from './base.entity';
+import { Order } from './order.entity';
+import { Product } from './product.entity';
+
+@Entity('order_items')
+export class OrderItem extends BaseEntity {
+  @ManyToOne(() => Order, (order) => order.items, { onDelete: 'CASCADE' })
+  @JoinColumn({ name: 'order_id' })
+  order: Order;
+
+  @ManyToOne(() => Product, (product) => product.orderItems)
+  @JoinColumn({ name: 'product_id' })
+  product: Product;
+
+  @Column('int')
+  quantity: number;
+
+  @Column('decimal', { precision: 10, scale: 2 })
+  unitPrice: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  discount: number;
+
+  get subtotal(): number {
+    return this.quantity * this.unitPrice * (1 - this.discount / 100);
+  }
+}
+```
+
+## File: src/domain/entities/order.entity.ts
+
+```typescript
+import { Entity, Column, ManyToOne, OneToMany, JoinColumn } from 'typeorm';
+import { BaseEntity } from './base.entity';
+import { User } from './user.entity';
+import { OrderItem } from './order-item.entity';
+
+export enum OrderStatus {
+  PENDING = 'pending',
+  PROCESSING = 'processing',
+  SHIPPED = 'shipped',
+  DELIVERED = 'delivered',
+  CANCELLED = 'cancelled',
+  REFUNDED = 'refunded',
+}
+
+export enum PaymentStatus {
+  PENDING = 'pending',
+  PAID = 'paid',
+  FAILED = 'failed',
+  REFUNDED = 'refunded',
+}
+
+@Entity('orders')
+export class Order extends BaseEntity {
+  @Column()
+  orderNumber: string;
+
+  @ManyToOne(() => User, (user) => user.orders)
+  @JoinColumn({ name: 'user_id' })
+  user: User;
+
+  @OneToMany(() => OrderItem, (orderItem) => orderItem.order, {
+    cascade: true,
+    eager: true,
+  })
+  items: OrderItem[];
+
+  @Column({
+    type: process.env.NODE_ENV === 'development' ? 'varchar' : 'enum',
+    enum: OrderStatus,
+    default: OrderStatus.PENDING,
+  })
+  status: OrderStatus;
+
+  @Column({
+    type: process.env.NODE_ENV === 'development' ? 'varchar' : 'enum',
+    enum: PaymentStatus,
+    default: PaymentStatus.PENDING,
+  })
+  paymentStatus: PaymentStatus;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  subtotal: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  tax: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  shippingCost: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  discount: number;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  total: number;
+
+  @Column('simple-json')
+  shippingAddress: {
+    firstName: string;
+    lastName: string;
+    address1: string;
+    address2?: string;
+    city: string;
+    state: string;
+    postalCode: string;
+    country: string;
+    phone: string;
+  };
+
+  @Column('simple-json', { nullable: true })
+  billingAddress?: {
+    firstName: string;
+    lastName: string;
+    address1: string;
+    address2?: string;
+    city: string;
+    state: string;
+    postalCode: string;
+    country: string;
+    phone: string;
+  };
+
+  @Column({ nullable: true })
+  notes?: string;
+
+  @Column({ nullable: true })
+  trackingNumber?: string;
+
+  @Column({ nullable: true })
+  paymentMethod?: string;
+
+  @Column({ nullable: true })
+  paymentTransactionId?: string;
+
+  calculateTotals(): void {
+    // Calculate subtotal from items
+    this.subtotal = this.items.reduce((sum, item) => sum + item.subtotal, 0);
+
+    // Calculate total with tax, shipping, and discounts
+    this.total = this.subtotal + this.tax + this.shippingCost - this.discount;
+  }
+
+  canCancel(): boolean {
+    return [OrderStatus.PENDING, OrderStatus.PROCESSING].includes(this.status);
+  }
+
+  cancel(): void {
+    if (!this.canCancel()) {
+      throw new Error('This order cannot be cancelled');
+    }
+    this.status = OrderStatus.CANCELLED;
+  }
+
+  markAsPaid(): void {
+    this.paymentStatus = PaymentStatus.PAID;
+    if (this.status === OrderStatus.PENDING) {
+      this.status = OrderStatus.PROCESSING;
+    }
+  }
+
+  markAsShipped(trackingNumber: string): void {
+    if (this.status !== OrderStatus.PROCESSING) {
+      throw new Error('Order must be in processing status to be shipped');
+    }
+    this.trackingNumber = trackingNumber;
+    this.status = OrderStatus.SHIPPED;
+  }
+
+  markAsDelivered(): void {
+    if (this.status !== OrderStatus.SHIPPED) {
+      throw new Error('Order must be shipped before it can be delivered');
+    }
+    this.status = OrderStatus.DELIVERED;
+  }
+}
+```
+
+## File: src/domain/entities/product.entity.ts
+
+```typescript
+import { Entity, Column, OneToMany } from 'typeorm';
+import { BaseEntity } from './base.entity';
+import { OrderItem } from './order-item.entity';
+
+@Entity('products')
+export class Product extends BaseEntity {
+  @Column()
+  name: string;
+
+  @Column('text')
+  description: string;
+
+  @Column('decimal', { precision: 10, scale: 2 })
+  price: number;
+
+  @Column('int')
+  stockQuantity: number;
+
+  @Column('simple-array', { nullable: true })
+  images: string[];
+
+  @Column({ default: true })
+  isActive: boolean;
+
+  @Column('simple-array', { nullable: true })
+  categories: string[];
+
+  @Column('simple-json', { nullable: true })
+  attributes: Record<string, any>;
+
+  @Column('decimal', { precision: 10, scale: 2, default: 0 })
+  discountPercentage: number;
+
+  @OneToMany(() => OrderItem, (orderItem) => orderItem.product)
+  orderItems: OrderItem[];
+
+  get isInStock(): boolean {
+    return this.stockQuantity > 0;
+  }
+
+  get finalPrice(): number {
+    if (this.discountPercentage > 0) {
+      return this.price * (1 - this.discountPercentage / 100);
+    }
+    return this.price;
+  }
+
+  decreaseStock(quantity: number): void {
+    if (quantity > this.stockQuantity) {
+      throw new Error('Not enough stock available');
+    }
+    this.stockQuantity -= quantity;
+  }
+
+  increaseStock(quantity: number): void {
+    this.stockQuantity += quantity;
+  }
+}
+```
+
+## File: src/domain/entities/user.entity.ts
+
+```typescript
+import { Entity, Column, OneToMany, BeforeInsert, BeforeUpdate } from 'typeorm';
+import { Exclude } from 'class-transformer';
+import * as bcrypt from 'bcrypt';
+import { BaseEntity } from './base.entity';
+import { Order } from './order.entity';
+
+export enum UserRole {
+  ADMIN = 'admin',
+  CUSTOMER = 'customer',
+  MANAGER = 'manager',
+}
+
+@Entity('users')
+export class User extends BaseEntity {
+  @Column({ unique: true })
+  email: string;
+
+  @Column()
+  firstName: string;
+
+  @Column()
+  lastName: string;
+
+  @Column()
+  @Exclude({ toPlainOnly: true })
+  password: string;
+
+  @Column({
+    type: process.env.NODE_ENV === 'development' ? 'varchar' : 'enum',
+    enum: UserRole,
+    default: UserRole.CUSTOMER,
+  })
+  role: UserRole;
+
+  @Column({ default: false })
+  isEmailVerified: boolean;
+
+  @Column({ nullable: true })
+  @Exclude({ toPlainOnly: true })
+  refreshToken?: string;
+
+  @OneToMany(() => Order, (order) => order.user)
+  orders: Order[];
+
+  @BeforeInsert()
+  @BeforeUpdate()
+  async hashPassword() {
+    // Only hash the password if it has been modified
+    if (this.password) {
+      const salt = await bcrypt.genSalt();
+      this.password = await bcrypt.hash(this.password, salt);
+    }
+  }
+
+  async validatePassword(password: string): Promise<boolean> {
+    return bcrypt.compare(password, this.password);
+  }
+
+  get fullName(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
+```
+
+## File: src/infrastructure/cache/cache.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { CacheModule as NestCacheModule } from '@nestjs/cache-manager';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import * as redisStore from 'cache-manager-redis-store';
+
+@Module({
+  imports: [
+    NestCacheModule.registerAsync({
+      isGlobal: true,
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        store: redisStore,
+        host: configService.get('redis.host'),
+        port: configService.get('redis.port'),
+        password: configService.get('redis.password'),
+        ttl: configService.get('redis.ttl'),
+        max: 100, // maximum number of items in cache
+      }),
+    }),
+  ],
+})
+export class CacheModule {}
+```
+
+## File: src/infrastructure/database/data-source.ts
+
+```typescript
+import { DataSource, DataSourceOptions } from 'typeorm';
+import { config } from 'dotenv';
+import { join } from 'path';
+
+// Load environment variables from .env file
+config();
+
+const nodeEnv = process.env.NODE_ENV || 'development';
+
+// Use SQLite for development
+let dataSourceOptions: DataSourceOptions;
+
+if (nodeEnv === 'development') {
+  dataSourceOptions = {
+    type: 'sqlite',
+    database: 'ecommerce-backend.sqlite',
+    entities: [join(__dirname, '../../**/*.entity{.ts,.js}')],
+    migrations: [join(__dirname, './migrations/**/*{.ts,.js}')],
+    synchronize: true,
+    logging: true,
+  };
+} else {
+  // Use PostgreSQL for production
+  dataSourceOptions = {
+    type: 'postgres',
+    host: process.env.DB_HOST || 'localhost',
+    port: parseInt(process.env.DB_PORT || '5432', 10),
+    username: process.env.DB_USERNAME || 'postgres',
+    password: process.env.DB_PASSWORD || 'postgres',
+    database: process.env.DB_DATABASE || 'ecommerce-backend',
+    schema: process.env.DB_SCHEMA || 'public',
+    entities: [join(__dirname, '../../**/*.entity{.ts,.js}')],
+    migrations: [join(__dirname, './migrations/**/*{.ts,.js}')],
+    synchronize: process.env.DB_SYNCHRONIZE === 'true',
+    logging: nodeEnv === 'development',
+    ssl: nodeEnv === 'production',
+  };
+}
+
+export { dataSourceOptions };
+
+const dataSource = new DataSource(dataSourceOptions);
+export default dataSource;
+```
+
+## File: src/infrastructure/database/database.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+
+@Module({
+  imports: [
+    TypeOrmModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => {
+        const nodeEnv = configService.get('nodeEnv');
+
+        // Use SQLite for development
+        if (nodeEnv === 'development') {
+          return {
+            type: 'sqlite',
+            database: 'ecommerce-backend.sqlite',
+            entities: [__dirname + '/../../**/*.entity{.ts,.js}'],
+            migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
+            synchronize: true,
+            logging: true,
+          };
+        }
+
+        // Use PostgreSQL for production
+        return {
+          type: 'postgres',
+          host: configService.get('database.host'),
+          port: configService.get('database.port'),
+          username: configService.get('database.username'),
+          password: configService.get('database.password'),
+          database: configService.get('database.database'),
+          schema: configService.get('database.schema'),
+          entities: [__dirname + '/../../**/*.entity{.ts,.js}'],
+          migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
+          synchronize: configService.get('database.synchronize'),
+          logging: nodeEnv === 'development',
+          ssl: nodeEnv === 'production',
+        };
+      },
+    }),
+  ],
+})
+export class DatabaseModule {}
+```
+
+## File: src/infrastructure/email/email.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { EmailService } from './email.service';
+
+@Module({
+  providers: [EmailService],
+  exports: [EmailService],
+})
+export class EmailModule {}
+```
+
+## File: src/infrastructure/email/email.service.ts
+
+```typescript
+import { Injectable } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import * as nodemailer from 'nodemailer';
+
+@Injectable()
+export class EmailService {
+  private transporter: nodemailer.Transporter;
+
+  constructor(private readonly configService: ConfigService) {
+    this.transporter = nodemailer.createTransport({
+      host: this.configService.get('mail.host'),
+      port: this.configService.get('mail.port'),
+      secure: this.configService.get('mail.port') === 465,
+      auth: {
+        user: this.configService.get('mail.user'),
+        pass: this.configService.get('mail.password'),
+      },
+    });
+  }
+
+  async sendMail(options: {
+    to: string;
+    subject: string;
+    text?: string;
+    html?: string;
+  }): Promise<void> {
+    await this.transporter.sendMail({
+      from: this.configService.get('mail.from'),
+      to: options.to,
+      subject: options.subject,
+      text: options.text,
+      html: options.html,
+    });
+  }
+
+  async sendPasswordResetEmail(to: string, token: string, username: string): Promise<void> {
+    const resetUrl = `${this.configService.get('appUrl')}/reset-password?token=${token}`;
+
+    await this.sendMail({
+      to,
+      subject: 'Password Reset Request',
+      html: `
+        <h1>Password Reset</h1>
+        <p>Hello ${username},</p>
+        <p>You requested a password reset. Please click the link below to reset your password:</p>
+        <p><a href="${resetUrl}">Reset Password</a></p>
+        <p>If you didn't request this, please ignore this email.</p>
+        <p>This link will expire in 1 hour.</p>
+      `,
+    });
+  }
+
+  async sendWelcomeEmail(to: string, username: string): Promise<void> {
+    await this.sendMail({
+      to,
+      subject: 'Welcome to our E-Commerce Platform',
+      html: `
+        <h1>Welcome to our E-Commerce Platform</h1>
+        <p>Hello ${username},</p>
+        <p>Thank you for registering with us. We're excited to have you on board!</p>
+        <p>You can now start shopping and exploring our platform.</p>
+        <p>Best regards,</p>
+        <p>The E-Commerce Team</p>
+      `,
+    });
+  }
+
+  async sendOrderConfirmationEmail(
+    to: string,
+    username: string,
+    orderNumber: string,
+    orderDetails: any,
+  ): Promise<void> {
+    await this.sendMail({
+      to,
+      subject: `Order Confirmation #${orderNumber}`,
+      html: `
+        <h1>Order Confirmation</h1>
+        <p>Hello ${username},</p>
+        <p>Thank you for your order. Your order #${orderNumber} has been received and is being processed.</p>
+        <h2>Order Details</h2>
+        <p>Order Date: ${new Date().toLocaleDateString()}</p>
+        <p>Order Total: $${orderDetails.total.toFixed(2)}</p>
+        <h3>Items</h3>
+        <ul>
+          ${orderDetails.items
+            .map(
+              (item) => `
+            <li>${item.quantity} x ${item.name} - $${item.price.toFixed(2)}</li>
+          `,
+            )
+            .join('')}
+        </ul>
+        <p>You can track your order status in your account.</p>
+        <p>Best regards,</p>
+        <p>The E-Commerce Team</p>
+      `,
+    });
+  }
+}
+```
+
+## File: src/infrastructure/logging/logging.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { WinstonModule } from 'nest-winston';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import * as winston from 'winston';
+import 'winston-daily-rotate-file';
+
+@Module({
+  imports: [
+    WinstonModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => {
+        const isProduction = configService.get('nodeEnv') === 'production';
+
+        // Define log format
+        const logFormat = winston.format.combine(
+          winston.format.timestamp(),
+          winston.format.errors({ stack: true }),
+          winston.format.splat(),
+          winston.format.json(),
+        );
+
+        // Define transports
+        const transports: winston.transport[] = [
+          // Console transport
+          new winston.transports.Console({
+            format: winston.format.combine(winston.format.colorize(), winston.format.simple()),
+            level: isProduction ? 'info' : 'debug',
+          }),
+        ];
+
+        // Add file transports in production
+        if (isProduction) {
+          // Add daily rotate file for all logs
+          transports.push(
+            new winston.transports.DailyRotateFile({
+              filename: 'logs/application-%DATE%.log',
+              datePattern: 'YYYY-MM-DD',
+              zippedArchive: true,
+              maxSize: '20m',
+              maxFiles: '14d',
+              level: 'info',
+            }),
+          );
+
+          // Add daily rotate file for error logs
+          transports.push(
+            new winston.transports.DailyRotateFile({
+              filename: 'logs/error-%DATE%.log',
+              datePattern: 'YYYY-MM-DD',
+              zippedArchive: true,
+              maxSize: '20m',
+              maxFiles: '14d',
+              level: 'error',
+            }),
+          );
+        }
+
+        return {
+          format: logFormat,
+          transports,
+        };
+      },
+    }),
+  ],
+  exports: [WinstonModule],
+})
+export class LoggingModule {}
+```
+
+## File: src/infrastructure/queue/queue.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { BullModule } from '@nestjs/bull';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+
+@Module({
+  imports: [
+    BullModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        redis: {
+          host: configService.get('redis.host'),
+          port: configService.get('redis.port'),
+          password: configService.get('redis.password'),
+        },
+        defaultJobOptions: {
+          attempts: 3,
+          backoff: {
+            type: 'exponential',
+            delay: 1000,
+          },
+          removeOnComplete: true,
+          removeOnFail: false,
+        },
+      }),
+    }),
+  ],
+})
+export class QueueModule {}
+```
+
+## File: src/infrastructure/security/security.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { APP_GUARD } from '@nestjs/core';
+import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+
+@Module({
+  imports: [
+    ThrottlerModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        throttlers: [
+          {
+            ttl: configService.get('throttle.ttl') || 60,
+            limit: configService.get('throttle.limit') || 10,
+          },
+        ],
+      }),
+    }),
+  ],
+  providers: [
+    {
+      provide: APP_GUARD,
+      useClass: ThrottlerGuard,
+    },
+  ],
+})
+export class SecurityModule {}
+```
+
+## File: src/main.ts
+
+```typescript
+import { NestFactory } from '@nestjs/core';
+import { ValidationPipe, Logger } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { NestExpressApplication } from '@nestjs/platform-express';
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+import { AppModule } from './app.module';
+import helmet from 'helmet';
+import * as compression from 'compression';
+import { existsSync, mkdirSync } from 'fs';
+async function bootstrap() {
+  // Create upload directory if it doesn't exist
+  const uploadDir = './uploads';
+  if (!existsSync(uploadDir)) {
+    mkdirSync(uploadDir, { recursive: true });
+  }
+
+  // Create NestJS application
+  const app = await NestFactory.create<NestExpressApplication>(AppModule, {
+    logger: ['error', 'warn', 'log', 'debug', 'verbose'],
+  });
+
+  // Get config service
+  const configService = app.get(ConfigService);
+  const port = configService.get<number>('port') || 3001;
+  const apiPrefix = configService.get<string>('apiPrefix') || 'api';
+  const nodeEnv = configService.get<string>('nodeEnv') || 'development';
+
+  // Set global prefix
+  app.setGlobalPrefix(apiPrefix);
+
+  // Enable CORS
+  app.enableCors();
+
+  // Use Helmet for security headers
+  app.use(helmet());
+
+  // Use compression
+  app.use(compression());
+
+  // Global validation pipe
+  app.useGlobalPipes(
+    new ValidationPipe({
+      whitelist: true,
+      forbidNonWhitelisted: true,
+      transform: true,
+    }),
+  );
+
+  // Swagger API documentation
+  if (nodeEnv !== 'production') {
+    const config = new DocumentBuilder()
+      .setTitle('E-Commerce API')
+      .setDescription('E-Commerce Backend API Documentation')
+      .setVersion('1.0')
+      .addBearerAuth()
+      .build();
+
+    const document = SwaggerModule.createDocument(app, config);
+    SwaggerModule.setup(`${apiPrefix}/docs`, app, document);
+  }
+
+  // Start the server
+  await app.listen(port);
+
+  Logger.log(`🚀 Application is running on: http://localhost:${port}/${apiPrefix}`, 'Bootstrap');
+
+  if (nodeEnv !== 'production') {
+    Logger.log(
+      `📝 Swagger documentation is available at: http://localhost:${port}/${apiPrefix}/docs`,
+      'Bootstrap',
+    );
+  }
+}
+void bootstrap();
+```
+
+## File: src/modules/auth/auth.controller.ts
+
+```typescript
+import { Body, Controller, Post, HttpCode, HttpStatus, UseGuards, Request } from '@nestjs/common';
+import { AuthService } from './auth.service';
+import {
+  LoginDto,
+  RegisterDto,
+  TokenResponseDto,
+  RefreshTokenDto,
+  ForgotPasswordDto,
+  ResetPasswordDto,
+} from '@application/dtos/auth.dto';
+import { UserResponseDto } from '@application/dtos/user.dto';
+import { JwtAuthGuard } from './guards/jwt-auth.guard';
+import { plainToClass } from 'class-transformer';
+
+@Controller('auth')
+export class AuthController {
+  constructor(private readonly authService: AuthService) {}
+
+  @Post('register')
+  async register(@Body() registerDto: RegisterDto): Promise<UserResponseDto> {
+    const user = await this.authService.register(registerDto);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Post('login')
+  @HttpCode(HttpStatus.OK)
+  async login(@Body() loginDto: LoginDto): Promise<TokenResponseDto> {
+    return this.authService.login(loginDto);
+  }
+
+  @Post('refresh')
+  @HttpCode(HttpStatus.OK)
+  async refreshToken(@Body() refreshTokenDto: RefreshTokenDto): Promise<TokenResponseDto> {
+    return this.authService.refreshToken(refreshTokenDto.refreshToken);
+  }
+
+  @Post('logout')
+  @UseGuards(JwtAuthGuard)
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async logout(@Request() req: any): Promise<void> {
+    await this.authService.logout(req.user.id);
+  }
+
+  @Post('forgot-password')
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async forgotPassword(@Body() forgotPasswordDto: ForgotPasswordDto): Promise<void> {
+    await this.authService.forgotPassword(forgotPasswordDto);
+  }
+
+  @Post('reset-password')
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async resetPassword(@Body() resetPasswordDto: ResetPasswordDto): Promise<void> {
+    await this.authService.resetPassword(resetPasswordDto);
+  }
+}
+```
+
+## File: src/modules/auth/auth.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { JwtModule } from '@nestjs/jwt';
+import { PassportModule } from '@nestjs/passport';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { User } from '@domain/entities/user.entity';
+import { AuthService } from './auth.service';
+import { AuthController } from './auth.controller';
+import { JwtStrategy } from './strategies/jwt.strategy';
+import { EmailModule } from '@infrastructure/email/email.module';
+
+@Module({
+  imports: [
+    TypeOrmModule.forFeature([User]),
+    PassportModule.register({ defaultStrategy: 'jwt' }),
+    JwtModule.registerAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        secret: configService.get('jwt.secret'),
+        signOptions: {
+          expiresIn: configService.get('jwt.expiresIn'),
+        },
+      }),
+    }),
+    EmailModule,
+  ],
+  controllers: [AuthController],
+  providers: [AuthService, JwtStrategy],
+  exports: [AuthService, JwtStrategy, PassportModule],
+})
+export class AuthModule {}
+```
+
+## File: src/modules/auth/auth.service.ts
+
+```typescript
+import { BadRequestException, Injectable, UnauthorizedException } from '@nestjs/common';
+import { JwtService } from '@nestjs/jwt';
+import { ConfigService } from '@nestjs/config';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import * as bcrypt from 'bcrypt';
+import { v4 as uuidv4 } from 'uuid';
+import { User } from '@domain/entities/user.entity';
+import { EmailService } from '@infrastructure/email/email.service';
+import {
+  LoginDto,
+  RegisterDto,
+  TokenResponseDto,
+  ForgotPasswordDto,
+  ResetPasswordDto,
+} from '@application/dtos/auth.dto';
+
+@Injectable()
+export class AuthService {
+  constructor(
+    @InjectRepository(User)
+    private readonly userRepository: Repository<User>,
+    private readonly jwtService: JwtService,
+    private readonly configService: ConfigService,
+    private readonly emailService: EmailService,
+  ) {}
+
+  async register(registerDto: RegisterDto): Promise<User> {
+    const { email, password, firstName, lastName } = registerDto;
+
+    // Check if user already exists
+    const existingUser = await this.userRepository.findOne({
+      where: { email },
+    });
+    if (existingUser) {
+      throw new BadRequestException('User with this email already exists');
+    }
+
+    // Create new user
+    const user = this.userRepository.create({
+      email,
+      password,
+      firstName,
+      lastName,
+    });
+
+    const savedUser = await this.userRepository.save(user);
+
+    // Send welcome email
+    await this.emailService.sendWelcomeEmail(user.email, user.firstName);
+
+    return savedUser;
+  }
+
+  async login(loginDto: LoginDto): Promise<TokenResponseDto> {
+    const { email, password } = loginDto;
+
+    // Find user
+    const user = await this.userRepository.findOne({
+      where: { email },
+    });
+
+    if (!user) {
+      throw new UnauthorizedException('Invalid credentials');
+    }
+
+    // Validate password
+    const isPasswordValid = await user.validatePassword(password);
+    if (!isPasswordValid) {
+      throw new UnauthorizedException('Invalid credentials');
+    }
+
+    // Generate tokens
+    const tokens = await this.generateTokens(user);
+
+    // Update refresh token in database
+    user.refreshToken = await bcrypt.hash(tokens.refreshToken, 10);
+    await this.userRepository.save(user);
+
+    return tokens;
+  }
+
+  async refreshToken(refreshToken: string): Promise<TokenResponseDto> {
+    try {
+      // Verify refresh token
+      const payload = this.jwtService.verify(refreshToken, {
+        secret: this.configService.get('jwt.refreshSecret'),
+      });
+
+      // Find user
+      const user = await this.userRepository.findOne({
+        where: { id: payload.sub },
+      });
+
+      if (!user || !user.refreshToken) {
+        throw new UnauthorizedException('Invalid refresh token');
+      }
+
+      // Validate stored refresh token
+      const isRefreshTokenValid = await bcrypt.compare(refreshToken, user.refreshToken);
+
+      if (!isRefreshTokenValid) {
+        throw new UnauthorizedException('Invalid refresh token');
+      }
+
+      // Generate new tokens
+      const tokens = await this.generateTokens(user);
+
+      // Update refresh token in database
+      user.refreshToken = await bcrypt.hash(tokens.refreshToken, 10);
+      await this.userRepository.save(user);
+
+      return tokens;
+    } catch (error) {
+      throw new UnauthorizedException('Invalid refresh token');
+    }
+  }
+
+  async logout(userId: string): Promise<void> {
+    // Clear refresh token
+    await this.userRepository.update(userId, { refreshToken: undefined });
+  }
+
+  async forgotPassword(forgotPasswordDto: ForgotPasswordDto): Promise<void> {
+    const { email } = forgotPasswordDto;
+
+    // Find user
+    const user = await this.userRepository.findOne({
+      where: { email },
+    });
+
+    if (!user) {
+      // Don't reveal that the user doesn't exist
+      return;
+    }
+
+    // Generate password reset token
+    const resetToken = uuidv4();
+    const resetTokenExpiry = new Date();
+    resetTokenExpiry.setHours(resetTokenExpiry.getHours() + 1); // Token valid for 1 hour
+
+    // Store hashed token in database
+    user.refreshToken = await bcrypt.hash(resetToken, 10);
+    await this.userRepository.save(user);
+
+    // Send password reset email
+    await this.emailService.sendPasswordResetEmail(user.email, resetToken, user.firstName);
+  }
+
+  async resetPassword(resetPasswordDto: ResetPasswordDto): Promise<void> {
+    const { token, newPassword } = resetPasswordDto;
+
+    // Find user with this reset token
+    const users = await this.userRepository.find();
+
+    // Find user with matching reset token
+    let userToUpdate: User | undefined;
+    for (const user of users) {
+      if (user.refreshToken) {
+        const isMatch = await bcrypt.compare(token, user.refreshToken);
+        if (isMatch) {
+          userToUpdate = user;
+          break;
+        }
+      }
+    }
+
+    if (!userToUpdate) {
+      throw new BadRequestException('Invalid or expired token');
+    }
+
+    // Update password and clear reset token
+    userToUpdate.password = newPassword;
+    userToUpdate.refreshToken = undefined;
+    await this.userRepository.save(userToUpdate);
+  }
+
+  async validateUser(userId: string): Promise<User> {
+    const user = await this.userRepository.findOne({
+      where: { id: userId },
+    });
+
+    if (!user) {
+      throw new UnauthorizedException('User not found');
+    }
+
+    return user;
+  }
+
+  private async generateTokens(user: User): Promise<TokenResponseDto> {
+    const payload = { sub: user.id, email: user.email, role: user.role };
+
+    const [accessToken, refreshToken] = await Promise.all([
+      this.jwtService.signAsync(payload, {
+        secret: this.configService.get('jwt.secret'),
+        expiresIn: this.configService.get('jwt.expiresIn'),
+      }),
+      this.jwtService.signAsync(payload, {
+        secret: this.configService.get('jwt.refreshSecret'),
+        expiresIn: this.configService.get('jwt.refreshExpiresIn'),
+      }),
+    ]);
+
+    return {
+      accessToken,
+      refreshToken,
+      expiresIn: this.getExpiresInSeconds(this.configService.get('jwt.expiresIn')),
+    };
+  }
+
+  private getExpiresInSeconds(expiresIn: string | undefined): number {
+    if (!expiresIn) return 3600; // Default to 1 hour
+
+    const match = expiresIn.match(/(\d+)([smhd])/);
+    if (!match) return 3600; // Default to 1 hour
+
+    const value = parseInt(match[1], 10);
+    const unit = match[2];
+
+    switch (unit) {
+      case 's':
+        return value;
+      case 'm':
+        return value * 60;
+      case 'h':
+        return value * 60 * 60;
+      case 'd':
+        return value * 24 * 60 * 60;
+      default:
+        return 3600;
+    }
+  }
+}
+```
+
+## File: src/modules/auth/decorators/current-user.decorator.ts
+
+```typescript
+import { createParamDecorator, ExecutionContext } from '@nestjs/common';
+
+export const CurrentUser = createParamDecorator((data: unknown, ctx: ExecutionContext) => {
+  const request = ctx.switchToHttp().getRequest();
+  return request.user;
+});
+```
+
+## File: src/modules/auth/decorators/roles.decorator.ts
+
+```typescript
+import { SetMetadata } from '@nestjs/common';
+import { UserRole } from '@domain/entities/user.entity';
+
+export const Roles = (...roles: UserRole[]) => SetMetadata('roles', roles);
+```
+
+## File: src/modules/auth/guards/jwt-auth.guard.ts
+
+```typescript
+import { Injectable } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
+
+@Injectable()
+export class JwtAuthGuard extends AuthGuard('jwt') {}
+```
+
+## File: src/modules/auth/guards/roles.guard.ts
+
+```typescript
+import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
+import { Reflector } from '@nestjs/core';
+import { UserRole } from '@domain/entities/user.entity';
+
+@Injectable()
+export class RolesGuard implements CanActivate {
+  constructor(private reflector: Reflector) {}
+
+  canActivate(context: ExecutionContext): boolean {
+    const requiredRoles = this.reflector.getAllAndOverride<UserRole[]>('roles', [
+      context.getHandler(),
+      context.getClass(),
+    ]);
+
+    if (!requiredRoles) {
+      return true;
+    }
+
+    const { user } = context.switchToHttp().getRequest();
+    return requiredRoles.some((role) => user.role === role);
+  }
+}
+```
+
+## File: src/modules/auth/strategies/jwt.strategy.ts
+
+```typescript
+import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { PassportStrategy } from '@nestjs/passport';
+import { ExtractJwt, Strategy } from 'passport-jwt';
+import { ConfigService } from '@nestjs/config';
+import { AuthService } from '../auth.service';
+
+@Injectable()
+export class JwtStrategy extends PassportStrategy(Strategy) {
+  constructor(
+    private readonly configService: ConfigService,
+    private readonly authService: AuthService,
+  ) {
+    const secret = configService.get<string>('jwt.secret');
+    if (!secret) {
+      throw new Error('JWT secret is not defined');
+    }
+
+    super({
+      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+      ignoreExpiration: false,
+      secretOrKey: secret,
+    });
+  }
+
+  async validate(payload: any) {
+    try {
+      const user = await this.authService.validateUser(payload.sub);
+      return user;
+    } catch (error) {
+      throw new UnauthorizedException('Invalid token');
+    }
+  }
+}
+```
+
+## File: src/modules/orders/orders.controller.ts
+
+```typescript
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+} from '@nestjs/common';
+import { OrdersService } from './orders.service';
+import {
+  CreateOrderDto,
+  UpdateOrderStatusDto,
+  UpdatePaymentStatusDto,
+  OrderResponseDto,
+} from '@application/dtos/order.dto';
+import { JwtAuthGuard } from '@modules/auth/guards/jwt-auth.guard';
+import { RolesGuard } from '@modules/auth/guards/roles.guard';
+import { Roles } from '@modules/auth/decorators/roles.decorator';
+import { UserRole } from '@domain/entities/user.entity';
+import { CurrentUser } from '@modules/auth/decorators/current-user.decorator';
+import { User } from '@domain/entities/user.entity';
+import { plainToClass } from 'class-transformer';
+
+@Controller('orders')
+@UseGuards(JwtAuthGuard)
+export class OrdersController {
+  constructor(private readonly ordersService: OrdersService) {}
+
+  @Get()
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async findAll(): Promise<OrderResponseDto[]> {
+    const orders = await this.ordersService.findAll();
+    return orders.map((order) => plainToClass(OrderResponseDto, order));
+  }
+
+  @Get('my-orders')
+  async findMyOrders(@CurrentUser() user: User): Promise<OrderResponseDto[]> {
+    const orders = await this.ordersService.findAll(user.id);
+    return orders.map((order) => plainToClass(OrderResponseDto, order));
+  }
+
+  @Get(':id')
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async findOne(@Param('id') id: string): Promise<OrderResponseDto> {
+    const order = await this.ordersService.findById(id);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Get('my-orders/:id')
+  async findMyOrder(@Param('id') id: string, @CurrentUser() user: User): Promise<OrderResponseDto> {
+    const order = await this.ordersService.findById(id, user.id);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Post()
+  async create(
+    @Body() createOrderDto: CreateOrderDto,
+    @CurrentUser() user: User,
+  ): Promise<OrderResponseDto> {
+    const order = await this.ordersService.create(createOrderDto, user);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Patch(':id/status')
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async updateStatus(
+    @Param('id') id: string,
+    @Body() updateOrderStatusDto: UpdateOrderStatusDto,
+  ): Promise<OrderResponseDto> {
+    const order = await this.ordersService.updateStatus(id, updateOrderStatusDto);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Patch(':id/payment')
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async updatePaymentStatus(
+    @Param('id') id: string,
+    @Body() updatePaymentStatusDto: UpdatePaymentStatusDto,
+  ): Promise<OrderResponseDto> {
+    const order = await this.ordersService.updatePaymentStatus(id, updatePaymentStatusDto);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Post(':id/cancel')
+  @UseGuards(RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  @HttpCode(HttpStatus.OK)
+  async cancelOrder(@Param('id') id: string): Promise<OrderResponseDto> {
+    const order = await this.ordersService.cancelOrder(id);
+    return plainToClass(OrderResponseDto, order);
+  }
+
+  @Post('my-orders/:id/cancel')
+  @HttpCode(HttpStatus.OK)
+  async cancelMyOrder(
+    @Param('id') id: string,
+    @CurrentUser() user: User,
+  ): Promise<OrderResponseDto> {
+    const order = await this.ordersService.cancelOrder(id, user.id);
+    return plainToClass(OrderResponseDto, order);
+  }
+}
+```
+
+## File: src/modules/orders/orders.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { Order } from '@domain/entities/order.entity';
+import { OrderItem } from '@domain/entities/order-item.entity';
+import { OrdersService } from './orders.service';
+import { OrdersController } from './orders.controller';
+import { ProductsModule } from '@modules/products/products.module';
+import { AuthModule } from '@modules/auth/auth.module';
+import { EmailModule } from '@infrastructure/email/email.module';
+
+@Module({
+  imports: [TypeOrmModule.forFeature([Order, OrderItem]), ProductsModule, AuthModule, EmailModule],
+  controllers: [OrdersController],
+  providers: [OrdersService],
+  exports: [OrdersService],
+})
+export class OrdersModule {}
+```
+
+## File: src/modules/orders/orders.service.ts
+
+```typescript
+import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository, FindOptionsWhere } from 'typeorm';
+import { Order, OrderStatus, PaymentStatus } from '@domain/entities/order.entity';
+import { OrderItem } from '@domain/entities/order-item.entity';
+import { User } from '@domain/entities/user.entity';
+import { ProductsService } from '@modules/products/products.service';
+import {
+  CreateOrderDto,
+  UpdateOrderStatusDto,
+  UpdatePaymentStatusDto,
+} from '@application/dtos/order.dto';
+import { EmailService } from '@infrastructure/email/email.service';
+import { v4 as uuidv4 } from 'uuid';
+
+@Injectable()
+export class OrdersService {
+  constructor(
+    @InjectRepository(Order)
+    private readonly orderRepository: Repository<Order>,
+    @InjectRepository(OrderItem)
+    private readonly orderItemRepository: Repository<OrderItem>,
+    private readonly productsService: ProductsService,
+    private readonly emailService: EmailService,
+  ) {}
+
+  async findAll(userId?: string): Promise<Order[]> {
+    const where: FindOptionsWhere<Order> = {};
+
+    if (userId) {
+      where.user = { id: userId };
+    }
+
+    return this.orderRepository.find({
+      where,
+      relations: ['user', 'items', 'items.product'],
+      order: { createdAt: 'DESC' },
+    });
+  }
+
+  async findById(id: string, userId?: string): Promise<Order> {
+    const where: FindOptionsWhere<Order> = { id };
+
+    if (userId) {
+      where.user = { id: userId };
+    }
+
+    const order = await this.orderRepository.findOne({
+      where,
+      relations: ['user', 'items', 'items.product'],
+    });
+
+    if (!order) {
+      throw new NotFoundException(`Order with ID ${id} not found`);
+    }
+
+    return order;
+  }
+
+  async create(createOrderDto: CreateOrderDto, user: User): Promise<Order> {
+    // Validate items
+    if (!createOrderDto.items || createOrderDto.items.length === 0) {
+      throw new BadRequestException('Order must contain at least one item');
+    }
+
+    // Create new order
+    const order = this.orderRepository.create({
+      orderNumber: this.generateOrderNumber(),
+      user,
+      shippingAddress: createOrderDto.shippingAddress,
+      billingAddress: createOrderDto.billingAddress || createOrderDto.shippingAddress,
+      notes: createOrderDto.notes,
+      paymentMethod: createOrderDto.paymentMethod,
+      status: OrderStatus.PENDING,
+      paymentStatus: PaymentStatus.PENDING,
+      subtotal: 0,
+      tax: 0,
+      shippingCost: 0,
+      discount: 0,
+      total: 0,
+    });
+
+    // Save order to get ID
+    const savedOrder = await this.orderRepository.save(order);
+
+    // Create order items
+    const orderItems: OrderItem[] = [];
+
+    for (const item of createOrderDto.items) {
+      const product = await this.productsService.findById(item.productId);
+
+      // Check if product is in stock
+      if (product.stockQuantity < item.quantity) {
+        throw new BadRequestException(`Product ${product.name} does not have enough stock`);
+      }
+
+      // Create order item
+      const orderItem = this.orderItemRepository.create({
+        order: savedOrder,
+        product,
+        quantity: item.quantity,
+        unitPrice: product.price,
+        discount: product.discountPercentage,
+      });
+
+      orderItems.push(await this.orderItemRepository.save(orderItem));
+
+      // Update product stock
+      await this.productsService.updateStock(product.id, -item.quantity);
+    }
+
+    // Update order with items
+    savedOrder.items = orderItems;
+
+    // Calculate totals
+    savedOrder.calculateTotals();
+
+    // Add tax (example: 10%)
+    savedOrder.tax = savedOrder.subtotal * 0.1;
+
+    // Add shipping cost (example: flat rate)
+    savedOrder.shippingCost = 10;
+
+    // Recalculate total
+    savedOrder.calculateTotals();
+
+    // Save updated order
+    const finalOrder = await this.orderRepository.save(savedOrder);
+
+    // Send order confirmation email
+    await this.emailService.sendOrderConfirmationEmail(
+      user.email,
+      user.firstName,
+      finalOrder.orderNumber,
+      {
+        total: finalOrder.total,
+        items: finalOrder.items.map((item) => ({
+          name: item.product.name,
+          quantity: item.quantity,
+          price: item.unitPrice,
+        })),
+      },
+    );
+
+    return finalOrder;
+  }
+
+  async updateStatus(id: string, updateOrderStatusDto: UpdateOrderStatusDto): Promise<Order> {
+    const order = await this.findById(id);
+
+    // Validate status transition
+    this.validateStatusTransition(order.status, updateOrderStatusDto.status);
+
+    // Update status
+    order.status = updateOrderStatusDto.status;
+
+    // Update tracking number if provided
+    if (updateOrderStatusDto.trackingNumber) {
+      order.trackingNumber = updateOrderStatusDto.trackingNumber;
+    }
+
+    return this.orderRepository.save(order);
+  }
+
+  async updatePaymentStatus(
+    id: string,
+    updatePaymentStatusDto: UpdatePaymentStatusDto,
+  ): Promise<Order> {
+    const order = await this.findById(id);
+
+    // Update payment status
+    order.paymentStatus = updatePaymentStatusDto.paymentStatus;
+
+    // Update payment transaction ID if provided
+    if (updatePaymentStatusDto.paymentTransactionId) {
+      order.paymentTransactionId = updatePaymentStatusDto.paymentTransactionId;
+    }
+
+    // If payment is marked as paid, update order status if it's still pending
+    if (
+      updatePaymentStatusDto.paymentStatus === PaymentStatus.PAID &&
+      order.status === OrderStatus.PENDING
+    ) {
+      order.status = OrderStatus.PROCESSING;
+    }
+
+    return this.orderRepository.save(order);
+  }
+
+  async cancelOrder(id: string, userId?: string): Promise<Order> {
+    const order = await this.findById(id, userId);
+
+    // Check if order can be cancelled
+    if (!order.canCancel()) {
+      throw new BadRequestException('This order cannot be cancelled due to its current status');
+    }
+
+    // Cancel order
+    order.cancel();
+
+    // Return items to inventory
+    for (const item of order.items) {
+      await this.productsService.updateStock(item.product.id, item.quantity);
+    }
+
+    return this.orderRepository.save(order);
+  }
+
+  private generateOrderNumber(): string {
+    const timestamp = new Date().getTime().toString().slice(-8);
+    const random = Math.floor(Math.random() * 10000)
+      .toString()
+      .padStart(4, '0');
+    return `ORD-${timestamp}-${random}`;
+  }
+
+  private validateStatusTransition(currentStatus: OrderStatus, newStatus: OrderStatus): void {
+    // Define valid status transitions
+    const validTransitions: Record<OrderStatus, OrderStatus[]> = {
+      [OrderStatus.PENDING]: [OrderStatus.PROCESSING, OrderStatus.CANCELLED],
+      [OrderStatus.PROCESSING]: [OrderStatus.SHIPPED, OrderStatus.CANCELLED],
+      [OrderStatus.SHIPPED]: [OrderStatus.DELIVERED, OrderStatus.CANCELLED],
+      [OrderStatus.DELIVERED]: [OrderStatus.REFUNDED],
+      [OrderStatus.CANCELLED]: [],
+      [OrderStatus.REFUNDED]: [],
+    };
+
+    // Check if transition is valid
+    if (!validTransitions[currentStatus].includes(newStatus)) {
+      throw new BadRequestException(
+        `Cannot transition order from ${currentStatus} to ${newStatus}`,
+      );
+    }
+  }
+}
+```
+
+## File: src/modules/products/products.controller.ts
+
+```typescript
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  Query,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+  UseInterceptors,
+  UploadedFiles,
+  ParseFilePipe,
+  MaxFileSizeValidator,
+  FileTypeValidator,
+} from '@nestjs/common';
+import { FilesInterceptor } from '@nestjs/platform-express';
+import { ProductsService } from './products.service';
+import {
+  CreateProductDto,
+  UpdateProductDto,
+  ProductFilterDto,
+  ProductResponseDto,
+} from '@application/dtos/product.dto';
+import { JwtAuthGuard } from '@modules/auth/guards/jwt-auth.guard';
+import { RolesGuard } from '@modules/auth/guards/roles.guard';
+import { Roles } from '@modules/auth/decorators/roles.decorator';
+import { UserRole } from '@domain/entities/user.entity';
+import { plainToClass } from 'class-transformer';
+import { diskStorage } from 'multer';
+import { extname } from 'path';
+import { v4 as uuidv4 } from 'uuid';
+import { ConfigService } from '@nestjs/config';
+
+@Controller('products')
+export class ProductsController {
+  constructor(
+    private readonly productsService: ProductsService,
+    private readonly configService: ConfigService,
+  ) {}
+
+  @Get()
+  async findAll(@Query() filters: ProductFilterDto): Promise<ProductResponseDto[]> {
+    const products = await this.productsService.findAll(filters);
+    return products.map((product) => plainToClass(ProductResponseDto, product));
+  }
+
+  @Get(':id')
+  async findOne(@Param('id') id: string): Promise<ProductResponseDto> {
+    const product = await this.productsService.findById(id);
+    return plainToClass(ProductResponseDto, product);
+  }
+
+  @Post()
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async create(@Body() createProductDto: CreateProductDto): Promise<ProductResponseDto> {
+    const product = await this.productsService.create(createProductDto);
+    return plainToClass(ProductResponseDto, product);
+  }
+
+  @Patch(':id')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async update(
+    @Param('id') id: string,
+    @Body() updateProductDto: UpdateProductDto,
+  ): Promise<ProductResponseDto> {
+    const product = await this.productsService.update(id, updateProductDto);
+    return plainToClass(ProductResponseDto, product);
+  }
+
+  @Delete(':id')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async remove(@Param('id') id: string): Promise<void> {
+    await this.productsService.remove(id);
+  }
+
+  @Post(':id/images')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  @UseInterceptors(
+    FilesInterceptor('images', 5, {
+      storage: diskStorage({
+        destination: (req, file, cb) => {
+          const uploadPath = './uploads/products';
+          cb(null, uploadPath);
+        },
+        filename: (req, file, cb) => {
+          const uniqueName = `${uuidv4()}${extname(file.originalname)}`;
+          cb(null, uniqueName);
+        },
+      }),
+    }),
+  )
+  async uploadImages(
+    @Param('id') id: string,
+    @UploadedFiles(
+      new ParseFilePipe({
+        validators: [
+          new MaxFileSizeValidator({ maxSize: 5 * 1024 * 1024 }), // 5MB
+          new FileTypeValidator({ fileType: /(jpg|jpeg|png|webp)$/ }),
+        ],
+      }),
+    )
+    files: Express.Multer.File[],
+  ): Promise<ProductResponseDto> {
+    const product = await this.productsService.findById(id);
+
+    // Get the base URL for images
+    const baseUrl = this.configService.get('appUrl') || 'http://localhost:3000';
+
+    // Add new image URLs to the product
+    const imageUrls = files.map((file) => `${baseUrl}/uploads/products/${file.filename}`);
+
+    // Update product with new images
+    product.images = [...(product.images || []), ...imageUrls];
+
+    // Save the updated product
+    const updatedProduct = await this.productsService.update(id, {
+      images: product.images,
+    });
+
+    return plainToClass(ProductResponseDto, updatedProduct);
+  }
+
+  @Patch(':id/stock')
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN, UserRole.MANAGER)
+  async updateStock(
+    @Param('id') id: string,
+    @Body('quantity') quantity: number,
+  ): Promise<ProductResponseDto> {
+    const product = await this.productsService.updateStock(id, quantity);
+    return plainToClass(ProductResponseDto, product);
+  }
+}
+```
+
+## File: src/modules/products/products.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { MulterModule } from '@nestjs/platform-express';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { Product } from '@domain/entities/product.entity';
+import { ProductsService } from './products.service';
+import { ProductsController } from './products.controller';
+import { AuthModule } from '@modules/auth/auth.module';
+import { diskStorage } from 'multer';
+import { existsSync, mkdirSync } from 'fs';
+
+@Module({
+  imports: [
+    TypeOrmModule.forFeature([Product]),
+    MulterModule.registerAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => {
+        const uploadDestination = configService.get('upload.destination') || './uploads';
+
+        // Ensure upload directory exists
+        if (!existsSync(uploadDestination)) {
+          mkdirSync(uploadDestination, { recursive: true });
+        }
+
+        // Create products directory
+        const productsDir = `${uploadDestination}/products`;
+        if (!existsSync(productsDir)) {
+          mkdirSync(productsDir, { recursive: true });
+        }
+
+        return {
+          storage: diskStorage({
+            destination: productsDir,
+            filename: (req, file, cb) => {
+              const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
+              const ext = file.originalname.split('.').pop();
+              cb(null, `${file.fieldname}-${uniqueSuffix}.${ext}`);
+            },
+          }),
+          limits: {
+            fileSize: configService.get('upload.maxFileSize') || 5 * 1024 * 1024, // 5MB
+          },
+        };
+      },
+    }),
+    AuthModule,
+  ],
+  controllers: [ProductsController],
+  providers: [ProductsService],
+  exports: [ProductsService],
+})
+export class ProductsModule {}
+```
+
+## File: src/modules/products/products.service.spec.ts
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import { getRepositoryToken } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { ProductsService } from './products.service';
+import { Product } from '@domain/entities/product.entity';
+import { NotFoundException } from '@nestjs/common';
+
+// Mock repository factory
+const mockRepository = () => ({
+  find: jest.fn(),
+  findOne: jest.fn(),
+  create: jest.fn(),
+  save: jest.fn(),
+  softRemove: jest.fn(),
+});
+
+describe('ProductsService', () => {
+  let service: ProductsService;
+  let repository: Repository<Product>;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        ProductsService,
+        {
+          provide: getRepositoryToken(Product),
+          useFactory: mockRepository,
+        },
+      ],
+    }).compile();
+
+    service = module.get<ProductsService>(ProductsService);
+    repository = module.get<Repository<Product>>(getRepositoryToken(Product));
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+
+  describe('findAll', () => {
+    it('should return an array of products', async () => {
+      const mockProducts = [
+        {
+          id: '1',
+          name: 'Product 1',
+          description: 'Description 1',
+          price: 100,
+          stockQuantity: 10,
+          images: [],
+          isActive: true,
+          categories: [],
+          attributes: {},
+          discountPercentage: 0,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ];
+
+      jest.spyOn(repository, 'find').mockResolvedValue(mockProducts as Product[]);
+
+      const result = await service.findAll();
+      expect(result).toEqual(mockProducts);
+      expect(repository.find).toHaveBeenCalled();
+    });
+  });
+
+  describe('findById', () => {
+    it('should return a product by id', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
+
+      const result = await service.findById('1');
+      expect(result).toEqual(mockProduct);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+
+    it('should throw NotFoundException if product not found', async () => {
+      jest.spyOn(repository, 'findOne').mockResolvedValue(null);
+
+      await expect(service.findById('1')).rejects.toThrow(NotFoundException);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+  });
+
+  describe('create', () => {
+    it('should create a new product', async () => {
+      const createProductDto = {
+        name: 'New Product',
+        description: 'New Description',
+        price: 200,
+        stockQuantity: 20,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+      };
+
+      const mockProduct = {
+        id: '1',
+        ...createProductDto,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      jest.spyOn(repository, 'create').mockReturnValue(mockProduct as Product);
+      jest.spyOn(repository, 'save').mockResolvedValue(mockProduct as Product);
+
+      const result = await service.create(createProductDto);
+      expect(result).toEqual(mockProduct);
+      expect(repository.create).toHaveBeenCalledWith(createProductDto);
+      expect(repository.save).toHaveBeenCalledWith(mockProduct);
+    });
+  });
+
+  describe('update', () => {
+    it('should update a product', async () => {
+      const updateProductDto = {
+        name: 'Updated Product',
+        price: 300,
+      };
+
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      const updatedProduct = {
+        ...mockProduct,
+        ...updateProductDto,
+      };
+
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'save').mockResolvedValue(updatedProduct as Product);
+
+      const result = await service.update('1', updateProductDto);
+      expect(result).toEqual(updatedProduct);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+      expect(repository.save).toHaveBeenCalledWith({
+        ...mockProduct,
+        ...updateProductDto,
+      });
+    });
+
+    it('should throw NotFoundException if product not found', async () => {
+      jest.spyOn(repository, 'findOne').mockResolvedValue(null);
+
+      await expect(service.update('1', { name: 'Updated' })).rejects.toThrow(NotFoundException);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+  });
+
+  describe('remove', () => {
+    it('should remove a product', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'softRemove').mockResolvedValue(undefined);
+
+      await service.remove('1');
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+      expect(repository.softRemove).toHaveBeenCalledWith(mockProduct);
+    });
+
+    it('should throw NotFoundException if product not found', async () => {
+      jest.spyOn(repository, 'findOne').mockResolvedValue(null);
+
+      await expect(service.remove('1')).rejects.toThrow(NotFoundException);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+  });
+
+  describe('updateStock', () => {
+    it('should increase product stock', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      const updatedProduct = {
+        ...mockProduct,
+        stockQuantity: 15,
+      };
+
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'save').mockResolvedValue(updatedProduct as Product);
+
+      const result = await service.updateStock('1', 5);
+      expect(result).toEqual(updatedProduct);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+      expect(repository.save).toHaveBeenCalledWith({
+        ...mockProduct,
+        stockQuantity: 15,
+      });
+    });
+
+    it('should decrease product stock', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      const updatedProduct = {
+        ...mockProduct,
+        stockQuantity: 5,
+      };
+
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
+      jest.spyOn(repository, 'save').mockResolvedValue(updatedProduct as Product);
+
+      const result = await service.updateStock('1', -5);
+      expect(result).toEqual(updatedProduct);
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+      expect(repository.save).toHaveBeenCalledWith({
+        ...mockProduct,
+        stockQuantity: 5,
+      });
+    });
+
+    it('should throw error if trying to decrease more than available stock', async () => {
+      const mockProduct = {
+        id: '1',
+        name: 'Product 1',
+        description: 'Description 1',
+        price: 100,
+        stockQuantity: 10,
+        images: [],
+        isActive: true,
+        categories: [],
+        attributes: {},
+        discountPercentage: 0,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      jest.spyOn(repository, 'findOne').mockResolvedValue(mockProduct as Product);
+
+      await expect(service.updateStock('1', -15)).rejects.toThrow('Not enough stock available');
+      expect(repository.findOne).toHaveBeenCalledWith({ where: { id: '1' } });
+    });
+  });
+});
+```
+
+## File: src/modules/products/products.service.ts
+
+```typescript
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository, Like, Between, FindOptionsWhere } from 'typeorm';
+import { Product } from '@domain/entities/product.entity';
+import {
+  CreateProductDto,
+  UpdateProductDto,
+  ProductFilterDto,
+} from '@application/dtos/product.dto';
+
+@Injectable()
+export class ProductsService {
+  constructor(
+    @InjectRepository(Product)
+    private readonly productRepository: Repository<Product>,
+  ) {}
+
+  async findAll(filters?: ProductFilterDto): Promise<Product[]> {
+    const where: FindOptionsWhere<Product> = {};
+
+    if (filters) {
+      // Apply search filter
+      if (filters.search) {
+        where.name = Like(`%${filters.search}%`);
+      }
+
+      // Apply category filter
+      if (filters.categories && filters.categories.length > 0) {
+        // This is a simplification - for array columns, you might need a custom query
+        // depending on your database and ORM setup
+        where.categories = Like(`%${filters.categories[0]}%`);
+      }
+
+      // Apply price range filter
+      if (filters.minPrice !== undefined || filters.maxPrice !== undefined) {
+        where.price = Between(filters.minPrice || 0, filters.maxPrice || Number.MAX_SAFE_INTEGER);
+      }
+
+      // Apply in-stock filter
+      if (filters.inStock !== undefined) {
+        where.stockQuantity = filters.inStock ? Between(1, Number.MAX_SAFE_INTEGER) : 0;
+      }
+
+      // Apply on-sale filter
+      if (filters.onSale !== undefined) {
+        where.discountPercentage = filters.onSale ? Between(0.01, 100) : 0;
+      }
+    }
+
+    return this.productRepository.find({ where });
+  }
+
+  async findById(id: string): Promise<Product> {
+    const product = await this.productRepository.findOne({ where: { id } });
+    if (!product) {
+      throw new NotFoundException(`Product with ID ${id} not found`);
+    }
+    return product;
+  }
+
+  async create(createProductDto: CreateProductDto): Promise<Product> {
+    const product = this.productRepository.create(createProductDto);
+    return this.productRepository.save(product);
+  }
+
+  async update(id: string, updateProductDto: UpdateProductDto): Promise<Product> {
+    const product = await this.findById(id);
+    Object.assign(product, updateProductDto);
+    return this.productRepository.save(product);
+  }
+
+  async remove(id: string): Promise<void> {
+    const product = await this.findById(id);
+    await this.productRepository.softRemove(product);
+  }
+
+  async updateStock(id: string, quantity: number): Promise<Product> {
+    const product = await this.findById(id);
+
+    if (quantity < 0 && Math.abs(quantity) > product.stockQuantity) {
+      throw new Error('Not enough stock available');
+    }
+
+    product.stockQuantity += quantity;
+    return this.productRepository.save(product);
+  }
+}
+```
+
+## File: src/modules/users/users.controller.ts
+
+```typescript
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+} from '@nestjs/common';
+import { UsersService } from './users.service';
+import {
+  CreateUserDto,
+  UpdateUserDto,
+  ChangePasswordDto,
+  UserResponseDto,
+} from '@application/dtos/user.dto';
+import { JwtAuthGuard } from '@modules/auth/guards/jwt-auth.guard';
+import { RolesGuard } from '@modules/auth/guards/roles.guard';
+import { Roles } from '@modules/auth/decorators/roles.decorator';
+import { UserRole } from '@domain/entities/user.entity';
+import { CurrentUser } from '@modules/auth/decorators/current-user.decorator';
+import { plainToClass } from 'class-transformer';
+import { User } from '@domain/entities/user.entity';
+
+@Controller('users')
+@UseGuards(JwtAuthGuard, RolesGuard)
+export class UsersController {
+  constructor(private readonly usersService: UsersService) {}
+
+  @Get()
+  @Roles(UserRole.ADMIN)
+  async findAll(): Promise<UserResponseDto[]> {
+    const users = await this.usersService.findAll();
+    return users.map((user) =>
+      plainToClass(UserResponseDto, user, { excludeExtraneousValues: true }),
+    );
+  }
+
+  @Get('profile')
+  async getProfile(@CurrentUser() user: User): Promise<UserResponseDto> {
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Get(':id')
+  @Roles(UserRole.ADMIN)
+  async findOne(@Param('id') id: string): Promise<UserResponseDto> {
+    const user = await this.usersService.findById(id);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Post()
+  @Roles(UserRole.ADMIN)
+  async create(@Body() createUserDto: CreateUserDto): Promise<UserResponseDto> {
+    const user = await this.usersService.create(createUserDto);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Patch(':id')
+  @Roles(UserRole.ADMIN)
+  async update(
+    @Param('id') id: string,
+    @Body() updateUserDto: UpdateUserDto,
+  ): Promise<UserResponseDto> {
+    const user = await this.usersService.update(id, updateUserDto);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Patch('profile')
+  async updateProfile(
+    @CurrentUser() user: User,
+    @Body() updateUserDto: UpdateUserDto,
+  ): Promise<UserResponseDto> {
+    const updatedUser = await this.usersService.update(user.id, updateUserDto);
+    return plainToClass(UserResponseDto, updatedUser, {
+      excludeExtraneousValues: true,
+    });
+  }
+
+  @Post('change-password')
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async changePassword(
+    @CurrentUser() user: User,
+    @Body() changePasswordDto: ChangePasswordDto,
+  ): Promise<void> {
+    await this.usersService.changePassword(user.id, changePasswordDto);
+  }
+
+  @Delete(':id')
+  @Roles(UserRole.ADMIN)
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async remove(@Param('id') id: string): Promise<void> {
+    await this.usersService.remove(id);
+  }
+
+  @Patch(':id/role')
+  @Roles(UserRole.ADMIN)
+  async setRole(@Param('id') id: string, @Body('role') role: UserRole): Promise<UserResponseDto> {
+    const user = await this.usersService.setRole(id, role);
+    return plainToClass(UserResponseDto, user, {
+      excludeExtraneousValues: true,
+    });
+  }
+}
+```
+
+## File: src/modules/users/users.module.ts
+
+```typescript
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { User } from '@domain/entities/user.entity';
+import { UsersService } from './users.service';
+import { UsersController } from './users.controller';
+import { AuthModule } from '@modules/auth/auth.module';
+
+@Module({
+  imports: [TypeOrmModule.forFeature([User]), AuthModule],
+  controllers: [UsersController],
+  providers: [UsersService],
+  exports: [UsersService],
+})
+export class UsersModule {}
+```
+
+## File: src/modules/users/users.service.ts
+
+```typescript
+import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { User, UserRole } from '@domain/entities/user.entity';
+import { CreateUserDto, UpdateUserDto, ChangePasswordDto } from '@application/dtos/user.dto';
+
+@Injectable()
+export class UsersService {
+  constructor(
+    @InjectRepository(User)
+    private readonly userRepository: Repository<User>,
+  ) {}
+
+  async findAll(): Promise<User[]> {
+    return this.userRepository.find();
+  }
+
+  async findById(id: string): Promise<User> {
+    const user = await this.userRepository.findOne({ where: { id } });
+    if (!user) {
+      throw new NotFoundException(`User with ID ${id} not found`);
+    }
+    return user;
+  }
+
+  async findByEmail(email: string): Promise<User | null> {
+    return this.userRepository.findOne({ where: { email } });
+  }
+
+  async create(createUserDto: CreateUserDto): Promise<User> {
+    const existingUser = await this.findByEmail(createUserDto.email);
+    if (existingUser) {
+      throw new BadRequestException('User with this email already exists');
+    }
+
+    const user = this.userRepository.create(createUserDto);
+    return this.userRepository.save(user);
+  }
+
+  async update(id: string, updateUserDto: UpdateUserDto): Promise<User> {
+    const user = await this.findById(id);
+
+    // Check if email is being updated and if it's already in use
+    if (updateUserDto.email && updateUserDto.email !== user.email) {
+      const existingUser = await this.findByEmail(updateUserDto.email);
+      if (existingUser) {
+        throw new BadRequestException('Email is already in use');
+      }
+    }
+
+    // Update user properties
+    Object.assign(user, updateUserDto);
+    return this.userRepository.save(user);
+  }
+
+  async changePassword(id: string, changePasswordDto: ChangePasswordDto): Promise<void> {
+    const { currentPassword, newPassword } = changePasswordDto;
+    const user = await this.findById(id);
+
+    // Validate current password
+    const isPasswordValid = await user.validatePassword(currentPassword);
+    if (!isPasswordValid) {
+      throw new BadRequestException('Current password is incorrect');
+    }
+
+    // Update password
+    user.password = newPassword;
+    await this.userRepository.save(user);
+  }
+
+  async remove(id: string): Promise<void> {
+    const user = await this.findById(id);
+    await this.userRepository.softRemove(user);
+  }
+
+  async setRole(id: string, role: UserRole): Promise<User> {
+    const user = await this.findById(id);
+    user.role = role;
+    return this.userRepository.save(user);
+  }
+}
+```
+
+## File: test/app.e2e-spec.ts
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import { INestApplication } from '@nestjs/common';
+import * as request from 'supertest';
+import { App } from 'supertest/types';
+import { AppModule } from './../src/app.module';
+
+describe('AppController (e2e)', () => {
+  let app: INestApplication<App>;
+
+  beforeEach(async () => {
+    const moduleFixture: TestingModule = await Test.createTestingModule({
+      imports: [AppModule],
+    }).compile();
+
+    app = moduleFixture.createNestApplication();
+    await app.init();
+  });
+
+  it('/ (GET)', () => {
+    return request(app.getHttpServer()).get('/').expect(200).expect('Hello World!');
+  });
+});
+```
+
+## File: test/jest-e2e.json
+
+```json
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  }
+}
+```
+
+## File: test/products.e2e-spec.ts
+
+```typescript
+import { Test, TestingModule } from '@nestjs/testing';
+import { INestApplication, ValidationPipe } from '@nestjs/common';
+import * as request from 'supertest';
+import { AppModule } from '../src/app.module';
+import { getRepositoryToken } from '@nestjs/typeorm';
+import { Product } from '../src/domain/entities/product.entity';
+import { User, UserRole } from '../src/domain/entities/user.entity';
+import { JwtService } from '@nestjs/jwt';
+
+describe('ProductsController (e2e)', () => {
+  let app: INestApplication;
+  let jwtService: JwtService;
+  let accessToken: string;
+  let adminAccessToken: string;
+  let productRepository;
+  let userRepository;
+
+  const mockProduct = {
+    id: '1',
+    name: 'Test Product',
+    description: 'Test Description',
+    price: 100,
+    stockQuantity: 10,
+    images: [],
+    isActive: true,
+    categories: ['test'],
+    attributes: {},
+    discountPercentage: 0,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  };
+
+  const mockUser = {
+    id: '1',
+    email: 'user@example.com',
+    firstName: 'Test',
+    lastName: 'User',
+    password: 'hashedPassword',
+    role: UserRole.CUSTOMER,
+    isEmailVerified: true,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  };
+
+  const mockAdmin = {
+    id: '2',
+    email: 'admin@example.com',
+    firstName: 'Admin',
+    lastName: 'User',
+    password: 'hashedPassword',
+    role: UserRole.ADMIN,
+    isEmailVerified: true,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  };
+
+  beforeAll(async () => {
+    const moduleFixture: TestingModule = await Test.createTestingModule({
+      imports: [AppModule],
+    }).compile();
+
+    app = moduleFixture.createNestApplication();
+    app.useGlobalPipes(
+      new ValidationPipe({
+        whitelist: true,
+        transform: true,
+      }),
+    );
+
+    await app.init();
+
+    jwtService = moduleFixture.get<JwtService>(JwtService);
+    productRepository = moduleFixture.get(getRepositoryToken(Product));
+    userRepository = moduleFixture.get(getRepositoryToken(User));
+
+    // Generate tokens
+    accessToken = jwtService.sign(
+      { sub: mockUser.id, email: mockUser.email, role: mockUser.role },
+      { secret: 'your-secret-key', expiresIn: '1h' },
+    );
+
+    adminAccessToken = jwtService.sign(
+      { sub: mockAdmin.id, email: mockAdmin.email, role: mockAdmin.role },
+      { secret: 'your-secret-key', expiresIn: '1h' },
+    );
+
+    // Mock repositories
+    jest.spyOn(productRepository, 'find').mockResolvedValue([mockProduct]);
+    jest.spyOn(productRepository, 'findOne').mockResolvedValue(mockProduct);
+    jest.spyOn(productRepository, 'create').mockReturnValue(mockProduct);
+    jest.spyOn(productRepository, 'save').mockResolvedValue(mockProduct);
+
+    jest.spyOn(userRepository, 'findOne').mockImplementation((options) => {
+      if (options.where.id === '1') return Promise.resolve(mockUser);
+      if (options.where.id === '2') return Promise.resolve(mockAdmin);
+      return Promise.resolve(null);
+    });
+  });
+
+  afterAll(async () => {
+    await app.close();
+  });
+
+  describe('GET /products', () => {
+    it('should return an array of products', () => {
+      return request(app.getHttpServer())
+        .get('/products')
+        .expect(200)
+        .expect((res) => {
+          expect(Array.isArray(res.body)).toBe(true);
+          expect(res.body.length).toBeGreaterThan(0);
+          expect(res.body[0]).toHaveProperty('id');
+          expect(res.body[0]).toHaveProperty('name');
+          expect(res.body[0]).toHaveProperty('price');
+        });
+    });
+  });
+
+  describe('GET /products/:id', () => {
+    it('should return a product by id', () => {
+      return request(app.getHttpServer())
+        .get('/products/1')
+        .expect(200)
+        .expect((res) => {
+          expect(res.body).toHaveProperty('id', '1');
+          expect(res.body).toHaveProperty('name', 'Test Product');
+          expect(res.body).toHaveProperty('price', 100);
+        });
+    });
+
+    it('should return 404 if product not found', () => {
+      jest.spyOn(productRepository, 'findOne').mockResolvedValueOnce(null);
+
+      return request(app.getHttpServer()).get('/products/999').expect(404);
+    });
+  });
+
+  describe('POST /products', () => {
+    it('should require authentication', () => {
+      return request(app.getHttpServer())
+        .post('/products')
+        .send({
+          name: 'New Product',
+          description: 'New Description',
+          price: 200,
+          stockQuantity: 20,
+        })
+        .expect(401);
+    });
+
+    it('should require admin role', () => {
+      return request(app.getHttpServer())
+        .post('/products')
+        .set('Authorization', `Bearer ${accessToken}`)
+        .send({
+          name: 'New Product',
+          description: 'New Description',
+          price: 200,
+          stockQuantity: 20,
+        })
+        .expect(403);
+    });
+
+    it('should create a new product with admin role', () => {
+      return request(app.getHttpServer())
+        .post('/products')
+        .set('Authorization', `Bearer ${adminAccessToken}`)
+        .send({
+          name: 'New Product',
+          description: 'New Description',
+          price: 200,
+          stockQuantity: 20,
+        })
+        .expect(201)
+        .expect((res) => {
+          expect(res.body).toHaveProperty('id');
+          expect(res.body).toHaveProperty('name', 'Test Product');
+        });
+    });
+
+    it('should validate input data', () => {
+      return request(app.getHttpServer())
+        .post('/products')
+        .set('Authorization', `Bearer ${adminAccessToken}`)
+        .send({
+          // Missing required fields
+          price: 'invalid', // Invalid type
+        })
+        .expect(400);
+    });
+  });
+
+  describe('PATCH /products/:id', () => {
+    it('should require authentication', () => {
+      return request(app.getHttpServer())
+        .patch('/products/1')
+        .send({
+          name: 'Updated Product',
+        })
+        .expect(401);
+    });
+
+    it('should require admin role', () => {
+      return request(app.getHttpServer())
+        .patch('/products/1')
+        .set('Authorization', `Bearer ${accessToken}`)
+        .send({
+          name: 'Updated Product',
+        })
+        .expect(403);
+    });
+
+    it('should update a product with admin role', () => {
+      const updatedProduct = { ...mockProduct, name: 'Updated Product' };
+      jest.spyOn(productRepository, 'save').mockResolvedValueOnce(updatedProduct);
+
+      return request(app.getHttpServer())
+        .patch('/products/1')
+        .set('Authorization', `Bearer ${adminAccessToken}`)
+        .send({
+          name: 'Updated Product',
+        })
+        .expect(200)
+        .expect((res) => {
+          expect(res.body).toHaveProperty('name', 'Updated Product');
+        });
+    });
+  });
+
+  describe('DELETE /products/:id', () => {
+    it('should require authentication', () => {
+      return request(app.getHttpServer()).delete('/products/1').expect(401);
+    });
+
+    it('should require admin role', () => {
+      return request(app.getHttpServer())
+        .delete('/products/1')
+        .set('Authorization', `Bearer ${accessToken}`)
+        .expect(403);
+    });
+
+    it('should delete a product with admin role', () => {
+      jest.spyOn(productRepository, 'softRemove').mockResolvedValueOnce(undefined);
+
+      return request(app.getHttpServer())
+        .delete('/products/1')
+        .set('Authorization', `Bearer ${adminAccessToken}`)
+        .expect(204);
+    });
+  });
+});
+```
+
+## File: tsconfig.build.json
+
+```json
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}
+```
+
+## File: tsconfig.json
+
+```json
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@domain/*": ["src/domain/*"],
+      "@application/*": ["src/application/*"],
+      "@infrastructure/*": ["src/infrastructure/*"],
+      "@presentation/*": ["src/presentation/*"],
+      "@modules/*": ["src/modules/*"],
+      "@config/*": ["src/config/*"]
+    }
+  }
+}
+```

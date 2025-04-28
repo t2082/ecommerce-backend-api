@@ -7,17 +7,20 @@ A robust and scalable E-Commerce Backend API built with NestJS, TypeScript, Post
 ## Features
 
 - **Authentication**
+
   - JWT + Refresh Token authentication
   - User registration and login
   - Password reset functionality
   - Role-based access control
 
 - **User Management**
+
   - CRUD operations for users
   - Role management (Admin, Manager, Customer)
   - Profile management
 
 - **Product Management**
+
   - CRUD operations for products
   - Product categorization
   - Image upload support
@@ -25,12 +28,14 @@ A robust and scalable E-Commerce Backend API built with NestJS, TypeScript, Post
   - Discount management
 
 - **Order Management**
+
   - Order creation and processing
   - Order status tracking
   - Payment status tracking
   - Order history
 
 - **Infrastructure**
+
   - PostgreSQL database with TypeORM
   - Redis for caching
   - BullMQ for task queues
@@ -38,6 +43,7 @@ A robust and scalable E-Commerce Backend API built with NestJS, TypeScript, Post
   - Email service with Nodemailer
 
 - **Security**
+
   - Helmet for HTTP headers
   - Rate limiting
   - CORS protection
@@ -212,6 +218,13 @@ src/
 3. Commit your changes: `git commit -am 'Add my feature'`
 4. Push to the branch: `git push origin feature/my-feature`
 5. Submit a pull request
+
+## How to add a new API?
+
+# 1. Add to Controller (ecommerce-backend\src\modules\ex\ex.controller.ts)
+
+# 2. Add to Dto (ecommerce-backend\src\application\dtos\ex.dto.ts)
+
 
 ## License
 

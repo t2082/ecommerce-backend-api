@@ -10,19 +10,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       useFactory: (configService: ConfigService) => {
         const nodeEnv = configService.get('nodeEnv');
 
-        // Use SQLite for development
-        if (nodeEnv === 'development') {
-          return {
-            type: 'sqlite',
-            database: 'ecommerce-backend.sqlite',
-            entities: [__dirname + '/../../**/*.entity{.ts,.js}'],
-            migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
-            synchronize: true,
-            logging: true,
-          };
-        }
-
-        // Use PostgreSQL for production
+        // Use PostgreSQL for all environments
         return {
           type: 'postgres',
           host: configService.get('database.host'),
@@ -41,4 +29,4 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     }),
   ],
 })
-export class DatabaseModule {}
+export class DatabaseModule { }

@@ -33,17 +33,12 @@ export class ProductsService {
 
       // Apply price range filter
       if (filters.minPrice !== undefined || filters.maxPrice !== undefined) {
-        where.price = Between(
-          filters.minPrice || 0,
-          filters.maxPrice || Number.MAX_SAFE_INTEGER,
-        );
+        where.price = Between(filters.minPrice || 0, filters.maxPrice || Number.MAX_SAFE_INTEGER);
       }
 
       // Apply in-stock filter
       if (filters.inStock !== undefined) {
-        where.stockQuantity = filters.inStock
-          ? Between(1, Number.MAX_SAFE_INTEGER)
-          : 0;
+        where.stockQuantity = filters.inStock ? Between(1, Number.MAX_SAFE_INTEGER) : 0;
       }
 
       // Apply on-sale filter
@@ -68,10 +63,7 @@ export class ProductsService {
     return this.productRepository.save(product);
   }
 
-  async update(
-    id: string,
-    updateProductDto: UpdateProductDto,
-  ): Promise<Product> {
+  async update(id: string, updateProductDto: UpdateProductDto): Promise<Product> {
     const product = await this.findById(id);
     Object.assign(product, updateProductDto);
     return this.productRepository.save(product);

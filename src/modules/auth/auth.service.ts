@@ -1,8 +1,4 @@
-import {
-  BadRequestException,
-  Injectable,
-  UnauthorizedException,
-} from '@nestjs/common';
+import { BadRequestException, Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -101,10 +97,7 @@ export class AuthService {
       }
 
       // Validate stored refresh token
-      const isRefreshTokenValid = await bcrypt.compare(
-        refreshToken,
-        user.refreshToken,
-      );
+      const isRefreshTokenValid = await bcrypt.compare(refreshToken, user.refreshToken);
 
       if (!isRefreshTokenValid) {
         throw new UnauthorizedException('Invalid refresh token');
@@ -151,11 +144,7 @@ export class AuthService {
     await this.userRepository.save(user);
 
     // Send password reset email
-    await this.emailService.sendPasswordResetEmail(
-      user.email,
-      resetToken,
-      user.firstName,
-    );
+    await this.emailService.sendPasswordResetEmail(user.email, resetToken, user.firstName);
   }
 
   async resetPassword(resetPasswordDto: ResetPasswordDto): Promise<void> {
@@ -215,9 +204,7 @@ export class AuthService {
     return {
       accessToken,
       refreshToken,
-      expiresIn: this.getExpiresInSeconds(
-        this.configService.get('jwt.expiresIn'),
-      ),
+      expiresIn: this.getExpiresInSeconds(this.configService.get('jwt.expiresIn')),
     };
   }
 

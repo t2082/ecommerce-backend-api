@@ -1,15 +1,7 @@
-import {
-  Injectable,
-  NotFoundException,
-  BadRequestException,
-} from '@nestjs/common';
+import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, FindOptionsWhere } from 'typeorm';
-import {
-  Order,
-  OrderStatus,
-  PaymentStatus,
-} from '@domain/entities/order.entity';
+import { Order, OrderStatus, PaymentStatus } from '@domain/entities/order.entity';
 import { OrderItem } from '@domain/entities/order-item.entity';
 import { User } from '@domain/entities/user.entity';
 import { ProductsService } from '@modules/products/products.service';
@@ -19,7 +11,6 @@ import {
   UpdatePaymentStatusDto,
 } from '@application/dtos/order.dto';
 import { EmailService } from '@infrastructure/email/email.service';
-import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()
 export class OrdersService {
@@ -76,8 +67,7 @@ export class OrdersService {
       orderNumber: this.generateOrderNumber(),
       user,
       shippingAddress: createOrderDto.shippingAddress,
-      billingAddress:
-        createOrderDto.billingAddress || createOrderDto.shippingAddress,
+      billingAddress: createOrderDto.billingAddress || createOrderDto.shippingAddress,
       notes: createOrderDto.notes,
       paymentMethod: createOrderDto.paymentMethod,
       status: OrderStatus.PENDING,
@@ -100,9 +90,7 @@ export class OrdersService {
 
       // Check if product is in stock
       if (product.stockQuantity < item.quantity) {
-        throw new BadRequestException(
-          `Product ${product.name} does not have enough stock`,
-        );
+        throw new BadRequestException(`Product ${product.name} does not have enough stock`);
       }
 
       // Create order item
@@ -156,10 +144,7 @@ export class OrdersService {
     return finalOrder;
   }
 
-  async updateStatus(
-    id: string,
-    updateOrderStatusDto: UpdateOrderStatusDto,
-  ): Promise<Order> {
+  async updateStatus(id: string, updateOrderStatusDto: UpdateOrderStatusDto): Promise<Order> {
     const order = await this.findById(id);
 
     // Validate status transition
@@ -206,9 +191,7 @@ export class OrdersService {
 
     // Check if order can be cancelled
     if (!order.canCancel()) {
-      throw new BadRequestException(
-        'This order cannot be cancelled due to its current status',
-      );
+      throw new BadRequestException('This order cannot be cancelled due to its current status');
     }
 
     // Cancel order
@@ -230,10 +213,7 @@ export class OrdersService {
     return `ORD-${timestamp}-${random}`;
   }
 
-  private validateStatusTransition(
-    currentStatus: OrderStatus,
-    newStatus: OrderStatus,
-  ): void {
+  private validateStatusTransition(currentStatus: OrderStatus, newStatus: OrderStatus): void {
     // Define valid status transitions
     const validTransitions: Record<OrderStatus, OrderStatus[]> = {
       [OrderStatus.PENDING]: [OrderStatus.PROCESSING, OrderStatus.CANCELLED],

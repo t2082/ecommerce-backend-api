@@ -1,12 +1,4 @@
-import {
-  Body,
-  Controller,
-  Post,
-  HttpCode,
-  HttpStatus,
-  UseGuards,
-  Request,
-} from '@nestjs/common';
+import { Body, Controller, Post, HttpCode, HttpStatus, UseGuards, Request } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import {
   LoginDto,
@@ -40,9 +32,7 @@ export class AuthController {
 
   @Post('refresh')
   @HttpCode(HttpStatus.OK)
-  async refreshToken(
-    @Body() refreshTokenDto: RefreshTokenDto,
-  ): Promise<TokenResponseDto> {
+  async refreshToken(@Body() refreshTokenDto: RefreshTokenDto): Promise<TokenResponseDto> {
     return this.authService.refreshToken(refreshTokenDto.refreshToken);
   }
 
@@ -55,17 +45,13 @@ export class AuthController {
 
   @Post('forgot-password')
   @HttpCode(HttpStatus.NO_CONTENT)
-  async forgotPassword(
-    @Body() forgotPasswordDto: ForgotPasswordDto,
-  ): Promise<void> {
+  async forgotPassword(@Body() forgotPasswordDto: ForgotPasswordDto): Promise<void> {
     await this.authService.forgotPassword(forgotPasswordDto);
   }
 
   @Post('reset-password')
   @HttpCode(HttpStatus.NO_CONTENT)
-  async resetPassword(
-    @Body() resetPasswordDto: ResetPasswordDto,
-  ): Promise<void> {
+  async resetPassword(@Body() resetPasswordDto: ResetPasswordDto): Promise<void> {
     await this.authService.resetPassword(resetPasswordDto);
   }
 }

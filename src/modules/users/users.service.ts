@@ -1,16 +1,8 @@
-import {
-  Injectable,
-  NotFoundException,
-  BadRequestException,
-} from '@nestjs/common';
+import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { User, UserRole } from '@domain/entities/user.entity';
-import {
-  CreateUserDto,
-  UpdateUserDto,
-  ChangePasswordDto,
-} from '@application/dtos/user.dto';
+import { CreateUserDto, UpdateUserDto, ChangePasswordDto } from '@application/dtos/user.dto';
 
 @Injectable()
 export class UsersService {
@@ -61,10 +53,7 @@ export class UsersService {
     return this.userRepository.save(user);
   }
 
-  async changePassword(
-    id: string,
-    changePasswordDto: ChangePasswordDto,
-  ): Promise<void> {
+  async changePassword(id: string, changePasswordDto: ChangePasswordDto): Promise<void> {
     const { currentPassword, newPassword } = changePasswordDto;
     const user = await this.findById(id);
 

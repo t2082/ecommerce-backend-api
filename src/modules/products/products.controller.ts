@@ -42,9 +42,7 @@ export class ProductsController {
   ) {}
 
   @Get()
-  async findAll(
-    @Query() filters: ProductFilterDto,
-  ): Promise<ProductResponseDto[]> {
+  async findAll(@Query() filters: ProductFilterDto): Promise<ProductResponseDto[]> {
     const products = await this.productsService.findAll(filters);
     return products.map((product) => plainToClass(ProductResponseDto, product));
   }
@@ -58,9 +56,7 @@ export class ProductsController {
   @Post()
   @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(UserRole.ADMIN, UserRole.MANAGER)
-  async create(
-    @Body() createProductDto: CreateProductDto,
-  ): Promise<ProductResponseDto> {
+  async create(@Body() createProductDto: CreateProductDto): Promise<ProductResponseDto> {
     const product = await this.productsService.create(createProductDto);
     return plainToClass(ProductResponseDto, product);
   }
@@ -116,12 +112,10 @@ export class ProductsController {
     const product = await this.productsService.findById(id);
 
     // Get the base URL for images
-    const baseUrl = this.configService.get('appUrl') || 'http://localhost:3000';
+    const baseUrl = this.configService.get<string>('appUrl') || 'http://localhost:3000';
 
     // Add new image URLs to the product
-    const imageUrls = files.map(
-      (file) => `${baseUrl}/uploads/products/${file.filename}`,
-    );
+    const imageUrls = files.map((file) => `${baseUrl}/uploads/products/${file.filename}`);
 
     // Update product with new images
     product.images = [...(product.images || []), ...imageUrls];

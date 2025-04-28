@@ -24,10 +24,7 @@ import 'winston-daily-rotate-file';
         const transports: winston.transport[] = [
           // Console transport
           new winston.transports.Console({
-            format: winston.format.combine(
-              winston.format.colorize(),
-              winston.format.simple(),
-            ),
+            format: winston.format.combine(winston.format.colorize(), winston.format.simple()),
             level: isProduction ? 'info' : 'debug',
           }),
         ];

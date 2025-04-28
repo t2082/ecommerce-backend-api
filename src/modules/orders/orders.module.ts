@@ -9,12 +9,7 @@ import { AuthModule } from '@modules/auth/auth.module';
 import { EmailModule } from '@infrastructure/email/email.module';
 
 @Module({
-  imports: [
-    TypeOrmModule.forFeature([Order, OrderItem]),
-    ProductsModule,
-    AuthModule,
-    EmailModule,
-  ],
+  imports: [TypeOrmModule.forFeature([Order, OrderItem]), ProductsModule, AuthModule, EmailModule],
   controllers: [OrdersController],
   providers: [OrdersService],
   exports: [OrdersService],

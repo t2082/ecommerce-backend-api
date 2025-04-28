@@ -66,7 +66,7 @@ describe('ProductsController (e2e)', () => {
         transform: true,
       }),
     );
-    
+
     await app.init();
 
     jwtService = moduleFixture.get<JwtService>(JwtService);
@@ -89,7 +89,7 @@ describe('ProductsController (e2e)', () => {
     jest.spyOn(productRepository, 'findOne').mockResolvedValue(mockProduct);
     jest.spyOn(productRepository, 'create').mockReturnValue(mockProduct);
     jest.spyOn(productRepository, 'save').mockResolvedValue(mockProduct);
-    
+
     jest.spyOn(userRepository, 'findOne').mockImplementation((options) => {
       if (options.where.id === '1') return Promise.resolve(mockUser);
       if (options.where.id === '2') return Promise.resolve(mockAdmin);
@@ -130,10 +130,8 @@ describe('ProductsController (e2e)', () => {
 
     it('should return 404 if product not found', () => {
       jest.spyOn(productRepository, 'findOne').mockResolvedValueOnce(null);
-      
-      return request(app.getHttpServer())
-        .get('/products/999')
-        .expect(404);
+
+      return request(app.getHttpServer()).get('/products/999').expect(404);
     });
   });
 
@@ -215,7 +213,7 @@ describe('ProductsController (e2e)', () => {
     it('should update a product with admin role', () => {
       const updatedProduct = { ...mockProduct, name: 'Updated Product' };
       jest.spyOn(productRepository, 'save').mockResolvedValueOnce(updatedProduct);
-      
+
       return request(app.getHttpServer())
         .patch('/products/1')
         .set('Authorization', `Bearer ${adminAccessToken}`)
@@ -231,9 +229,7 @@ describe('ProductsController (e2e)', () => {
 
   describe('DELETE /products/:id', () => {
     it('should require authentication', () => {
-      return request(app.getHttpServer())
-        .delete('/products/1')
-        .expect(401);
+      return request(app.getHttpServer()).delete('/products/1').expect(401);
     });
 
     it('should require admin role', () => {
@@ -245,7 +241,7 @@ describe('ProductsController (e2e)', () => {
 
     it('should delete a product with admin role', () => {
       jest.spyOn(productRepository, 'softRemove').mockResolvedValueOnce(undefined);
-      
+
       return request(app.getHttpServer())
         .delete('/products/1')
         .set('Authorization', `Bearer ${adminAccessToken}`)
