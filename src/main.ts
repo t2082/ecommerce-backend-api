@@ -62,7 +62,7 @@ async function bootstrap() {
   // Start the server
   await app.listen(port);
 
-  Logger.log(`🚀 Application is running on: http://localhost:${port}/${apiPrefix}`, 'Bootstrap');
+  Logger.log(`🚀 Application is running on: http://localhost:${port}/`, 'Bootstrap');
 
   if (nodeEnv !== 'production') {
     Logger.log(

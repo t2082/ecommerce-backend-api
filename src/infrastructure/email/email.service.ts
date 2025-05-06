@@ -24,13 +24,29 @@ export class EmailService {
     text?: string;
     html?: string;
   }): Promise<void> {
-    await this.transporter.sendMail({
-      from: this.configService.get('mail.from'),
-      to: options.to,
-      subject: options.subject,
-      text: options.text,
-      html: options.html,
-    });
+    const nodeEnv = this.configService.get('nodeEnv');
+
+    // In development mode, just log the email instead of sending it
+    if (nodeEnv === 'development') {
+      console.log('Email would be sent in production:');
+      console.log(`To: ${options.to}`);
+      console.log(`Subject: ${options.subject}`);
+      console.log(`Content: ${options.text || options.html}`);
+      return;
+    }
+
+    try {
+      await this.transporter.sendMail({
+        from: this.configService.get('mail.from'),
+        to: options.to,
+        subject: options.subject,
+        text: options.text,
+        html: options.html,
+      });
+    } catch (error) {
+      console.error('Failed to send email:', error.message);
+      // Don't throw the error so the application can continue
+    }
   }
 
   async sendPasswordResetEmail(to: string, token: string, username: string): Promise<void> {
@@ -84,12 +100,12 @@ export class EmailService {
         <h3>Items</h3>
         <ul>
           ${orderDetails.items
-            .map(
-              (item) => `
+          .map(
+            (item) => `
             <li>${item.quantity} x ${item.name} - $${item.price.toFixed(2)}</li>
           `,
-            )
-            .join('')}
+          )
+          .join('')}
         </ul>
         <p>You can track your order status in your account.</p>
         <p>Best regards,</p>

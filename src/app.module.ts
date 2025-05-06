@@ -38,6 +38,12 @@ import { OrdersModule } from '@modules/orders/orders.module';
       serveRoot: '/uploads',
     }),
 
+    // Serve public files
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'public'),
+      serveRoot: '/',
+    }),
+
     // Feature modules
     AuthModule,
     UsersModule,
